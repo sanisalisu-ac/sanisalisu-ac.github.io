@@ -1,0 +1,13 @@
+{
+  "source": "Google Scholar",
+  "updated": "2026-10-01",
+  "citations": 341,
+  "h_index": 10,
+  "i10_index": 12,
+  "openalex": {
+    "citations": null,
+    "h_index": null,
+    "updated": null
+  },
+  "note": "Scholar figures are refreshed weekly by the update workflow when Google Scholar allows it; OpenAlex figures are always refreshed."
+}

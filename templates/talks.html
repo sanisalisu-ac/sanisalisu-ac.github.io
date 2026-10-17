@@ -1,0 +1,40 @@
+{% extends "base.html" %}
+{% block title %}Talks, Sani Salisu{% endblock %}
+{% block description %}Conference and seminar talks by Sani Salisu on fixed point theory, variational inequalities and optimization in geodesic spaces.{% endblock %}
+{% block main %}
+<div class="wrap">
+  <header class="page-head">
+    <h1>Talks</h1>
+    <p class="lede">{{ stats.talks }} conference and seminar talks across Thailand, Romania, France, Spain, Italy, Moldova and Nigeria. Where photographs exist, the talk links to its album in the gallery.</p>
+  </header>
+  <section class="section">
+    <ul class="glist">
+      {% for t in talks.talks %}
+      <li><span class="when">{{ t.date[:4] }}{% if t.date|length > 4 %}<br>{{ ['Jan','Feb','Mar','Apr','May','Jun','Jul','Aug','Sep','Oct','Nov','Dec'][t.date[5:7]|int - 1] }}{% endif %}</span>
+        <div>
+          <p class="talk-title">{{ t.title }}</p>
+          <p>{% if t.url %}<a href="{{ t.url }}" rel="noopener">{{ t.event }}</a>{% else %}{{ t.event }}{% endif %}, {{ t.place }}.</p>
+          {% if t.note or t.album or t.slides %}<p>{% if t.note %}<span class="{{ 'award' if 'Award' in t.note }}">{{ t.note }}.</span> {% endif %}{% if t.slides %}<a href="{{ t.slides }}">Slides</a> {% endif %}{% if t.album %}<a href="gallery.html#{{ t.album }}">Photographs</a>{% endif %}</p>{% endif %}
+        </div>
+      </li>
+      {% endfor %}
+    </ul>
+  </section>
+  <section class="section">
+    <div class="split">
+      <h2>Workshops attended</h2>
+      <ul class="glist">
+        {% for w in talks.workshops %}
+        <li><span class="when">{{ w.date[:4] }}</span><div><p>{% if w.url %}<a href="{{ w.url }}" rel="noopener">{{ w.event }}</a>{% else %}{{ w.event }}{% endif %}, {{ w.place }}.</p></div></li>
+        {% endfor %}
+      </ul>
+    </div>
+  </section>
+  <section class="section">
+    <div class="split">
+      <h2>Invitations</h2>
+      <p>I am glad to speak at seminars and workshops, in person or online, on fixed point iterations, monotone operator splitting or optimization on manifolds. <a href="contact.html">Write to me</a> with the date and audience.</p>
+    </div>
+  </section>
+</div>
+{% endblock %}

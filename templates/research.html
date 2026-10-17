@@ -1,0 +1,78 @@
+{% extends "base.html" %}
+{% block title %}Research, Sani Salisu{% endblock %}
+{% block description %}Research themes of Sani Salisu: fixed point theory, variational inequalities and monotone inclusions, numerical optimization in linear and geodesic settings, and their applications.{% endblock %}
+{% block head %}<link rel="stylesheet" href="assets/vendor/katex/katex.min.css">{% endblock %}
+{% block main %}
+<div class="wrap">
+  <header class="page-head">
+    <h1>Research</h1>
+    <p class="lede">Many problems in optimization, equilibrium and data science can be written as a search for a point that an operator leaves unchanged. My research asks when such a point exists, what it says about the operator, and how to reach it with methods that are provably convergent and fast in practice.</p>
+  </header>
+
+  <section class="section">
+    <div class="split">
+      <h2>The common thread</h2>
+      <div>
+        <p>A great many questions reduce to finding \(x^\ast\) with</p>
+        <div class="math-block">\[ x^\ast = T x^\ast \quad\text{or}\quad 0 \in A x^\ast + B x^\ast, \]</div>
+        <p>where \(T\) is a nonlinear map and \(A, B\) are monotone operators. Simple iterations such as \(x_{n+1} = T x_n\) may fail to converge, even for nonexpansive \(T\). Averaging repairs this: the Krasnoselskii–Mann scheme \(x_{n+1} = (1-\lambda)x_n + \lambda T x_n\) converges under mild conditions, and enriched mappings, a class I have studied extensively with Vasile Berinde and colleagues, are precisely those that averaging turns into tractable maps. The <a href="code.html">examples page</a> lets you watch this happen.</p>
+        <p>Much of my work carries these ideas into spaces without linear structure, such as CAT(0) spaces, Hadamard manifolds and hyperbolic spaces, where convex combinations become geodesics and familiar inequalities must be rebuilt from the geometry.</p>
+      </div>
+    </div>
+  </section>
+
+  <section class="section">
+    <h2>Themes</h2>
+    <p class="muted">Counts are computed from the publication list and update automatically. A paper may belong to several themes.</p>
+    <div class="themes">
+      {% for t in topics %}
+      <article class="theme">
+        <h3>{{ t.label }}</h3>
+        <p>{{ t.blurb }}</p>
+        <p class="count"><a href="publications.html?topic={{ t.key }}">{{ t.count }} papers on this theme</a></p>
+        {% if t.examples %}<ul class="small">{% for p in t.examples %}<li>{% if p.url %}<a href="{{ p.url }}" rel="noopener">{{ p.title_html|safe }}</a>{% else %}{{ p.title_html|safe }}{% endif %} ({{ p.year }})</li>{% endfor %}</ul>{% endif %}
+      </article>
+      {% endfor %}
+      <article class="theme">
+        <h3>Artificial intelligence for hard problems</h3>
+        <p>A growing direction of my work brings machine learning and artificial intelligence into the design and analysis of methods for difficult problems in optimization and nonlinear analysis, and, in the other direction, uses optimization theory to train models such as extreme learning machines more reliably.</p>
+      </article>
+    </div>
+  </section>
+
+  <section class="section" id="grants">
+    <div class="split">
+      <h2>Funded projects</h2>
+      <ul class="glist">
+        <li><span class="when">2025–2026</span><div><h3>Optimization of extreme learning machine models via conjugate gradient techniques, with application to the classification of tomato leaf diseases</h3><p>Co-investigator. TETFund Institution-Based Research grant, Usmanu Danfodiyo University, Sokoto, Nigeria (UDUS-IBR-2025-10-81).</p></div></li>
+        <li><span class="when">2025–2026</span><div><h3>Optimization of blood supply chain networks through numerical variational inequality techniques</h3><p>Co-investigator. Deanship of Graduate Studies and Scientific Research, Jouf University, Saudi Arabia (DGSSR-2025-02-01481).</p></div></li>
+      </ul>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="split">
+      <h2>Collaboration</h2>
+      <div>
+        <p>I have written papers with co-authors at institutions in Thailand, China, Taiwan, Korea, Pakistan, India, Saudi Arabia, Romania, Poland, Ireland, Canada, South Africa and Nigeria. I remain a member of the KMUTT Fixed Point Theory and Applications Research Group in Bangkok and continue a long collaboration with the fixed point school at the North University Centre at Baia Mare.</p>
+        <p>I welcome conversations with researchers and prospective students interested in iterative methods, monotone operator theory or optimization on manifolds. <a href="contact.html">Get in touch</a>.</p>
+      </div>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="split">
+      <h2>Service</h2>
+      <ul class="glist">
+        <li><span class="when">2023–present</span><div><h3>Reviewer, Mathematical Reviews (MathSciNet)</h3><p>American Mathematical Society.</p></div></li>
+        <li><span class="when">Ongoing</span><div><h3>Referee for international journals</h3><p>Fixed point theory, nonlinear analysis, variational inequalities and vector optimization.</p></div></li>
+      </ul>
+    </div>
+  </section>
+</div>
+{% endblock %}
+{% block scripts %}
+<script src="assets/vendor/katex/katex.min.js" defer></script>
+<script src="assets/vendor/katex/auto-render.min.js" defer></script>
+<script src="assets/js/math.js" defer></script>
+{% endblock %}

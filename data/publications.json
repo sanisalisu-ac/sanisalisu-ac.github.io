@@ -1,0 +1,1896 @@
+{
+  "updated": null,
+  "publications": [
+    {
+      "title": "On the convergence of modified Tseng extragradient methods with double inertial technique for nonmonotone variational inequalities",
+      "authors": [
+        "Peng, J.-W.",
+        "Fei, X.-Y.",
+        "Salisu, S.",
+        "Yao, J.-C."
+      ],
+      "venue": "Numer. Algorithms",
+      "volume": null,
+      "issue": null,
+      "pages": null,
+      "year": 2026,
+      "type": "article",
+      "status": "in press",
+      "doi": "10.1007/s11075-026-02521-6",
+      "url": "https://doi.org/10.1007/s11075-026-02521-6",
+      "index": "SCIE",
+      "quartile": "Q1",
+      "impact_factor": 2.5,
+      "first_author": false,
+      "corresponding": true,
+      "topics": [
+        "variational",
+        "optimization"
+      ],
+      "series": null,
+      "source": "cv",
+      "id": "peng2026ontheconvergenceofmodifi"
+    },
+    {
+      "title": "Adaptive inertial-relaxed Tseng extragradient algorithms for non-monotone variational inequalities with applications to Nash equilibrium in oligopolistic market competition",
+      "authors": [
+        "Peng, J.-W.",
+        "Kumam, P.",
+        "Salisu, S.",
+        "Yao, J.-C."
+      ],
+      "venue": "Math. Comput. Simulation",
+      "volume": "252",
+      "issue": null,
+      "pages": "497–517",
+      "year": 2027,
+      "type": "article",
+      "status": "published",
+      "doi": "10.1016/j.matcom.2026.10.006",
+      "url": "https://doi.org/10.1016/j.matcom.2026.10.006",
+      "index": "SCIE",
+      "quartile": "Q1",
+      "impact_factor": 4.0,
+      "first_author": false,
+      "corresponding": true,
+      "topics": [
+        "variational",
+        "applications"
+      ],
+      "series": null,
+      "source": "cv",
+      "id": "peng2027adaptiveinertialrelaxedt"
+    },
+    {
+      "title": "Fixed point properties of strongly quasi-nonexpansive mappings and cutters",
+      "authors": [
+        "Salisu, S.",
+        "Cegielski, A.",
+        "Worapitpong, W.",
+        "Kumam, P."
+      ],
+      "venue": "J. Fixed Point Theory Appl.",
+      "volume": "28",
+      "issue": "4",
+      "pages": null,
+      "year": 2026,
+      "type": "article",
+      "status": "published",
+      "doi": "10.1007/s11784-026-01343-2",
+      "url": "https://doi.org/10.1007/s11784-026-01343-2",
+      "index": "SCIE",
+      "quartile": "Q2",
+      "impact_factor": 1.1,
+      "first_author": true,
+      "corresponding": false,
+      "topics": [
+        "fixed-point"
+      ],
+      "series": null,
+      "source": "cv",
+      "id": "salisu2026fixedpointpropertiesofst"
+    },
+    {
+      "title": "Extrapolated adaptive proximal method with a single dynamic parameter for variational inequalities and optimization applications",
+      "authors": [
+        "Peng, J.-W.",
+        "Salisu, S.",
+        "Mofarreh, F.",
+        "Yao, J.-C."
+      ],
+      "venue": "Commun. Nonlinear Sci. Numer. Simul.",
+      "volume": "163",
+      "issue": null,
+      "pages": "110495",
+      "year": 2026,
+      "type": "article",
+      "status": "published",
+      "doi": "10.1016/j.cnsns.2026.110495",
+      "url": "https://doi.org/10.1016/j.cnsns.2026.110495",
+      "index": "SCIE",
+      "quartile": "Q1",
+      "impact_factor": 3.8,
+      "first_author": false,
+      "corresponding": true,
+      "topics": [
+        "variational"
+      ],
+      "series": null,
+      "source": "cv",
+      "id": "peng2026extrapolatedadaptiveprox"
+    },
+    {
+      "title": "A perturbed single-operator method for nonlinear equations with application to classification via extreme learning machines",
+      "authors": [
+        "Salisu, S.",
+        "Abubakar, J.",
+        "Kumam, P."
+      ],
+      "venue": "Commun. Nonlinear Sci. Numer. Simul.",
+      "volume": "155",
+      "issue": null,
+      "pages": "109586",
+      "year": 2026,
+      "type": "article",
+      "status": "published",
+      "doi": "10.1016/j.cnsns.2025.109586",
+      "url": "https://doi.org/10.1016/j.cnsns.2025.109586",
+      "index": "SCIE",
+      "quartile": "Q1",
+      "impact_factor": 3.8,
+      "first_author": true,
+      "corresponding": false,
+      "topics": [
+        "optimization",
+        "applications"
+      ],
+      "series": null,
+      "source": "cv",
+      "id": "salisu2026aperturbedsingleoperator"
+    },
+    {
+      "title": "Block proximal point method for mixed variational inequality problem",
+      "authors": [
+        "Abubakar, J.",
+        "Salisu, S.",
+        "Sitthithakerngkiet, K."
+      ],
+      "venue": "Commun. Nonlinear Sci. Numer. Simul.",
+      "volume": "163",
+      "issue": null,
+      "pages": "110786",
+      "year": 2026,
+      "type": "article",
+      "status": "published",
+      "doi": "10.1016/j.cnsns.2026.110786",
+      "url": "https://doi.org/10.1016/j.cnsns.2026.110786",
+      "index": "SCIE",
+      "quartile": "Q1",
+      "impact_factor": 3.8,
+      "first_author": false,
+      "corresponding": false,
+      "topics": [
+        "variational"
+      ],
+      "series": null,
+      "source": "cv",
+      "id": "abubakar2026blockproximalpointmethod"
+    },
+    {
+      "title": "A perturbed convex combination method for pseudo-monotone variational inequalities with applications to blood supply chain networks",
+      "authors": [
+        "Alsahli, G.",
+        "Salisu, S.",
+        "Alotaibi, N."
+      ],
+      "venue": "AIMS Math.",
+      "volume": "11",
+      "issue": "8",
+      "pages": "25229–25264",
+      "year": 2026,
+      "type": "article",
+      "status": "published",
+      "doi": "10.3934/math.20261014",
+      "url": "https://doi.org/10.3934/math.20261014",
+      "index": "SCIE",
+      "quartile": "Q1",
+      "impact_factor": 1.8,
+      "first_author": false,
+      "corresponding": false,
+      "topics": [
+        "variational",
+        "applications"
+      ],
+      "series": null,
+      "source": "cv",
+      "id": "alsahli2026aperturbedconvexcombinat"
+    },
+    {
+      "title": "Fixed point theorems for nonlinear contractive mappings in cone-valued $\\theta$-type multiplicative metric spaces",
+      "authors": [
+        "Singh, P.",
+        "Singh, S.",
+        "Salisu, S.",
+        "Singh, V."
+      ],
+      "venue": "AIMS Math.",
+      "volume": "11",
+      "issue": "6",
+      "pages": "17794–17819",
+      "year": 2026,
+      "type": "article",
+      "status": "published",
+      "doi": "10.3934/math.2026725",
+      "url": "https://doi.org/10.3934/math.2026725",
+      "index": "SCIE",
+      "quartile": "Q1",
+      "impact_factor": 1.8,
+      "first_author": false,
+      "corresponding": false,
+      "topics": [
+        "fixed-point",
+        "geometry"
+      ],
+      "series": null,
+      "source": "cv",
+      "id": "singh2026fixedpointtheoremsfornon"
+    },
+    {
+      "title": "Inertial Krasnoselskii–Mann algorithm for approximating fixed points of enriched nonexpansive mappings",
+      "authors": [
+        "Sarkinbai, M. S.",
+        "Salisu, S.",
+        "Minjibir, M. S."
+      ],
+      "venue": "Carpathian J. Math.",
+      "volume": "42",
+      "issue": "3",
+      "pages": "573–594",
+      "year": 2026,
+      "type": "article",
+      "status": "published",
+      "doi": null,
+      "url": "https://www.jstor.org/stable/27487175",
+      "index": "SCIE",
+      "quartile": "Q1",
+      "impact_factor": 1.4,
+      "first_author": false,
+      "corresponding": false,
+      "topics": [
+        "fixed-point"
+      ],
+      "series": null,
+      "source": "cv",
+      "id": "sarkinbai2026inertialkrasnoselskiiman"
+    },
+    {
+      "title": "A two-term inertial method for monotone VIPs: implementation in multiclass classification and portfolio optimization",
+      "authors": [
+        "Jia, Z.",
+        "Peng, J.-W.",
+        "Salisu, S.",
+        "Shehu, Y."
+      ],
+      "venue": "Math. Comput. Simulation",
+      "volume": "249",
+      "issue": null,
+      "pages": "510–532",
+      "year": 2026,
+      "type": "article",
+      "status": "published",
+      "doi": "10.1016/j.matcom.2026.06.001",
+      "url": "https://doi.org/10.1016/j.matcom.2026.06.001",
+      "index": "SCIE",
+      "quartile": "Q1",
+      "impact_factor": 4.0,
+      "first_author": false,
+      "corresponding": false,
+      "topics": [
+        "variational",
+        "optimization",
+        "applications"
+      ],
+      "series": null,
+      "source": "cv",
+      "id": "jia2026atwoterminertialmethodfo"
+    },
+    {
+      "title": "Perturbed gradient methods for data classification via regularized extreme learning machine",
+      "authors": [
+        "Abubakar, J.",
+        "Salisu, S.",
+        "Sitthithakerngkiet, K."
+      ],
+      "venue": "Math. Methods Appl. Sci.",
+      "volume": "49",
+      "issue": "10",
+      "pages": "10486–10507",
+      "year": 2026,
+      "type": "article",
+      "status": "published",
+      "doi": "10.1002/mma.70607",
+      "url": "https://doi.org/10.1002/mma.70607",
+      "index": "SCIE",
+      "quartile": "Q1",
+      "impact_factor": 2.0,
+      "first_author": false,
+      "corresponding": false,
+      "topics": [
+        "optimization",
+        "applications"
+      ],
+      "series": null,
+      "source": "cv",
+      "id": "abubakar2026perturbedgradientmethods"
+    },
+    {
+      "title": "Convergence theorems for fixed points and equilibrium problems in hyperbolic spaces",
+      "authors": [
+        "Harbau, M. H.",
+        "Muhammad, S. B.",
+        "Salisu, S."
+      ],
+      "venue": "Nonlinear Convex Anal. Optim.",
+      "volume": "5",
+      "issue": null,
+      "pages": "73–92",
+      "year": 2026,
+      "type": "article",
+      "status": "published",
+      "doi": null,
+      "url": "https://bangmodjmcs.com/index.php/ncao/article/view/424",
+      "index": null,
+      "quartile": null,
+      "impact_factor": null,
+      "first_author": false,
+      "corresponding": false,
+      "topics": [
+        "fixed-point",
+        "variational",
+        "geometry"
+      ],
+      "series": null,
+      "source": "cv",
+      "id": "harbau2026convergencetheoremsforfi"
+    },
+    {
+      "title": "Approximation of solutions of Hammerstein integral inclusions in $L^p$ spaces",
+      "authors": [
+        "Ma'aruf, S. M.",
+        "Yusuf, M.",
+        "Salisu, S."
+      ],
+      "venue": "Nonlinear Convex Anal. Optim.",
+      "volume": "5",
+      "issue": null,
+      "pages": "13–28",
+      "year": 2026,
+      "type": "article",
+      "status": "published",
+      "doi": null,
+      "url": "https://bangmodjmcs.com/index.php/ncao/article/view/343",
+      "index": null,
+      "quartile": null,
+      "impact_factor": null,
+      "first_author": false,
+      "corresponding": false,
+      "topics": [
+        "variational",
+        "applications"
+      ],
+      "series": null,
+      "source": "cv",
+      "id": "maaruf2026approximationofsolutions"
+    },
+    {
+      "title": "Fixed points of enriched mappings with general real constants",
+      "authors": [
+        "Khammahawong, K.",
+        "Boonyam, N.",
+        "Salisu, S.",
+        "Dechboon, P."
+      ],
+      "venue": "Mathematics",
+      "volume": "14",
+      "issue": null,
+      "pages": "937",
+      "year": 2026,
+      "type": "article",
+      "status": "published",
+      "doi": "10.3390/math14060937",
+      "url": "https://doi.org/10.3390/math14060937",
+      "index": "SCIE",
+      "quartile": "Q1",
+      "impact_factor": 2.3,
+      "first_author": false,
+      "corresponding": false,
+      "topics": [
+        "fixed-point"
+      ],
+      "series": null,
+      "source": "cv",
+      "id": "khammahawong2026fixedpointsofenrichedmap"
+    },
+    {
+      "title": "On new spectral conjugate gradient methods for Riemannian optimization using retraction and scaled vector transport",
+      "authors": [
+        "Salihu, N.",
+        "Kumam, P.",
+        "Salisu, S.",
+        "Sitthithakerngkiet, K."
+      ],
+      "venue": "Oper. Res. Forum",
+      "volume": "7",
+      "issue": null,
+      "pages": "7",
+      "year": 2026,
+      "type": "article",
+      "status": "published",
+      "doi": "10.1007/s43069-025-00594-y",
+      "url": "https://doi.org/10.1007/s43069-025-00594-y",
+      "index": "Scopus",
+      "quartile": "Q2",
+      "impact_factor": null,
+      "first_author": false,
+      "corresponding": false,
+      "topics": [
+        "optimization",
+        "geometry"
+      ],
+      "series": null,
+      "source": "cv",
+      "id": "salihu2026onnewspectralconjugategr"
+    },
+    {
+      "title": "Solving variational inequalities using an algorithm with extrapolations from the past and relaxation",
+      "authors": [
+        "Yao, Y.",
+        "Salisu, S.",
+        "Shehu, Y."
+      ],
+      "venue": "Commun. Nonlinear Sci. Numer. Simul.",
+      "volume": "157",
+      "issue": null,
+      "pages": "109681",
+      "year": 2026,
+      "type": "article",
+      "status": "published",
+      "doi": "10.1016/j.cnsns.2026.109681",
+      "url": "https://doi.org/10.1016/j.cnsns.2026.109681",
+      "index": "SCIE",
+      "quartile": "Q1",
+      "impact_factor": 3.8,
+      "first_author": false,
+      "corresponding": false,
+      "topics": [
+        "variational"
+      ],
+      "series": null,
+      "source": "cv",
+      "id": "yao2026solvingvariationalinequa"
+    },
+    {
+      "title": "A modified contraction-type method for solving monotone inclusion problem in Hilbert spaces",
+      "authors": [
+        "Wang, L.",
+        "Cai, G.",
+        "Salisu, S.",
+        "Shehu, Y."
+      ],
+      "venue": "Math. Comput. Simulation",
+      "volume": "240",
+      "issue": null,
+      "pages": "749–768",
+      "year": 2026,
+      "type": "article",
+      "status": "published",
+      "doi": "10.1016/j.matcom.2025.07.041",
+      "url": "https://doi.org/10.1016/j.matcom.2025.07.041",
+      "index": "SCIE",
+      "quartile": "Q1",
+      "impact_factor": 4.0,
+      "first_author": false,
+      "corresponding": false,
+      "topics": [
+        "fixed-point",
+        "variational"
+      ],
+      "series": null,
+      "source": "cv",
+      "id": "wang2026amodifiedcontractiontype"
+    },
+    {
+      "title": "Convergence results of proximal-type algorithms with reflections for variational inequalities",
+      "authors": [
+        "Yao, Y.",
+        "Salisu, S.",
+        "Shehu, Y."
+      ],
+      "venue": "Optim. Eng.",
+      "volume": "27",
+      "issue": null,
+      "pages": "433–462",
+      "year": 2026,
+      "type": "article",
+      "status": "published",
+      "doi": "10.1007/s11081-025-10010-3",
+      "url": "https://doi.org/10.1007/s11081-025-10010-3",
+      "index": "SCIE",
+      "quartile": "Q2",
+      "impact_factor": 2.3,
+      "first_author": false,
+      "corresponding": false,
+      "topics": [
+        "variational"
+      ],
+      "series": null,
+      "source": "cv",
+      "id": "yao2026convergenceresultsofprox",
+      "code": "https://github.com/SaniSalisu21133/MATLAB-CODE-Proximal-Type-Algorithm-With-Reflection"
+    },
+    {
+      "title": "Proximal methods for equilibrium problems over the set of fixed points of enriched nonexpansive mappings",
+      "authors": [
+        "Boonyam, N.",
+        "Salisu, S.",
+        "Berinde, V.",
+        "Kumam, P."
+      ],
+      "venue": "Optim. Eng.",
+      "volume": "27",
+      "issue": null,
+      "pages": "405–432",
+      "year": 2026,
+      "type": "article",
+      "status": "published",
+      "doi": "10.1007/s11081-025-10008-x",
+      "url": "https://doi.org/10.1007/s11081-025-10008-x",
+      "index": "SCIE",
+      "quartile": "Q2",
+      "impact_factor": 2.3,
+      "first_author": false,
+      "corresponding": false,
+      "topics": [
+        "fixed-point",
+        "variational"
+      ],
+      "series": null,
+      "source": "cv",
+      "id": "boonyam2026proximalmethodsforequili"
+    },
+    {
+      "title": "Approximating fixed points of enriched nonexpansive mappings via a geodesic implicit midpoint scheme",
+      "authors": [
+        "Salisu, S.",
+        "Alsahli, G.",
+        "Rufa'i, A."
+      ],
+      "venue": "Comput. Appl. Math.",
+      "volume": "44",
+      "issue": null,
+      "pages": "386",
+      "year": 2025,
+      "type": "article",
+      "status": "published",
+      "doi": "10.1007/s40314-025-03350-4",
+      "url": "https://doi.org/10.1007/s40314-025-03350-4",
+      "index": "SCIE",
+      "quartile": "Q1",
+      "impact_factor": 2.3,
+      "first_author": true,
+      "corresponding": false,
+      "topics": [
+        "fixed-point",
+        "geometry"
+      ],
+      "series": null,
+      "source": "cv",
+      "id": "salisu2025approximatingfixedpoints"
+    },
+    {
+      "title": "Optimization of blood supply network through a perturbed forward–backward method",
+      "authors": [
+        "Salisu, S.",
+        "Kumam, P.",
+        "Sitthithakerngkiet, K."
+      ],
+      "venue": "J. Ind. Manag. Optim.",
+      "volume": "21",
+      "issue": "5",
+      "pages": "3691–3720",
+      "year": 2025,
+      "type": "article",
+      "status": "published",
+      "doi": "10.3934/jimo.2025028",
+      "url": "https://doi.org/10.3934/jimo.2025028",
+      "index": "SCIE",
+      "quartile": "Q3",
+      "impact_factor": 1.4,
+      "first_author": true,
+      "corresponding": false,
+      "topics": [
+        "applications"
+      ],
+      "series": null,
+      "source": "cv",
+      "id": "salisu2025optimizationofbloodsuppl"
+    },
+    {
+      "title": "Viscosity scheme with enriched mappings for hierarchical variational inequalities in certain geodesic spaces",
+      "authors": [
+        "Salisu, S.",
+        "Sriwongsa, S.",
+        "Kumam, P.",
+        "Berinde, V."
+      ],
+      "venue": "Fixed Point Theory",
+      "volume": "26",
+      "issue": null,
+      "pages": "293–308",
+      "year": 2025,
+      "type": "article",
+      "status": "published",
+      "doi": null,
+      "url": "https://math.ubbcluj.ro/~nodeacj/volumes/2025-No1/251-sal-sri-kum-ber-23-0068-final-final.php",
+      "index": "SCIE",
+      "quartile": "Q2",
+      "impact_factor": 1.1,
+      "first_author": true,
+      "corresponding": false,
+      "topics": [
+        "fixed-point",
+        "variational",
+        "geometry"
+      ],
+      "series": null,
+      "source": "cv",
+      "id": "salisu2025viscosityschemewithenric"
+    },
+    {
+      "title": "Fixed point properties of saturated and unsaturated contractive mappings in CAT(0) spaces",
+      "authors": [
+        "Salisu, S.",
+        "Berinde, V.",
+        "Sriwongsa, S.",
+        "Kumam, P."
+      ],
+      "venue": "J. Anal.",
+      "volume": "33",
+      "issue": null,
+      "pages": "903–925",
+      "year": 2025,
+      "type": "article",
+      "status": "published",
+      "doi": "10.1007/s41478-024-00868-4",
+      "url": "https://doi.org/10.1007/s41478-024-00868-4",
+      "index": "ESCI",
+      "quartile": "Q1",
+      "impact_factor": 1.7,
+      "first_author": true,
+      "corresponding": false,
+      "topics": [
+        "fixed-point",
+        "geometry"
+      ],
+      "series": null,
+      "source": "cv",
+      "id": "salisu2025fixedpointpropertiesofsa"
+    },
+    {
+      "title": "Extragradient method for monotone variational inequality in CAT(0) spaces",
+      "authors": [
+        "Salisu, S.",
+        "Sriwongsa, S.",
+        "Kumam, P."
+      ],
+      "venue": "Numerical Computations: Theory and Algorithms (NUMTA 2023)",
+      "volume": null,
+      "issue": null,
+      "pages": "134–148",
+      "year": 2025,
+      "type": "chapter",
+      "status": "published",
+      "doi": "10.1007/978-3-031-81244-6_10",
+      "url": "https://doi.org/10.1007/978-3-031-81244-6_10",
+      "index": "Scopus",
+      "quartile": null,
+      "impact_factor": null,
+      "first_author": true,
+      "corresponding": false,
+      "topics": [
+        "variational",
+        "optimization",
+        "geometry"
+      ],
+      "series": "Numerical Computations: Theory and Algorithms (NUMTA 2023)",
+      "source": "cv",
+      "id": "salisu2025extragradientmethodformo"
+    },
+    {
+      "title": "New modification of projected reflected gradient algorithm",
+      "authors": [
+        "Yao, Y.",
+        "Peng, Z.-Y.",
+        "Salisu, S.",
+        "Shehu, Y."
+      ],
+      "venue": "Optimization",
+      "volume": null,
+      "issue": null,
+      "pages": "1–40",
+      "year": 2025,
+      "type": "article",
+      "status": "published",
+      "doi": "10.1080/02331934.2025.2589368",
+      "url": "https://doi.org/10.1080/02331934.2025.2589368",
+      "index": "SCIE",
+      "quartile": "Q2",
+      "impact_factor": 1.8,
+      "first_author": false,
+      "corresponding": false,
+      "topics": [
+        "optimization"
+      ],
+      "series": null,
+      "source": "cv",
+      "id": "yao2025newmodificationofproject"
+    },
+    {
+      "title": "Iterative algorithm for a common solution of equilibrium and fixed point problems for a finite family of multivalued enriched nonexpansive mappings in Hadamard spaces",
+      "authors": [
+        "Minjibir, M. S.",
+        "Musa, J. A.",
+        "Salisu, S."
+      ],
+      "venue": "Optim. Eruditorum",
+      "volume": "2",
+      "issue": "3",
+      "pages": "213–237",
+      "year": 2025,
+      "type": "article",
+      "status": "published",
+      "doi": "10.69829/oper-025-0203-ta05",
+      "url": "https://doi.org/10.69829/oper-025-0203-ta05",
+      "index": null,
+      "quartile": null,
+      "impact_factor": null,
+      "first_author": false,
+      "corresponding": false,
+      "topics": [
+        "fixed-point",
+        "variational",
+        "geometry"
+      ],
+      "series": null,
+      "source": "cv",
+      "id": "minjibir2025iterativealgorithmforaco"
+    },
+    {
+      "title": "Some new three-term conjugate gradient methods for Riemannian optimization with application to the Gough–Stewart platform",
+      "authors": [
+        "Salihu, N.",
+        "Kumam, P.",
+        "Wang, L.",
+        "Salisu, S."
+      ],
+      "venue": "Math. Model. Numer. Simul. Appl.",
+      "volume": "5",
+      "issue": "3",
+      "pages": "492–515",
+      "year": 2025,
+      "type": "article",
+      "status": "published",
+      "doi": "10.53391/2791-8564.1001",
+      "url": "https://doi.org/10.53391/2791-8564.1001",
+      "index": "Scopus",
+      "quartile": null,
+      "impact_factor": null,
+      "first_author": false,
+      "corresponding": false,
+      "topics": [
+        "optimization",
+        "geometry",
+        "applications"
+      ],
+      "series": null,
+      "source": "cv",
+      "id": "salihu2025somenewthreetermconjugat"
+    },
+    {
+      "title": "Spectral conjugate gradient for Riemannian optimization: application to the Gough–Stewart platform",
+      "authors": [
+        "Nasiru, S.",
+        "Kumam, P.",
+        "Salisu, S.",
+        "Wang, L.",
+        "Seangwattana, T."
+      ],
+      "venue": "Int. J. Dyn. Control",
+      "volume": "13",
+      "issue": "8",
+      "pages": "288",
+      "year": 2025,
+      "type": "article",
+      "status": "published",
+      "doi": "10.1007/s40435-025-01788-2",
+      "url": "https://doi.org/10.1007/s40435-025-01788-2",
+      "index": "ESCI",
+      "quartile": "Q1",
+      "impact_factor": 2.7,
+      "first_author": false,
+      "corresponding": false,
+      "topics": [
+        "optimization",
+        "geometry",
+        "applications"
+      ],
+      "series": null,
+      "source": "cv",
+      "id": "nasiru2025spectralconjugategradien"
+    },
+    {
+      "title": "New splitting algorithm with three inertial steps for three-operator monotone inclusion problems",
+      "authors": [
+        "Yao, Y.",
+        "Salisu, S.",
+        "Peng, Z.-Y.",
+        "Shehu, Y."
+      ],
+      "venue": "J. Optim. Theory Appl.",
+      "volume": "206",
+      "issue": "3",
+      "pages": "64",
+      "year": 2025,
+      "type": "article",
+      "status": "published",
+      "doi": "10.1007/s10957-025-02741-1",
+      "url": "https://doi.org/10.1007/s10957-025-02741-1",
+      "index": "SCIE",
+      "quartile": "Q1",
+      "impact_factor": 1.9,
+      "first_author": false,
+      "corresponding": false,
+      "topics": [
+        "variational"
+      ],
+      "series": null,
+      "source": "cv",
+      "id": "yao2025newsplittingalgorithmwit"
+    },
+    {
+      "title": "Approximating fixed points of nonexpansive-type mappings in Hadamard spaces",
+      "authors": [
+        "Worapitpong, W.",
+        "Chaipunya, P.",
+        "Kumam, P.",
+        "Salisu, S."
+      ],
+      "venue": "J. Math. Comput. Sci.",
+      "volume": "39",
+      "issue": "4",
+      "pages": "522–540",
+      "year": 2025,
+      "type": "article",
+      "status": "published",
+      "doi": "10.22436/jmcs.039.04.07",
+      "url": "https://doi.org/10.22436/jmcs.039.04.07",
+      "index": "ESCI",
+      "quartile": "Q1",
+      "impact_factor": 1.5,
+      "first_author": false,
+      "corresponding": false,
+      "topics": [
+        "fixed-point",
+        "geometry"
+      ],
+      "series": null,
+      "source": "cv",
+      "id": "worapitpong2025approximatingfixedpoints"
+    },
+    {
+      "title": "Analysis of Tseng algorithm with inertial extrapolation step for stochastic variational inequality problem",
+      "authors": [
+        "Oyewole, O. K.",
+        "Moshokoa, S. P.",
+        "Salisu, S.",
+        "Shehu, Y."
+      ],
+      "venue": "Appl. Numer. Math.",
+      "volume": "217",
+      "issue": null,
+      "pages": "199–215",
+      "year": 2025,
+      "type": "article",
+      "status": "published",
+      "doi": "10.1016/j.apnum.2025.06.008",
+      "url": "https://doi.org/10.1016/j.apnum.2025.06.008",
+      "index": "SCIE",
+      "quartile": "Q1",
+      "impact_factor": 2.3,
+      "first_author": false,
+      "corresponding": false,
+      "topics": [
+        "variational"
+      ],
+      "series": null,
+      "source": "cv",
+      "id": "oyewole2025analysisoftsengalgorithm"
+    },
+    {
+      "title": "Some hybrid Riemannian conjugate gradient methods with restart strategy",
+      "authors": [
+        "Salihu, N.",
+        "Kumam, P.",
+        "Salisu, S.",
+        "Khammahawong, K."
+      ],
+      "venue": "Franklin Open",
+      "volume": "10",
+      "issue": null,
+      "pages": "100240",
+      "year": 2025,
+      "type": "article",
+      "status": "published",
+      "doi": "10.1016/j.fraope.2025.100240",
+      "url": "https://doi.org/10.1016/j.fraope.2025.100240",
+      "index": null,
+      "quartile": null,
+      "impact_factor": null,
+      "first_author": false,
+      "corresponding": false,
+      "topics": [
+        "optimization",
+        "geometry"
+      ],
+      "series": null,
+      "source": "cv",
+      "id": "salihu2025somehybridriemannianconj"
+    },
+    {
+      "title": "A revised MRMIL Riemannian conjugate gradient method with simplified global convergence properties",
+      "authors": [
+        "Salihu, N.",
+        "Kumam, P.",
+        "Salisu, S.",
+        "Wang, L.",
+        "Sitthithakerngkiet, K."
+      ],
+      "venue": "Appl. Numer. Math.",
+      "volume": "214",
+      "issue": null,
+      "pages": "110–126",
+      "year": 2025,
+      "type": "article",
+      "status": "published",
+      "doi": "10.1016/j.apnum.2025.03.007",
+      "url": "https://doi.org/10.1016/j.apnum.2025.03.007",
+      "index": "SCIE",
+      "quartile": "Q1",
+      "impact_factor": 2.3,
+      "first_author": false,
+      "corresponding": false,
+      "topics": [
+        "optimization",
+        "geometry"
+      ],
+      "series": null,
+      "source": "cv",
+      "id": "salihu2025arevisedmrmilriemannianc"
+    },
+    {
+      "title": "A generalized scheme for split inclusion problem with conjugate-like direction",
+      "authors": [
+        "Abubakar, J.",
+        "Chaipunya, P.",
+        "Kumam, P.",
+        "Salisu, S."
+      ],
+      "venue": "Math. Methods Oper. Res.",
+      "volume": "101",
+      "issue": null,
+      "pages": "51–71",
+      "year": 2025,
+      "type": "article",
+      "status": "published",
+      "doi": "10.1007/s00186-024-00882-z",
+      "url": "https://doi.org/10.1007/s00186-024-00882-z",
+      "index": "SCIE",
+      "quartile": "Q2",
+      "impact_factor": 1.2,
+      "first_author": false,
+      "corresponding": false,
+      "topics": [
+        "variational"
+      ],
+      "series": null,
+      "source": "cv",
+      "id": "abubakar2025ageneralizedschemeforspl"
+    },
+    {
+      "title": "Half a century of fixed point theory research in Thailand: a bibliometric analysis",
+      "authors": [
+        "Saqlain, M.",
+        "Merigó, J. M.",
+        "Kumam, P.",
+        "Salisu, S."
+      ],
+      "venue": "Thai J. Math.",
+      "volume": "23",
+      "issue": "3",
+      "pages": "341–384",
+      "year": 2025,
+      "type": "article",
+      "status": "published",
+      "doi": null,
+      "url": "https://thaijmath.com/index.php/thaijmath/article/view/1787",
+      "index": "ESCI",
+      "quartile": "Q4",
+      "impact_factor": 0.4,
+      "first_author": false,
+      "corresponding": false,
+      "topics": [
+        "fixed-point",
+        "applications"
+      ],
+      "series": null,
+      "source": "cv",
+      "id": "saqlain2025halfacenturyoffixedpoint"
+    },
+    {
+      "title": "Golden ratio method for solving monotone variational inequality problems in Hadamard spaces",
+      "authors": [
+        "Salisu, S.",
+        "Sriwongsa, S.",
+        "Kumam, P."
+      ],
+      "venue": "Math. Methods Appl. Sci.",
+      "volume": "47",
+      "issue": null,
+      "pages": "10101–10116",
+      "year": 2024,
+      "type": "article",
+      "status": "published",
+      "doi": "10.1002/mma.10112",
+      "url": "https://doi.org/10.1002/mma.10112",
+      "index": "SCIE",
+      "quartile": "Q1",
+      "impact_factor": 2.0,
+      "first_author": true,
+      "corresponding": false,
+      "topics": [
+        "variational",
+        "geometry"
+      ],
+      "series": null,
+      "source": "cv",
+      "id": "salisu2024goldenratiomethodforsolv"
+    },
+    {
+      "title": "Variational inequality and proximal scheme for enriched nonexpansive mappings in CAT(0) spaces",
+      "authors": [
+        "Salisu, S.",
+        "Sriwongsa, S.",
+        "Kumam, P.",
+        "Berinde, V."
+      ],
+      "venue": "J. Nonlinear Convex Anal.",
+      "volume": "25",
+      "issue": "7",
+      "pages": "1759–1776",
+      "year": 2024,
+      "type": "article",
+      "status": "published",
+      "doi": null,
+      "url": "http://yokohamapublishers.jp/online2/opjnca/vol25/p1759.html",
+      "index": "SCIE",
+      "quartile": "Q3",
+      "impact_factor": 0.5,
+      "first_author": true,
+      "corresponding": false,
+      "topics": [
+        "fixed-point",
+        "variational",
+        "geometry"
+      ],
+      "series": null,
+      "source": "cv",
+      "id": "salisu2024variationalinequalityand"
+    },
+    {
+      "title": "Iterative algorithms for common fixed points of a countable family of quasi-nonexpansive multivalued mappings in CAT(0) spaces",
+      "authors": [
+        "Salisu, S.",
+        "Minjibir, M. S."
+      ],
+      "venue": "Math. Sci.",
+      "volume": "18",
+      "issue": null,
+      "pages": "681–692",
+      "year": 2024,
+      "type": "article",
+      "status": "published",
+      "doi": "10.1007/s40096-024-00524-9",
+      "url": "https://doi.org/10.1007/s40096-024-00524-9",
+      "index": "SCIE",
+      "quartile": "Q1",
+      "impact_factor": 2.0,
+      "first_author": true,
+      "corresponding": false,
+      "topics": [
+        "fixed-point",
+        "geometry"
+      ],
+      "series": null,
+      "source": "cv",
+      "id": "salisu2024iterativealgorithmsforco"
+    },
+    {
+      "title": "Viscosity implicit midpoint scheme for enriched nonexpansive mappings",
+      "authors": [
+        "Salisu, S.",
+        "Sriwongsa, S.",
+        "Kumam, P.",
+        "Je, C. Y."
+      ],
+      "venue": "Constr. Math. Anal.",
+      "volume": "7",
+      "issue": "4",
+      "pages": "160–179",
+      "year": 2024,
+      "type": "article",
+      "status": "published",
+      "doi": "10.33205/cma.1540982",
+      "url": "https://doi.org/10.33205/cma.1540982",
+      "index": "ESCI",
+      "quartile": "Q1",
+      "impact_factor": 2.9,
+      "first_author": true,
+      "corresponding": false,
+      "topics": [
+        "fixed-point"
+      ],
+      "series": null,
+      "source": "cv",
+      "id": "salisu2024viscosityimplicitmidpoin"
+    },
+    {
+      "title": "On approximating fixed points of strictly pseudocontractive mappings in metric spaces",
+      "authors": [
+        "Salisu, S.",
+        "Berinde, V.",
+        "Sriwongsa, S.",
+        "Kumam, P."
+      ],
+      "venue": "Carpathian J. Math.",
+      "volume": "40",
+      "issue": "2",
+      "pages": "419–430",
+      "year": 2024,
+      "type": "article",
+      "status": "published",
+      "doi": "10.37193/CJM.2024.02.12",
+      "url": "https://doi.org/10.37193/CJM.2024.02.12",
+      "index": "SCIE",
+      "quartile": "Q1",
+      "impact_factor": 1.4,
+      "first_author": true,
+      "corresponding": false,
+      "topics": [
+        "fixed-point",
+        "geometry"
+      ],
+      "series": null,
+      "source": "cv",
+      "id": "salisu2024onapproximatingfixedpoin"
+    },
+    {
+      "title": "Enriched multi-valued nonexpansive mappings in geodesic spaces",
+      "authors": [
+        "Salisu, S.",
+        "Kumam, P.",
+        "Sriwongsa, S.",
+        "Inuwa, A. Y."
+      ],
+      "venue": "Rend. Circ. Mat. Palermo (2)",
+      "volume": "73",
+      "issue": null,
+      "pages": "1435–1451",
+      "year": 2024,
+      "type": "article",
+      "status": "published",
+      "doi": "10.1007/s12215-023-00993-2",
+      "url": "https://doi.org/10.1007/s12215-023-00993-2",
+      "index": "ESCI",
+      "quartile": "Q2",
+      "impact_factor": 0.9,
+      "first_author": true,
+      "corresponding": false,
+      "topics": [
+        "fixed-point",
+        "geometry"
+      ],
+      "series": null,
+      "source": "cv",
+      "id": "salisu2024enrichedmultivaluednonex"
+    },
+    {
+      "title": "Enriched asymptotically nonexpansive mappings with center zero",
+      "authors": [
+        "Salisu, S.",
+        "Kumam, P.",
+        "Sriwongsa, S.",
+        "Gopal, D."
+      ],
+      "venue": "Filomat",
+      "volume": "38",
+      "issue": null,
+      "pages": "343–356",
+      "year": 2024,
+      "type": "article",
+      "status": "published",
+      "doi": "10.2298/FIL2401343S",
+      "url": "https://doi.org/10.2298/FIL2401343S",
+      "index": "SCIE",
+      "quartile": "Q2",
+      "impact_factor": 1.0,
+      "first_author": true,
+      "corresponding": false,
+      "topics": [
+        "fixed-point"
+      ],
+      "series": null,
+      "source": "cv",
+      "id": "salisu2024enrichedasymptoticallyno"
+    },
+    {
+      "title": "A viscosity-type scheme for optimization problems in Hadamard spaces with applications",
+      "authors": [
+        "Salisu, S.",
+        "Kumam, P.",
+        "Sriwongsa, S."
+      ],
+      "venue": "Optimization",
+      "volume": "73",
+      "issue": null,
+      "pages": "2447–2471",
+      "year": 2024,
+      "type": "article",
+      "status": "published",
+      "doi": "10.1080/02331934.2023.2230985",
+      "url": "https://doi.org/10.1080/02331934.2023.2230985",
+      "index": "SCIE",
+      "quartile": "Q2",
+      "impact_factor": 1.8,
+      "first_author": true,
+      "corresponding": false,
+      "topics": [
+        "optimization",
+        "geometry"
+      ],
+      "series": null,
+      "source": "cv",
+      "id": "salisu2024aviscositytypeschemeforo"
+    },
+    {
+      "title": "Spectral-like conjugate gradient methods with sufficient descent property for vector optimization",
+      "authors": [
+        "Yahaya, J.",
+        "Kumam, P.",
+        "Salisu, S.",
+        "Sitthithakerngkiet, K."
+      ],
+      "venue": "PLOS ONE",
+      "volume": "19",
+      "issue": "5",
+      "pages": "e0302441",
+      "year": 2024,
+      "type": "article",
+      "status": "published",
+      "doi": "10.1371/journal.pone.0302441",
+      "url": "https://doi.org/10.1371/journal.pone.0302441",
+      "index": "SCIE",
+      "quartile": "Q2",
+      "impact_factor": 2.8,
+      "first_author": false,
+      "corresponding": false,
+      "topics": [
+        "optimization"
+      ],
+      "series": null,
+      "source": "cv",
+      "id": "yahaya2024spectrallikeconjugategra"
+    },
+    {
+      "title": "Two efficient nonlinear conjugate gradient methods for Riemannian manifolds",
+      "authors": [
+        "Salihu, N.",
+        "Kumam, P.",
+        "Salisu, S."
+      ],
+      "venue": "Comput. Appl. Math.",
+      "volume": "43",
+      "issue": null,
+      "pages": "415",
+      "year": 2024,
+      "type": "article",
+      "status": "published",
+      "doi": "10.1007/s40314-024-02920-2",
+      "url": "https://doi.org/10.1007/s40314-024-02920-2",
+      "index": "SCIE",
+      "quartile": "Q1",
+      "impact_factor": 2.3,
+      "first_author": false,
+      "corresponding": false,
+      "topics": [
+        "optimization",
+        "geometry"
+      ],
+      "series": null,
+      "source": "cv",
+      "id": "salihu2024twoefficientnonlinearcon"
+    },
+    {
+      "title": "Modified Halpern and viscosity methods for hierarchical variational inequalities on Hadamard manifolds",
+      "authors": [
+        "Khammahawong, K.",
+        "Salisu, S."
+      ],
+      "venue": "Comput. Appl. Math.",
+      "volume": "43",
+      "issue": null,
+      "pages": "1",
+      "year": 2024,
+      "type": "article",
+      "status": "published",
+      "doi": "10.1007/s40314-023-02503-7",
+      "url": "https://doi.org/10.1007/s40314-023-02503-7",
+      "index": "SCIE",
+      "quartile": "Q1",
+      "impact_factor": 2.3,
+      "first_author": false,
+      "corresponding": false,
+      "topics": [
+        "variational",
+        "geometry"
+      ],
+      "series": null,
+      "source": "cv",
+      "id": "khammahawong2024modifiedhalpernandviscos"
+    },
+    {
+      "title": "On the class of Wei–Yao–Liu conjugate gradient methods for vector optimization",
+      "authors": [
+        "Yahaya, J.",
+        "Kumam, P.",
+        "Salisu, S.",
+        "Timothy, A. J."
+      ],
+      "venue": "Nonlinear Convex Anal. Optim.",
+      "volume": "3",
+      "issue": null,
+      "pages": "1–23",
+      "year": 2024,
+      "type": "article",
+      "status": "published",
+      "doi": "10.58715/ncao.2024.3.1",
+      "url": "https://doi.org/10.58715/ncao.2024.3.1",
+      "index": null,
+      "quartile": null,
+      "impact_factor": null,
+      "first_author": false,
+      "corresponding": false,
+      "topics": [
+        "optimization"
+      ],
+      "series": null,
+      "source": "cv",
+      "id": "yahaya2024ontheclassofweiyaoliucon"
+    },
+    {
+      "title": "Equilibrium problems and proximal algorithm using tangent space products",
+      "authors": [
+        "Inuwa, A. Y.",
+        "Chaipunya, P.",
+        "Kumam, P.",
+        "Salisu, S."
+      ],
+      "venue": "Carpathian J. Math.",
+      "volume": "40",
+      "issue": "1",
+      "pages": "65–76",
+      "year": 2024,
+      "type": "article",
+      "status": "published",
+      "doi": "10.37193/CJM.2024.01.06",
+      "url": "https://doi.org/10.37193/CJM.2024.01.06",
+      "index": "SCIE",
+      "quartile": "Q1",
+      "impact_factor": 1.4,
+      "first_author": false,
+      "corresponding": false,
+      "topics": [
+        "variational"
+      ],
+      "series": null,
+      "source": "cv",
+      "id": "inuwa2024equilibriumproblemsandpr"
+    },
+    {
+      "title": "Coupled best proximity points for cyclic Kannan and Chatterjea contractions in CAT$_p$(0) spaces",
+      "authors": [
+        "Mongkolkeha, C.",
+        "Dechboon, P.",
+        "Salisu, S.",
+        "Khammahawong, K."
+      ],
+      "venue": "Carpathian J. Math.",
+      "volume": "40",
+      "issue": "2",
+      "pages": "343–361",
+      "year": 2024,
+      "type": "article",
+      "status": "published",
+      "doi": "10.37193/CJM.2024.02.08",
+      "url": "https://doi.org/10.37193/CJM.2024.02.08",
+      "index": "SCIE",
+      "quartile": "Q1",
+      "impact_factor": 1.4,
+      "first_author": false,
+      "corresponding": false,
+      "topics": [
+        "fixed-point",
+        "geometry"
+      ],
+      "series": null,
+      "source": "cv",
+      "id": "mongkolkeha2024coupledbestproximitypoin"
+    },
+    {
+      "title": "On fixed points of enriched contractions and enriched nonexpansive mappings",
+      "authors": [
+        "Salisu, S.",
+        "Kumam, P.",
+        "Sriwongsa, S."
+      ],
+      "venue": "Carpathian J. Math.",
+      "volume": "39",
+      "issue": null,
+      "pages": "237–254",
+      "year": 2023,
+      "type": "article",
+      "status": "published",
+      "doi": "10.37193/CJM.2023.01.16",
+      "url": "https://doi.org/10.37193/CJM.2023.01.16",
+      "index": "SCIE",
+      "quartile": "Q1",
+      "impact_factor": 1.4,
+      "first_author": true,
+      "corresponding": false,
+      "topics": [
+        "fixed-point"
+      ],
+      "series": null,
+      "source": "cv",
+      "id": "salisu2023onfixedpointsofenrichedc"
+    },
+    {
+      "title": "Convergence theorems for fixed points in CAT$_p$(0) spaces",
+      "authors": [
+        "Salisu, S.",
+        "Minjibir, M. S.",
+        "Kumam, P.",
+        "Sriwongsa, S."
+      ],
+      "venue": "J. Appl. Math. Comput.",
+      "volume": "69",
+      "issue": null,
+      "pages": "631–650",
+      "year": 2023,
+      "type": "article",
+      "status": "published",
+      "doi": "10.1007/s12190-022-01763-6",
+      "url": "https://doi.org/10.1007/s12190-022-01763-6",
+      "index": "SCIE",
+      "quartile": "Q1",
+      "impact_factor": 3.0,
+      "first_author": true,
+      "corresponding": false,
+      "topics": [
+        "fixed-point",
+        "geometry"
+      ],
+      "series": null,
+      "source": "cv",
+      "id": "salisu2023convergencetheoremsforfi"
+    },
+    {
+      "title": "Approximating fixed points of demicontractive mappings in metric spaces by geodesic averaged perturbation techniques",
+      "authors": [
+        "Salisu, S.",
+        "Berinde, V.",
+        "Kumam, P.",
+        "Sriwongsa, S."
+      ],
+      "venue": "AIMS Math.",
+      "volume": "8",
+      "issue": "12",
+      "pages": "28582–28600",
+      "year": 2023,
+      "type": "article",
+      "status": "published",
+      "doi": "10.3934/math.20231463",
+      "url": "https://doi.org/10.3934/math.20231463",
+      "index": "SCIE",
+      "quartile": "Q1",
+      "impact_factor": 1.8,
+      "first_author": true,
+      "corresponding": false,
+      "topics": [
+        "fixed-point",
+        "geometry"
+      ],
+      "series": null,
+      "source": "cv",
+      "id": "salisu2023approximatingfixedpoints"
+    },
+    {
+      "title": "Convergence theorems for monotone vector field inclusions and minimization problems in Hadamard spaces",
+      "authors": [
+        "Salisu, S.",
+        "Kumam, P.",
+        "Sriwongsa, S."
+      ],
+      "venue": "Anal. Geom. Metr. Spaces",
+      "volume": "11",
+      "issue": null,
+      "pages": null,
+      "year": 2023,
+      "type": "article",
+      "status": "published",
+      "doi": "10.1515/agms-2022-0150",
+      "url": "https://doi.org/10.1515/agms-2022-0150",
+      "index": "SCIE",
+      "quartile": "Q3",
+      "impact_factor": 0.7,
+      "first_author": true,
+      "corresponding": false,
+      "topics": [
+        "variational",
+        "optimization",
+        "geometry"
+      ],
+      "series": null,
+      "source": "cv",
+      "id": "salisu2023convergencetheoremsformo"
+    },
+    {
+      "title": "Generalized RMIL conjugate gradient method under the strong Wolfe line search with application in image processing",
+      "authors": [
+        "Awwal, A. M.",
+        "Wang, L.",
+        "Kumam, P.",
+        "Sulaiman, M. I.",
+        "Salisu, S.",
+        "Salihu, N.",
+        "Yodjai, P."
+      ],
+      "venue": "Math. Methods Appl. Sci.",
+      "volume": "46",
+      "issue": "16",
+      "pages": "17544–17556",
+      "year": 2023,
+      "type": "article",
+      "status": "published",
+      "doi": "10.1002/mma.9515",
+      "url": "https://doi.org/10.1002/mma.9515",
+      "index": "SCIE",
+      "quartile": "Q1",
+      "impact_factor": 2.0,
+      "first_author": false,
+      "corresponding": false,
+      "topics": [
+        "optimization",
+        "applications"
+      ],
+      "series": null,
+      "source": "cv",
+      "id": "awwal2023generalizedrmilconjugate"
+    },
+    {
+      "title": "A unified scheme for solving split inclusions with applications",
+      "authors": [
+        "Sumalai, P.",
+        "Abubakar, J.",
+        "Kumam, P.",
+        "Salisu, S."
+      ],
+      "venue": "Math. Methods Appl. Sci.",
+      "volume": "46",
+      "issue": "13",
+      "pages": "14622–14639",
+      "year": 2023,
+      "type": "article",
+      "status": "published",
+      "doi": "10.1002/mma.9338",
+      "url": "https://doi.org/10.1002/mma.9338",
+      "index": "SCIE",
+      "quartile": "Q1",
+      "impact_factor": 2.0,
+      "first_author": false,
+      "corresponding": false,
+      "topics": [
+        "variational"
+      ],
+      "series": null,
+      "source": "cv",
+      "id": "sumalai2023aunifiedschemeforsolving"
+    },
+    {
+      "title": "Fixed point theorems for enriched Kannan mappings in CAT(0) spaces",
+      "authors": [
+        "Inuwa, A. Y.",
+        "Kumam, P.",
+        "Chaipunya, P.",
+        "Salisu, S."
+      ],
+      "venue": "Fixed Point Theory Algorithms Sci. Eng.",
+      "volume": "2023",
+      "issue": null,
+      "pages": "13",
+      "year": 2023,
+      "type": "article",
+      "status": "published",
+      "doi": "10.1186/s13663-023-00750-1",
+      "url": "https://doi.org/10.1186/s13663-023-00750-1",
+      "index": "ESCI",
+      "quartile": "Q2",
+      "impact_factor": 1.5,
+      "first_author": false,
+      "corresponding": false,
+      "topics": [
+        "fixed-point",
+        "geometry"
+      ],
+      "series": null,
+      "source": "cv",
+      "id": "inuwa2023fixedpointtheoremsforenr"
+    },
+    {
+      "title": "Iterative approximation of common fixed points of two nonself asymptotically nonexpansive mappings in CAT(0) spaces with numerical examples",
+      "authors": [
+        "Kratuloek, K.",
+        "Kumam, P.",
+        "Amnuaykarn, K.",
+        "Nantadilok, J.",
+        "Salisu, S."
+      ],
+      "venue": "Math. Methods Appl. Sci.",
+      "volume": "46",
+      "issue": "12",
+      "pages": "13521–13539",
+      "year": 2023,
+      "type": "article",
+      "status": "published",
+      "doi": "10.1002/mma.9269",
+      "url": "https://doi.org/10.1002/mma.9269",
+      "index": "SCIE",
+      "quartile": "Q1",
+      "impact_factor": 2.0,
+      "first_author": false,
+      "corresponding": false,
+      "topics": [
+        "fixed-point",
+        "geometry"
+      ],
+      "series": null,
+      "source": "cv",
+      "id": "kratuloek2023iterativeapproximationof"
+    },
+    {
+      "title": "Strong convergence theorems for fixed point of multi-valued mappings in Hadamard spaces",
+      "authors": [
+        "Salisu, S.",
+        "Kumam, P.",
+        "Sriwongsa, S."
+      ],
+      "venue": "J. Inequal. Appl.",
+      "volume": "2022",
+      "issue": null,
+      "pages": "143",
+      "year": 2022,
+      "type": "article",
+      "status": "published",
+      "doi": "10.1186/s13660-022-02870-5",
+      "url": "https://doi.org/10.1186/s13660-022-02870-5",
+      "index": "SCIE",
+      "quartile": "Q1",
+      "impact_factor": 1.9,
+      "first_author": true,
+      "corresponding": false,
+      "topics": [
+        "fixed-point",
+        "geometry"
+      ],
+      "series": null,
+      "source": "cv",
+      "id": "salisu2022strongconvergencetheorem"
+    },
+    {
+      "title": "One step proximal point schemes for monotone vector field inclusion problems",
+      "authors": [
+        "Salisu, S.",
+        "Kumam, P.",
+        "Sriwongsa, S."
+      ],
+      "venue": "AIMS Math.",
+      "volume": "7",
+      "issue": "5",
+      "pages": "7385–7402",
+      "year": 2022,
+      "type": "article",
+      "status": "published",
+      "doi": "10.3934/math.2022412",
+      "url": "https://doi.org/10.3934/math.2022412",
+      "index": "SCIE",
+      "quartile": "Q1",
+      "impact_factor": 1.8,
+      "first_author": true,
+      "corresponding": false,
+      "topics": [
+        "variational"
+      ],
+      "series": null,
+      "source": "cv",
+      "id": "salisu2022onestepproximalpointsche"
+    },
+    {
+      "title": "On minimization and fixed point problems in Hadamard spaces",
+      "authors": [
+        "Salisu, S.",
+        "Kumam, P.",
+        "Sriwongsa, S.",
+        "Abubakar, J."
+      ],
+      "venue": "Comput. Appl. Math.",
+      "volume": "41",
+      "issue": "3",
+      "pages": "117",
+      "year": 2022,
+      "type": "article",
+      "status": "published",
+      "doi": "10.1007/s40314-022-01821-6",
+      "url": "https://doi.org/10.1007/s40314-022-01821-6",
+      "index": "SCIE",
+      "quartile": "Q1",
+      "impact_factor": 2.3,
+      "first_author": true,
+      "corresponding": false,
+      "topics": [
+        "fixed-point",
+        "optimization",
+        "geometry"
+      ],
+      "series": null,
+      "source": "cv",
+      "id": "salisu2022onminimizationandfixedpo"
+    },
+    {
+      "title": "Implicit midpoint scheme for enriched nonexpansive mappings",
+      "authors": [
+        "Salisu, S.",
+        "Hashim, L.",
+        "Inuwa, A. Y.",
+        "Saje, A. U."
+      ],
+      "venue": "Nonlinear Convex Anal. Optim.",
+      "volume": "1",
+      "issue": "2",
+      "pages": "211–222",
+      "year": 2022,
+      "type": "article",
+      "status": "published",
+      "doi": null,
+      "url": "https://ncaodesign.files.wordpress.com/2023/02/ncaov1n2p211.pdf",
+      "index": null,
+      "quartile": null,
+      "impact_factor": null,
+      "first_author": true,
+      "corresponding": false,
+      "topics": [
+        "fixed-point"
+      ],
+      "series": null,
+      "source": "cv",
+      "id": "salisu2022implicitmidpointschemefo"
+    },
+    {
+      "title": "Strong and $\\Delta$-convergence theorems for a countable family of multi-valued demicontractive maps in Hadamard spaces",
+      "authors": [
+        "Minjibir, M. S.",
+        "Salisu, S."
+      ],
+      "venue": "Nonlinear Funct. Anal. Appl.",
+      "volume": "27",
+      "issue": "1",
+      "pages": "45–58",
+      "year": 2022,
+      "type": "article",
+      "status": "published",
+      "doi": "10.22771/nfaa.2022.27.01.03",
+      "url": "https://doi.org/10.22771/nfaa.2022.27.01.03",
+      "index": "Scopus",
+      "quartile": "Q2",
+      "impact_factor": null,
+      "first_author": false,
+      "corresponding": false,
+      "topics": [
+        "fixed-point",
+        "geometry"
+      ],
+      "series": null,
+      "source": "cv",
+      "id": "minjibir2022stronganddeltaconvergenc"
+    },
+    {
+      "title": "A new generalized quasi-Newton algorithm based on structured diagonal Hessian approximation for solving nonlinear least-squares problems with application to 3DOF planar robot arm manipulator",
+      "authors": [
+        "Yahaya, M. M.",
+        "Kumam, P.",
+        "Awwal, A. M.",
+        "Chaipunya, P.",
+        "Aji, S.",
+        "Salisu, S."
+      ],
+      "venue": "IEEE Access",
+      "volume": "10",
+      "issue": null,
+      "pages": "10816–10826",
+      "year": 2022,
+      "type": "article",
+      "status": "published",
+      "doi": "10.1109/ACCESS.2022.3144875",
+      "url": "https://doi.org/10.1109/ACCESS.2022.3144875",
+      "index": "SCIE",
+      "quartile": "Q2",
+      "impact_factor": 4.2,
+      "first_author": false,
+      "corresponding": false,
+      "topics": [
+        "optimization",
+        "applications"
+      ],
+      "series": null,
+      "source": "cv",
+      "id": "yahaya2022anewgeneralizedquasinewt"
+    },
+    {
+      "title": "Pursuit differential game problems of $l$-catch in a Hilbert space",
+      "authors": [
+        "Hadejia, Y. A.",
+        "Salisu, S.",
+        "Ahmed, I.",
+        "Musa, S."
+      ],
+      "venue": "Sule Lamido Univ. J. Sci. Technol.",
+      "volume": "5",
+      "issue": "1&2",
+      "pages": "79–93",
+      "year": 2022,
+      "type": "article",
+      "status": "published",
+      "doi": "10.56471/slujst.v5i.282",
+      "url": "https://doi.org/10.56471/slujst.v5i.282",
+      "index": null,
+      "quartile": null,
+      "impact_factor": null,
+      "first_author": false,
+      "corresponding": false,
+      "topics": [
+        "applications"
+      ],
+      "series": null,
+      "source": "cv",
+      "id": "hadejia2022pursuitdifferentialgamep"
+    }
+  ]
+}

@@ -1,0 +1,104 @@
+{% extends "base.html" %}
+{% block title %}Code and examples, Sani Salisu{% endblock %}
+{% block description %}Interactive examples of fixed point and projection methods, downloadable Python code and datasets used in Sani Salisu's applications.{% endblock %}
+{% block head %}<link rel="stylesheet" href="assets/vendor/katex/katex.min.css">{% endblock %}
+{% block main %}
+<div class="wrap">
+  <header class="page-head">
+    <h1>Code and examples</h1>
+    <p class="lede">Two small experiments that show, in a few seconds, why the averaging and extrapolation ideas in my papers matter. Both run in your browser; the same algorithms are available below as short Python scripts.</p>
+  </header>
+
+  <section class="section" id="averaging">
+    <div class="demo">
+      <div>
+        <canvas id="demo-km" width="640" height="640" aria-label="Plot of Picard and Krasnoselskii–Mann iterations for a rotation"></canvas>
+        <ul class="legend"><li><i class="l-c"></i>Picard iteration</li><li><i class="l-b"></i>Krasnoselskii–Mann iteration</li><li><i class="l-a"></i>Fixed point</li></ul>
+      </div>
+      <div>
+        <h2>Averaging tames a nonexpansive map</h2>
+        <p>Let \(T\) rotate the plane by an angle \(\theta\) about the origin. It is nonexpansive and its only fixed point is \(0\), yet the Picard iteration \(x_{n+1} = T x_n\) circles forever. The Krasnoselskii–Mann iteration</p>
+        <div class="math-block">\[ x_{n+1} = (1-\lambda)\,x_n + \lambda\, T x_n, \qquad 0<\lambda<1, \]</div>
+        <p>averages each step with the current point and spirals into the fixed point. Enriched nonexpansive mappings are exactly the maps for which a suitable averaging of this kind becomes nonexpansive.</p>
+        <div class="controls">
+          <label>Rotation angle \(\theta\) <output id="km-theta-out"></output><input id="km-theta" type="range" min="10" max="170" value="70"></label>
+          <label>Averaging parameter \(\lambda\) <output id="km-lambda-out"></output><input id="km-lambda" type="range" min="5" max="95" value="50"></label>
+          <label>Iterations <output id="km-n-out"></output><input id="km-n" type="range" min="5" max="120" value="40"></label>
+        </div>
+        <p class="small muted" id="km-report" role="status"></p>
+        <p class="small muted">Click or tap the plot to choose a new starting point.</p>
+      </div>
+    </div>
+  </section>
+
+  <section class="section" id="extragradient">
+    <div class="demo">
+      <div>
+        <canvas id="demo-eg" width="640" height="640" aria-label="Plot of projected gradient and extragradient iterations for a monotone variational inequality"></canvas>
+        <ul class="legend"><li><i class="l-c"></i>Projected gradient</li><li><i class="l-b"></i>Extragradient (Korpelevich)</li><li><i class="l-a"></i>Solution</li></ul>
+      </div>
+      <div>
+        <h2>One extra projection makes the difference</h2>
+        <p>Find \(x^\ast \in C = [-1,1]^2\) with \(\langle F x^\ast, y - x^\ast\rangle \ge 0\) for all \(y \in C\), where \(F x = M x + q\) and \(M = \begin{pmatrix}\varepsilon & 1\\ -1 & \varepsilon\end{pmatrix}\). For small \(\varepsilon\) the operator is monotone but far from a gradient, and the projected gradient method \(x_{n+1} = P_C(x_n - \tau F x_n)\) drifts away from the solution. The extragradient method first takes a trial step and then corrects with the operator evaluated there:</p>
+        <div class="math-block">\[ y_n = P_C(x_n - \tau F x_n), \qquad x_{n+1} = P_C(x_n - \tau F y_n). \]</div>
+        <p>Tseng, golden-ratio and inertial variants in my recent papers refine this idea to save projections and to handle non-monotone operators.</p>
+        <div class="controls">
+          <label>Monotonicity \(\varepsilon\) <output id="eg-eps-out"></output><input id="eg-eps" type="range" min="0" max="50" value="0"></label>
+          <label>Step size \(\tau\) <output id="eg-tau-out"></output><input id="eg-tau" type="range" min="5" max="90" value="30"></label>
+          <label>Iterations <output id="eg-n-out"></output><input id="eg-n" type="range" min="5" max="200" value="80"></label>
+        </div>
+        <p class="small muted" id="eg-report" role="status"></p>
+        <p class="small muted">Click or tap the plot to choose a new starting point.</p>
+      </div>
+    </div>
+  </section>
+
+  <section class="section" id="downloads">
+    <div class="split"><h2>Python scripts</h2>
+      <div>
+        <p>Self-contained scripts that reproduce the two experiments and print the error at every iteration. They need only NumPy, and Matplotlib if you want the figure.</p>
+        <ul class="glist plain">
+          <li><h3><a href="assets/code/krasnoselskii_mann.py" download>krasnoselskii_mann.py</a></h3><p>Picard and Krasnoselskii–Mann iterations for a plane rotation.</p></li>
+          <li><h3><a href="assets/code/extragradient_vi.py" download>extragradient_vi.py</a></h3><p>Projected gradient and extragradient methods for a box-constrained monotone variational inequality.</p></li>
+        </ul>
+        <pre class="code"><code>pip install numpy matplotlib
+python extragradient_vi.py --eps 0 --tau 0.3 --iters 80 --plot</code></pre>
+      </div>
+    </div>
+  </section>
+
+  <section class="section" id="repositories">
+    <div class="split"><h2>Research code</h2>
+      <div>
+        <p>Code accompanying my papers is released on GitHub as each project is cleaned up for public use. When a paper has public code, a Code link appears beside it in the <a href="publications.html">publication list</a>.</p>
+        <ul class="glist plain">
+          <li><h3><a href="https://github.com/SaniSalisu21133/MATLAB-CODE-Proximal-Type-Algorithm-With-Reflection" rel="noopener">Proximal-type algorithm with reflections</a></h3><p>MATLAB code for the numerical experiments in <a href="https://doi.org/10.1007/s11081-025-10010-3" rel="noopener">Yao, Salisu and Shehu, Optimization and Engineering (2026)</a>.</p></li>
+          <li><h3><a href="https://github.com/SaniSalisu21133/Gradient_Descent_without_Descent_Diffeomorphic_Convexification" rel="noopener">Gradient descent without descent: diffeomorphic convexification</a></h3><p>Code for an ongoing project.</p></li>
+          <li><h3><a href="https://github.com/SaniSalisu21133/Proximal_Gradient_Descent_without_Descent_Diffeomorphic_Convexification" rel="noopener">Proximal gradient descent without descent: diffeomorphic convexification</a></h3><p>Code for the proximal version of the project above.</p></li>
+        </ul>
+        {% if site.github_user %}<p><a class="btn ghost" href="https://github.com/{{ site.github_user }}?tab=repositories" rel="noopener">All repositories on GitHub</a></p>{% endif %}
+        <p>If you need the implementation behind a specific paper before it is public, <a href="contact.html">ask me</a>.</p>
+      </div>
+    </div>
+  </section>
+
+  <section class="section" id="data">
+    <div class="split"><h2>Datasets</h2>
+      <div>
+        <p>Public benchmarks of the kind used in the applications of my work on classification and image recovery:</p>
+        <ul>
+          <li><a href="https://archive.ics.uci.edu/" rel="noopener">UCI Machine Learning Repository</a>, for classification experiments with extreme learning machines.</li>
+          <li><a href="https://github.com/spMohanty/PlantVillage-Dataset" rel="noopener">PlantVillage</a>, leaf images including tomato diseases.</li>
+          <li><a href="https://sipi.usc.edu/database/" rel="noopener">USC-SIPI Image Database</a>, standard test images for restoration and deblurring.</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+</div>
+{% endblock %}
+{% block scripts %}
+<script src="assets/vendor/katex/katex.min.js" defer></script>
+<script src="assets/vendor/katex/auto-render.min.js" defer></script>
+<script src="assets/js/math.js" defer></script>
+<script src="assets/js/demos.js" defer></script>
+{% endblock %}

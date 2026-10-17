@@ -1,0 +1,44 @@
+{% extends "base.html" %}
+{% block title %}Contact, Sani Salisu{% endblock %}
+{% block description %}How to reach Sani Salisu: email, postal addresses and research profiles.{% endblock %}
+{% block main %}
+<div class="wrap">
+  <header class="page-head">
+    <h1>Contact</h1>
+    <p class="lede">Email is the quickest way to reach me. I am happy to hear about collaboration, seminar invitations, student projects and requests for papers.</p>
+  </header>
+  <section class="section">
+    <div class="split"><h2>Email</h2>
+      <div>
+        <p><a class="js-email" data-u="{{ site.email_user }}" data-d="{{ site.email_domain }}" href="#">{{ site.email_user }} [at] {{ site.email_domain }}</a> (Chongqing Normal University)</p>
+        <p><a class="js-email" data-u="{{ site.email2_user }}" data-d="{{ site.email2_domain }}" href="#">{{ site.email2_user }} [at] {{ site.email2_domain }}</a> (Iconic Open University)</p>
+      </div>
+    </div>
+  </section>
+  <section class="section">
+    <div class="split"><h2>Write a message</h2>
+      <form id="contact-form" class="contact-form" novalidate>
+        <div class="field"><label for="c-name">Your name</label><input id="c-name" name="name" autocomplete="name" required maxlength="120"></div>
+        <div class="field"><label for="c-email">Email</label><input id="c-email" name="email" type="email" autocomplete="email" required maxlength="160"></div>
+        <div class="field"><label for="c-topic">Topic</label>
+          <select id="c-topic" name="topic"><option>Research collaboration</option><option>Seminar or conference invitation</option><option>Student project or supervision</option><option>Request for a paper</option><option>Something else</option></select></div>
+        <div class="field"><label for="c-msg">Message</label><textarea id="c-msg" name="message" rows="6" required maxlength="4000"></textarea></div>
+        <div class="hp" aria-hidden="true"><label for="c-web">Leave this empty</label><input id="c-web" name="_gotcha" tabindex="-1" autocomplete="off"></div>
+        <div class="btn-row"><button class="btn" type="submit">Send message</button></div>
+        <p class="form-status" id="contact-status" role="status"></p>
+      </form>
+    </div>
+  </section>
+  <section class="section">
+    <div class="split"><h2>Addresses</h2>
+      <div class="two">
+        <div class="referee"><h3>Chongqing Normal University</h3><p>School of Mathematical Sciences<br>Chongqing, China</p></div>
+        <div class="referee"><h3>Iconic Open University</h3><p>Department of IT &amp; Software Engineering<br>Faculty of Computing Sciences<br>Sokoto, Nigeria</p></div>
+      </div>
+    </div>
+  </section>
+  <section class="section">
+    <div class="split"><h2>Profiles</h2><div>{% include "_profiles.html" %}</div></div>
+  </section>
+</div>
+{% endblock %}

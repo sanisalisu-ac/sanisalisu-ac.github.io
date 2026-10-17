@@ -1,0 +1,474 @@
+%% ====================================================================
+%%  Curriculum Vitae -- Sani SALISU
+%%  Compile with:  pdflatex Salisu_CV.tex   (run twice for page numbers)
+%%  Web edition: date of birth and phone numbers removed. The photo SaniPhotograph.png
+%%  is used when present in this folder and skipped otherwise.
+%% ====================================================================
+\documentclass[11pt,a4paper]{article}
+
+%% ---------- Packages (all standard in TeX Live / MiKTeX) ------------
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage{mathpazo}                 % Palatino text and math
+\usepackage[a4paper,left=18mm,right=18mm,top=16mm,bottom=18mm]{geometry}
+\usepackage{xcolor}
+\usepackage{graphicx}
+\usepackage{enumitem}
+\usepackage{fancyhdr}
+\usepackage{lastpage}
+\usepackage[hidelinks]{hyperref}
+
+%% ---------- Colours and basic layout --------------------------------
+\definecolor{accent}{RGB}{0,62,116}
+\definecolor{soft}{RGB}{95,95,95}
+\hypersetup{colorlinks=true,urlcolor=accent,linkcolor=accent}
+\setlength{\parindent}{0pt}
+\setlength{\parskip}{0pt}
+\setlength{\emergencystretch}{4em}
+\urlstyle{same}
+\makeatletter\g@addto@macro{\UrlBreaks}{\do\.\do\-\do\/\do\0\do\1\do\2\do\3\do\4\do\5\do\6\do\7\do\8\do\9}\makeatother
+
+\pagestyle{fancy}
+\fancyhf{}
+\renewcommand{\headrulewidth}{0pt}
+\fancyfoot[L]{\footnotesize\color{soft}Sani Salisu \,--\, Curriculum Vitae}
+\fancyfoot[R]{\footnotesize\color{soft}Page \thepage\ of \pageref{LastPage}}
+
+%% ---------- CV commands ---------------------------------------------
+\newlength{\datewidth}\setlength{\datewidth}{27mm}
+
+% Section heading with a coloured rule
+\newcommand{\cvsection}[1]{%
+  \vspace{9pt}\pagebreak[2]%
+  {\color{accent}\large\scshape #1}\par\nopagebreak
+  \vspace{-3pt}{\color{accent}\rule{\linewidth}{0.8pt}}\par\nopagebreak
+  \vspace{4pt}}
+
+% Sub-heading inside a section
+\newcommand{\cvsub}[1]{\vspace{4pt}{\color{accent}\bfseries #1}\par\nopagebreak\vspace{3pt}}
+
+% \cventry{dates}{bold title}{institution}{further text}
+\newcommand{\cventry}[4]{%
+  \noindent\parbox[t]{\datewidth}{\leavevmode\raggedright\small\color{soft}#1}%
+  \hspace{3mm}%
+  \parbox[t]{\dimexpr\linewidth-\datewidth-3mm\relax}{%
+    \textbf{#2}\ifx&#3&\else, #3\fi\par
+    \ifx&#4&\else{\small #4}\par\fi}%
+  \par\vspace{5pt}}
+
+% \cvitem{label}{text}
+\newcommand{\cvitem}[2]{%
+  \noindent\parbox[t]{\datewidth}{\leavevmode\raggedright\small\color{soft}#1}%
+  \hspace{3mm}%
+  \parbox[t]{\dimexpr\linewidth-\datewidth-3mm\relax}{#2}%
+  \par\vspace{3pt}}
+
+\newcommand{\siteurl}{https://sanisalisu.github.io}  % set to your site address
+\newcommand{\me}{\textbf{Salisu, S.}}
+\newcommand{\corr}{{\color{soft}\,--\,\emph{corresponding author}}}
+\newcommand{\ix}[1]{\,\mbox{\color{accent}[#1]}}
+\newcommand{\chk}[1]{\textcolor{red}{#1}}   % red = still to be confirmed; change red to black once verified
+\newcommand{\doi}[1]{{\small doi:\,\href{https://doi.org/#1}{\nolinkurl{#1}}}}
+\newcommand{\link}[1]{\href{#1}{\small link}}
+
+\setlist[enumerate]{leftmargin=9mm,itemsep=2.5pt,topsep=2pt,label={[\arabic*]},
+  font=\small\color{soft}}
+\setlist[itemize]{leftmargin=5mm,itemsep=2pt,topsep=2pt,label={\color{accent}\textbullet}}
+
+%% ====================================================================
+\begin{document}
+
+%% ---------------------------- HEADER --------------------------------
+\begin{minipage}[t]{0.75\linewidth}
+  \vspace{0pt}
+  {\fontsize{24}{28}\selectfont\color{accent}\textbf{Sani} \textsc{Salisu}}\par
+  \vspace{4pt}
+  {\large Applied Mathematics \,\textbar\, Nonlinear Analysis \& Optimization}\par
+  \vspace{7pt}
+  \small
+  School of Mathematical Sciences, Chongqing Normal University, Chongqing, China\par
+  Department of IT \& Software Engineering, Iconic Open University, Nigeria\par
+  \vspace{3pt}
+  \href{mailto:sanisalisu@cqnu.edu.cn}{sanisalisu@cqnu.edu.cn} \,\textbullet\,
+  \href{mailto:s.salisu@iconicuniversity.edu.ng}{s.salisu@iconicuniversity.edu.ng}\par
+  \href{\siteurl}{\nolinkurl{\siteurl}}\par
+  \vspace{3pt}
+  {\color{soft}Nationality:} Nigerian
+\end{minipage}%
+\hfill
+\begin{minipage}[t]{0.23\linewidth}
+  \vspace{0pt}\raggedleft
+  \IfFileExists{SaniPhotograph.png}{\includegraphics[height=40mm]{SaniPhotograph.png}}{}
+\end{minipage}
+
+\vspace{6pt}
+{\small
+\href{https://orcid.org/0000-0003-3387-4188}{ORCID: 0000-0003-3387-4188} \;\textbullet\;
+\href{https://scholar.google.com/citations?user=stLnqjwAAAAJ}{Google Scholar} \;\textbullet\;
+\href{https://mathscinet.ams.org/mathscinet/MRAuthorID/1494599}{MathSciNet: 1494599} \;\textbullet\;
+\href{https://www.scopus.com/authid/detail.uri?authorId=57204799122}{Scopus: 57204799122} \;\textbullet\;
+\href{https://www.webofscience.com/wos/author/record/LKJ-6393-2024}{Web of Science: LKJ-6393-2024} \;\textbullet\;
+\href{https://www.researchgate.net/profile/Sani-Salisu-4}{ResearchGate}}
+
+%% ---------------------------- PROFILE -------------------------------
+\cvsection{Research Profile}
+My research lies in numerical optimization and fixed point theory, and moves between theory and computation. On the theoretical side, I establish the existence and uniqueness of solutions and study the properties of the operators involved. On the algorithmic side, I design and analyse iterative methods (proximal, splitting, projection, inertial and conjugate-gradient) for optimization problems, variational inequalities, monotone inclusions and fixed point problems. The work spans Hilbert spaces and nonlinear settings such as CAT(0)/Hadamard spaces and Riemannian manifolds, and extends to computation, with applications in supply-chain networks, machine learning, image restoration, robotics and portfolio selection.
+\vspace{5pt}
+\begin{itemize}
+  \item \textbf{64+ peer-reviewed publications} (2022--2027), in journals including \emph{J.\ Optim.\ Theory Appl.},
+        \emph{Commun.\ Nonlinear Sci.\ Numer.\ Simul.}, \emph{Math.\ Comput.\ Simulation} and \emph{Optimization};
+        \textbf{32 in JCR Q1 journals}; first and/or corresponding author on 25.
+  \item \textbf{Google Scholar (Oct.\ 2026):} 341 citations, $h$-index 10, i10-index 12.
+  \item \textbf{International collaboration} with researchers in Thailand, China, Taiwan, Korea, Pakistan, India,
+        Saudi Arabia, Romania, Poland, Ireland, Canada and South Africa; \textbf{13 conference and seminar talks}.
+  \item \textbf{Co-investigator on two funded research grants} (Nigeria and Saudi Arabia), 2025--2026.
+\end{itemize}
+%% ---------------------------- INTERESTS -----------------------------
+\cvsection{Research Interests}
+Numerical and nonsmooth optimization; variational inequalities, monotone inclusions and equilibrium problems; splitting, proximal and conjugate-gradient methods, including Riemannian and vector optimization; fixed point theory in Banach, metric and geodesic spaces (CAT(0), Hadamard, hyperbolic), with emphasis on enriched and multivalued mappings; integrating artificial intelligence and machine learning into the design and analysis of methods for challenging problems in optimization and nonlinear analysis; and applications to data science, signal and image recovery, and supply-chain networks.
+
+%% ---------------------------- EMPLOYMENT ----------------------------
+\cvsection{Academic Appointments}
+\cventry{Nov.\ 2025 -- present}{Postdoctoral Researcher}{School of Mathematical Sciences, Chongqing Normal University, China}
+  {Research on splitting and proximal algorithms for variational inequalities and monotone inclusions, with applications
+   in optimization and data science.}
+\cventry{Oct.\ 2024 -- present}{Lecturer I}{Iconic Open University, Sokoto, Nigeria}
+  {Undergraduate teaching in mathematics in an open and distance learning setting.}
+\cventry{Jul.\ 2024 -- Jun.\ 2025}{Postdoctoral Researcher}{King Mongkut's University of Technology Thonburi (KMUTT), Bangkok, Thailand}
+  {Fixed Point Theory and Applications Research Group (host: Prof.\ Poom Kumam).}
+\cventry{Oct.\ 2023 -- Aug.\ 2025}{Lecturer II}{Department of Mathematics, Sule Lamido University Kafin Hausa, Nigeria}{}
+\cventry{Apr.\ 2023 -- Jul.\ 2023}{Visiting Researcher (Erasmus+ Mobility)}{North University Centre at Baia Mare, Technical University of Cluj-Napoca, Romania}
+  {Host: Prof.\ Vasile Berinde. The visit started a continuing collaboration on enriched mappings in geodesic spaces.}
+\cventry{Dec.\ 2019 -- Sep.\ 2023}{Assistant Lecturer}{Department of Mathematics, Sule Lamido University Kafin Hausa, Nigeria}{}
+
+%% ---------------------------- EDUCATION -----------------------------
+\cvsection{Education}
+\cventry{2021 -- 2024}{Ph.D.\ in Applied Mathematics}{King Mongkut's University of Technology Thonburi (KMUTT), Bangkok, Thailand}
+  {Thesis: \emph{Approximation Methods for Fixed Point and Convex Optimization Problems} (defended 22 Nov.\ 2023; awarded Feb.\ 2024).\\
+   Advisors: Prof.\ Poom Kumam, Assoc.\ Prof.\ Songpon Sriwongsa and Prof.\ Vasile Berinde.
+   Supported by a Petchra Pra Jom Klao Ph.D.\ Scholarship.}
+\cventry{2018 -- 2019}{M.Sc.\ in Pure and Applied Mathematics}{African University of Science and Technology (AUST), Abuja, Nigeria}
+  {Thesis: \emph{Iterative Methods for Approximation of Fixed Points of Certain Multivalued Mappings in Hadamard Spaces}.
+   Supported by a Pan African Materials Institute (PAMI) Scholarship.}
+\cventry{2013 -- 2017}{B.Sc.\ in Mathematics}{Sokoto State University (SSU), Sokoto, Nigeria}
+  {Thesis: \emph{Modifications of Hill Cipher Algorithm Using Similarity Matrices and Involutory Key}.
+   Best Graduating Student (Pioneer Set).}
+\cventry{2009 -- 2012}{Nigeria Certificate in Education (Mathematics \& Physics)}{Jigawa State College of Education, Gumel, Nigeria}{}
+
+%% ---------------------------- GRANTS --------------------------------
+\cvsection{Research Grants}
+\cventry{2025 -- 2026}{Co-investigator, TETFund Institution-Based Research (IBR) Grant}{}
+  {\emph{Optimization of Extreme Learning Machine Model via Conjugate Gradient Technique: Application to Classification of
+   Tomato Leaf Diseases.} Tertiary Education Trust Fund (TETFund), Usmanu Danfodiyo University, Sokoto, Nigeria
+   (IBR ID: UDUS-IBR-2025-10-81).}
+\cventry{2025 -- 2026}{Co-investigator, Deanship of Graduate Studies and Scientific Research Grant}{}
+  {\emph{Optimization of Blood Supply Chain Network through Numerical Variational Inequality Technique.}
+   Jouf University, Saudi Arabia (Grant No.\ DGSSR-2025-02-01481).}
+
+%% ---------------------------- AWARDS --------------------------------
+\cvsection{Fellowships, Scholarships and Awards}
+\cvitem{Oct.\ 2025}{Postdoctoral Fellowship, Chongqing Normal University, China.}
+\cvitem{Jul.\ 2024}{Postdoctoral Fellowship, King Mongkut's University of Technology Thonburi, Thailand.}
+\cvitem{Apr.\ 2023}{Erasmus+ Mobility Grant, Technical University of Cluj-Napoca, Romania.}
+\cvitem{Sep.\ 2022}{Best Presentation Award, 3rd International Workshop on Applied Nonlinear Analysis (IWANA 2022), Thailand.}
+\cvitem{Mar.\ 2021}{Best Graduating Student -- Pioneer Set, Sokoto State University, Nigeria.}
+\cvitem{Nov.\ 2020}{Petchra Pra Jom Klao Ph.D.\ Scholarship (Grant No.\ 67/2563), KMUTT, Thailand.}
+\cvitem{Mar.\ 2019}{Pan African Materials Institute (PAMI) Internship Grant, AUST, Abuja, Nigeria.}
+\cvitem{Jan.\ 2018}{Pan African Materials Institute (PAMI) M.Sc.\ Scholarship, AUST, Abuja, Nigeria.}
+\cvitem{Apr.\ 2017}{Gold Medal, National Mathematics Competition for University Students (NAMCUS 2017),
+                    National Mathematical Centre, Abuja, Nigeria.}
+\cvitem{May 2016}{Award of Excellence in Leadership, National Association of Mathematics Students, SSU Chapter.}
+
+%% ---------------------------- TEACHING ------------------------------
+\cvsection{Teaching Experience}
+\cvitem{Courses taught}{Elementary Mathematics I, II and III; Foundations of Mathematical Analysis I and II;
+  Lebesgue Measure and Integration; Mathematical Methods I; Discrete Structures
+  (Sule Lamido University and Iconic Open University, 2019--present).}
+\cvitem{Teaching interests}{Real and functional analysis, convex analysis and optimization, numerical analysis and
+  numerical optimization, linear algebra, and computational mathematics with MATLAB and Python.}
+
+%% ---------------------------- SERVICE -------------------------------
+\cvsection{Professional Service}
+\cvitem{2023 -- present}{\textbf{Reviewer}, \emph{Mathematical Reviews} (MathSciNet), American Mathematical Society.}
+\cvitem{Ongoing}{\textbf{Referee} for international journals in fixed point theory, nonlinear analysis,
+  variational inequalities and vector optimization.}
+\cvitem{2021 -- present}{\textbf{Member}, KMUTT Fixed Point Theory and Applications Research Group (KMUTT-Fixed Point Lab), Thailand.}
+
+%% ---------------------------- SKILLS --------------------------------
+\cvsection{Skills and Languages}
+\cvitem{Computing}{MATLAB (proficient), \LaTeX{} (proficient), Python (intermediate; including Pymanopt),
+  Java (intermediate), Microsoft Office (proficient).}
+\cvitem{Languages}{English (fluent), Hausa (native); Arabic, Chinese and  Thai (elementary).}
+\cvitem{Personal}{Teamwork, leadership, flexibility, active listening. Enjoys badminton, football and swimming.}
+
+%% ---------------------------- PUBLICATIONS --------------------------
+\cvsection{Publications}
+{\small\color{soft} Reverse chronological order. Brackets give the Web of Science index (SCIE/ESCI), the journal's
+best JCR quartile and its 2025 Journal Impact Factor (JCR released June 2026). }
+
+\cvsub{Peer-Reviewed Journal Articles and Book Chapter}
+{\small
+\begin{enumerate}
+\item Peng, J.-W., Fei, X.-Y., \me, Yao, J.-C., On the convergence of modified Tseng extragradient methods with double inertial technique for nonmonotone variational inequalities, \emph{Numer.\ Algorithms} (2026), in press.
+  \doi{10.1007/s11075-026-02521-6} \ix{SCIE, Q1, IF 2.5} \corr
+\item Peng, J.-W., Kumam, P., \me, Yao, J.-C., Adaptive inertial-relaxed Tseng extragradient algorithms for non-monotone
+  variational inequalities with applications to Nash equilibrium in oligopolistic market competition,
+  \emph{Math.\ Comput.\ Simulation} \textbf{252} (2027), 497--517. \doi{10.1016/j.matcom.2026.10.006}
+  \ix{SCIE, Q1, IF 4.0} \corr
+\item \me, Cegielski, A., Worapitpong, W., Kumam, P., Fixed point properties of strongly quasi-nonexpansive mappings and
+  cutters, \emph{J.\ Fixed Point Theory Appl.} \textbf{28}(4) (2026). \doi{10.1007/s11784-026-01343-2}
+  \ix{SCIE, Q2, IF 1.1}
+\item Peng, J.-W., \me, Mofarreh, F., Yao, J.-C., Extrapolated adaptive proximal method with a single dynamic parameter for
+  variational inequalities and optimization applications, \emph{Commun.\ Nonlinear Sci.\ Numer.\ Simul.} \textbf{163} (2026),
+  110495. \doi{10.1016/j.cnsns.2026.110495} \ix{SCIE, Q1, IF 3.8} \corr
+\item \me, Abubakar, J., Kumam, P., A perturbed single-operator method for nonlinear equations with application to
+  classification via extreme learning machines, \emph{Commun.\ Nonlinear Sci.\ Numer.\ Simul.} \textbf{155} (2026), 109586.
+  \doi{10.1016/j.cnsns.2025.109586} \ix{SCIE, Q1, IF 3.8}
+\item Abubakar, J., \me, Sitthithakerngkiet, K., Block proximal point method for mixed variational inequality problem,
+  \emph{Commun.\ Nonlinear Sci.\ Numer.\ Simul.} \textbf{163} (2026), 110786. \doi{10.1016/j.cnsns.2026.110786}
+  \ix{SCIE, Q1, IF 3.8}
+\item Alsahli, G., \me, Alotaibi, N., A perturbed convex combination method for pseudo-monotone variational inequalities with
+  applications to blood supply chain networks, \emph{AIMS Math.} \textbf{11}(8) (2026), 25229--25264.
+  \doi{10.3934/math.20261014} \ix{SCIE, Q1, IF 1.8}
+\item Singh, P., Singh, S., \me, Singh, V., Fixed point theorems for nonlinear contractive mappings in cone-valued
+  $\theta$-type multiplicative metric spaces, \emph{AIMS Math.} \textbf{11}(6) (2026), 17794--17819.
+  \doi{10.3934/math.2026725} \ix{SCIE, Q1, IF 1.8}
+\item Sarkinbai, M.\,S., \me, Minjibir, M.\,S., Inertial Krasnoselskii--Mann algorithm for approximating fixed points of
+  enriched nonexpansive mappings, \emph{Carpathian J.\ Math.} \textbf{42}(3) (2026), 573--594.
+  \link{https://www.jstor.org/stable/27487175} \ix{SCIE, Q1, IF 1.4}
+\item Jia, Z., Peng, J.-W., \me, Shehu, Y., A two-term inertial method for monotone VIPs: implementation in multiclass
+  classification and portfolio optimization, \emph{Math.\ Comput.\ Simulation} \textbf{249} (2026), 510--532.
+  \doi{10.1016/j.matcom.2026.06.001} \ix{SCIE, Q1, IF 4.0}
+\item Abubakar, J., \me, Sitthithakerngkiet, K., Perturbed gradient methods for data classification via regularized extreme
+  learning machine, \emph{Math.\ Methods Appl.\ Sci.} \textbf{49}(10) (2026), 10486--10507. \doi{10.1002/mma.70607}
+  \ix{SCIE, Q1, IF 2.0}
+\item Harbau, M.\,H., Muhammad, S.\,B., \me, Convergence theorems for fixed points and equilibrium problems in hyperbolic
+  spaces, \emph{Nonlinear Convex Anal.\ Optim.} \textbf{5} (2026), 73--92.
+  \link{https://bangmodjmcs.com/index.php/ncao/article/view/424 }
+\item Ma'aruf, S.\,M., Yusuf, M., \me, Approximation of solutions of Hammerstein integral inclusions in $L^p$ spaces,
+  \emph{Nonlinear Convex Anal.\ Optim.} \textbf{5} (2026), 13--28.
+  \link{https://bangmodjmcs.com/index.php/ncao/article/view/343}
+\item Khammahawong, K., Boonyam, N., \me, Dechboon, P., Fixed points of enriched mappings with general real constants,
+  \emph{Mathematics} \textbf{14} (2026), 937. \doi{10.3390/math14060937} \ix{SCIE, Q1, IF 2.3}
+\item Salihu, N., Kumam, P., \me, Sitthithakerngkiet, K., On new spectral conjugate gradient methods for Riemannian
+  optimization using retraction and scaled vector transport, \emph{Oper.\ Res.\ Forum} \textbf{7} (2026), 7.
+  \doi{10.1007/s43069-025-00594-y} \ix{Scopus, Q2}
+\item Yao, Y., \me, Shehu, Y., Solving variational inequalities using an algorithm with extrapolations from the past and
+  relaxation, \emph{Commun.\ Nonlinear Sci.\ Numer.\ Simul.} \textbf{157} (2026), 109681.
+  \doi{10.1016/j.cnsns.2026.109681} \ix{SCIE, Q1, IF 3.8}
+\item Wang, L., Cai, G., \me, Shehu, Y., A modified contraction-type method for solving monotone inclusion problem in
+  Hilbert spaces, \emph{Math.\ Comput.\ Simulation} \textbf{240} (2026), 749--768. \doi{10.1016/j.matcom.2025.07.041}
+  \ix{SCIE, Q1, IF 4.0}
+\item Yao, Y., \me, Shehu, Y., Convergence results of proximal-type algorithms with reflections for variational
+  inequalities, \emph{Optim.\ Eng.} \textbf{27} (2026), 433--462. \doi{10.1007/s11081-025-10010-3} \ix{SCIE, Q2, IF 2.3}
+\item Boonyam, N., \me, Berinde, V., Kumam, P., Proximal methods for equilibrium problems over the set of fixed points of
+  enriched nonexpansive mappings, \emph{Optim.\ Eng.} \textbf{27} (2026), 405--432. \doi{10.1007/s11081-025-10008-x}
+  \ix{SCIE, Q2, IF 2.3}
+%% ---- 2025
+\item \me, Alsahli, G., Rufa'i, A., Approximating fixed points of enriched nonexpansive mappings via a geodesic implicit
+  midpoint scheme, \emph{Comput.\ Appl.\ Math.} \textbf{44} (2025), 386. \doi{10.1007/s40314-025-03350-4} \ix{SCIE, Q1, IF 2.3}
+\item \me, Kumam, P., Sitthithakerngkiet, K., Optimization of blood supply network through a perturbed forward--backward
+  method, \emph{J.\ Ind.\ Manag.\ Optim.} \textbf{21}(5) (2025), 3691--3720. \doi{10.3934/jimo.2025028} \ix{SCIE, Q3, IF 1.4}
+\item \me, Sriwongsa, S., Kumam, P., Berinde, V., Viscosity scheme with enriched mappings for hierarchical variational
+  inequalities in certain geodesic spaces, \emph{Fixed Point Theory} \textbf{26} (2025), 293--308.
+  \link{https://math.ubbcluj.ro/~nodeacj/volumes/2025-No1/251-sal-sri-kum-ber-23-0068-final-final.php}
+  \ix{SCIE, Q2, IF 1.1}
+\item \me, Berinde, V., Sriwongsa, S., Kumam, P., Fixed point properties of saturated and unsaturated contractive mappings
+  in CAT(0) spaces, \emph{J.\ Anal.} \textbf{33} (2025), 903--925. \doi{10.1007/s41478-024-00868-4} \ix{ESCI, Q1, IF 1.7}
+\item \me, Sriwongsa, S., Kumam, P., Extragradient method for monotone variational inequality in CAT(0) spaces, in:
+  \emph{Numerical Computations: Theory and Algorithms (NUMTA 2023)}, Lecture Notes in Computer Science, vol.~14477,
+  Springer, Cham, 2025, pp.~134--148. \doi{10.1007/978-3-031-81244-6_10} \ix{Book chapter; Scopus}
+\item Yao, Y., Peng, Z.-Y., \me, Shehu, Y., New modification of projected reflected gradient algorithm,
+  \emph{Optimization} (2025), 1--40. \doi{10.1080/02331934.2025.2589368} \ix{SCIE, Q2, IF 1.8}
+\item Minjibir, M.\,S., Musa, J.\,A., \me, Iterative algorithm for a common solution of equilibrium and fixed point problems
+  for a finite family of multivalued enriched nonexpansive mappings in Hadamard spaces, \emph{Optim.\ Eruditorum}
+  \textbf{2}(3) (2025), 213--237. \doi{10.69829/oper-025-0203-ta05}
+\item Salihu, N., Kumam, P., Wang, L., \me, Some new three-term conjugate gradient methods for Riemannian optimization with
+  application to the Gough--Stewart platform, \emph{Math.\ Model.\ Numer.\ Simul.\ Appl.} \textbf{5}(3) (2025), 492--515.
+  \doi{10.53391/2791-8564.1001} \ix{Scopus}
+\item Nasiru, S., Kumam, P., \me, Wang, L., Seangwattana, T., Spectral conjugate gradient for Riemannian optimization:
+  application to the Gough--Stewart platform, \emph{Int.\ J.\ Dyn.\ Control} \textbf{13}(8) (2025), 288.
+  \doi{10.1007/s40435-025-01788-2} \ix{ESCI, Q1, IF 2.7}
+\item Yao, Y., \me, Peng, Z.-Y., Shehu, Y., New splitting algorithm with three inertial steps for three-operator monotone
+  inclusion problems, \emph{J.\ Optim.\ Theory Appl.} \textbf{206}(3) (2025), 64. \doi{10.1007/s10957-025-02741-1}
+  \ix{SCIE, Q1, IF 1.9}
+\item Worapitpong, W., Chaipunya, P., Kumam, P., \me, Approximating fixed points of nonexpansive-type mappings in Hadamard
+  spaces, \emph{J.\ Math.\ Comput.\ Sci.} \textbf{39}(4) (2025), 522--540. \doi{10.22436/jmcs.039.04.07} \ix{ESCI, Q1, IF 1.5}
+\item Oyewole, O.\,K., Moshokoa, S.\,P., \me, Shehu, Y., Analysis of Tseng algorithm with inertial extrapolation step for
+  stochastic variational inequality problem, \emph{Appl.\ Numer.\ Math.} \textbf{217} (2025), 199--215.
+  \doi{10.1016/j.apnum.2025.06.008} \ix{SCIE, Q1, IF 2.3}
+\item Salihu, N., Kumam, P., \me, Khammahawong, K., Some hybrid Riemannian conjugate gradient methods with restart
+  strategy, \emph{Franklin Open} \textbf{10} (2025), 100240. \doi{10.1016/j.fraope.2025.100240}
+\item Salihu, N., Kumam, P., \me, Wang, L., Sitthithakerngkiet, K., A revised MRMIL Riemannian conjugate gradient method
+  with simplified global convergence properties, \emph{Appl.\ Numer.\ Math.} \textbf{214} (2025), 110--126.
+  \doi{10.1016/j.apnum.2025.03.007} \ix{SCIE, Q1, IF 2.3}
+\item Abubakar, J., Chaipunya, P., Kumam, P., \me, A generalized scheme for split inclusion problem with conjugate-like
+  direction, \emph{Math.\ Methods Oper.\ Res.} \textbf{101} (2025), 51--71. \doi{10.1007/s00186-024-00882-z}
+  \ix{SCIE, Q2, IF 1.2}
+\item Saqlain, M., Merig\'o, J.\,M., Kumam, P., \me, Half a century of fixed point theory research in Thailand: a
+  bibliometric analysis, \emph{Thai J.\ Math.} \textbf{23}(3) (2025), 341--384. \link{https://thaijmath.com/index.php/thaijmath/article/view/1787} \ix{ESCI, Q4, IF 0.4}
+%% ---- 2024
+\item \me, Sriwongsa, S., Kumam, P., Golden ratio method for solving monotone variational inequality problems in Hadamard
+  spaces, \emph{Math.\ Methods Appl.\ Sci.} \textbf{47} (2024), 10101--10116. \doi{10.1002/mma.10112} \ix{SCIE, Q1, IF 2.0}
+\item \me, Sriwongsa, S., Kumam, P., Berinde, V., Variational inequality and proximal scheme for enriched nonexpansive
+  mappings in CAT(0) spaces, \emph{J.\ Nonlinear Convex Anal.} \textbf{25}(7) (2024), 1759--1776.
+  \link{http://yokohamapublishers.jp/online2/opjnca/vol25/p1759.html} \ix{SCIE, Q3, IF 0.5}
+\item \me, Minjibir, M.\,S., Iterative algorithms for common fixed points of a countable family of quasi-nonexpansive
+  multivalued mappings in CAT(0) spaces, \emph{Math.\ Sci.} \textbf{18} (2024), 681--692.
+  \doi{10.1007/s40096-024-00524-9} \ix{SCIE, Q1, IF 2.0}
+\item \me, Sriwongsa, S., Kumam, P., Je, C.\,Y., Viscosity implicit midpoint scheme for enriched nonexpansive mappings,
+  \emph{Constr.\ Math.\ Anal.} \textbf{7}(4) (2024), 160--179. \doi{10.33205/cma.1540982} \ix{ESCI, Q1, IF 2.9}
+\item \me, Berinde, V., Sriwongsa, S., Kumam, P., On approximating fixed points of strictly pseudocontractive mappings in
+  metric spaces, \emph{Carpathian J.\ Math.} \textbf{40}(2) (2024), 419--430. \doi{10.37193/CJM.2024.02.12}
+  \ix{SCIE, Q1, IF 1.4}
+\item \me, Kumam, P., Sriwongsa, S., Inuwa, A.\,Y., Enriched multi-valued nonexpansive mappings in geodesic spaces,
+  \emph{Rend.\ Circ.\ Mat.\ Palermo (2)} \textbf{73} (2024), 1435--1451. \doi{10.1007/s12215-023-00993-2}
+  \ix{ESCI, Q2, IF 0.9}
+\item \me, Kumam, P., Sriwongsa, S., Gopal, D., Enriched asymptotically nonexpansive mappings with center zero,
+  \emph{Filomat} \textbf{38} (2024), 343--356. \doi{10.2298/FIL2401343S} \ix{SCIE, Q2, IF 1.0}
+\item \me, Kumam, P., Sriwongsa, S., A viscosity-type scheme for optimization problems in Hadamard spaces with
+  applications, \emph{Optimization} \textbf{73} (2024), 2447--2471. \doi{10.1080/02331934.2023.2230985} \ix{SCIE, Q2, IF 1.8}
+\item Yahaya, J., Kumam, P., \me, Sitthithakerngkiet, K., Spectral-like conjugate gradient methods with sufficient descent
+  property for vector optimization, \emph{PLOS ONE} \textbf{19}(5) (2024), e0302441.
+  \doi{10.1371/journal.pone.0302441} \ix{SCIE, Q2, IF 2.8}
+\item Salihu, N., Kumam, P., \me, Two efficient nonlinear conjugate gradient methods for Riemannian manifolds,
+  \emph{Comput.\ Appl.\ Math.} \textbf{43} (2024), 415. \doi{10.1007/s40314-024-02920-2} \ix{SCIE, Q1, IF 2.3}
+\item Khammahawong, K., \me, Modified Halpern and viscosity methods for hierarchical variational inequalities on Hadamard
+  manifolds, \emph{Comput.\ Appl.\ Math.} \textbf{43} (2024), 1. \doi{10.1007/s40314-023-02503-7} \ix{SCIE, Q1, IF 2.3}
+\item Yahaya, J., Kumam, P., \me, Timothy, A.\,J., On the class of Wei--Yao--Liu conjugate gradient methods for vector
+  optimization, \emph{Nonlinear Convex Anal.\ Optim.} \textbf{3} (2024), 1--23. \doi{10.58715/ncao.2024.3.1}
+\item Inuwa, A.\,Y., Chaipunya, P., Kumam, P., \me, Equilibrium problems and proximal algorithm using tangent space
+  products, \emph{Carpathian J.\ Math.} \textbf{40}(1) (2024), 65--76. \doi{10.37193/CJM.2024.01.06} \ix{SCIE, Q1, IF 1.4}
+\item Mongkolkeha, C., Dechboon, P., \me, Khammahawong, K., Coupled best proximity points for cyclic Kannan and Chatterjea
+  contractions in CAT$_p$(0) spaces, \emph{Carpathian J.\ Math.} \textbf{40}(2) (2024), 343--361.
+  \doi{10.37193/CJM.2024.02.08} \ix{SCIE, Q1, IF 1.4}
+%% ---- 2023
+\item \me, Kumam, P., Sriwongsa, S., On fixed points of enriched contractions and enriched nonexpansive mappings,
+  \emph{Carpathian J.\ Math.} \textbf{39} (2023), 237--254. \doi{10.37193/CJM.2023.01.16} \ix{SCIE, Q1, IF 1.4}
+\item \me, Minjibir, M.\,S., Kumam, P., Sriwongsa, S., Convergence theorems for fixed points in CAT$_p$(0) spaces,
+  \emph{J.\ Appl.\ Math.\ Comput.} \textbf{69} (2023), 631--650. \doi{10.1007/s12190-022-01763-6} \ix{SCIE, Q1, IF 3.0}
+\item \me, Berinde, V., Kumam, P., Sriwongsa, S., Approximating fixed points of demicontractive mappings in metric spaces
+  by geodesic averaged perturbation techniques, \emph{AIMS Math.} \textbf{8}(12) (2023), 28582--28600.
+  \doi{10.3934/math.20231463} \ix{SCIE, Q1, IF 1.8}
+\item \me, Kumam, P., Sriwongsa, S., Convergence theorems for monotone vector field inclusions and minimization problems
+  in Hadamard spaces, \emph{Anal.\ Geom.\ Metr.\ Spaces} \textbf{11} (2023), 20220150. \doi{10.1515/agms-2022-0150}
+  \ix{SCIE, Q3, IF 0.7}
+\item Awwal, A.\,M., Wang, L., Kumam, P., Sulaiman, M.\,I., \me, Salihu, N., Yodjai, P., Generalized RMIL conjugate
+  gradient method under the strong Wolfe line search with application in image processing, \emph{Math.\ Methods Appl.\
+  Sci.} \textbf{46}(16) (2023), 17544--17556. \doi{10.1002/mma.9515} \ix{SCIE, Q1, IF 2.0}
+\item Sumalai, P., Abubakar, J., Kumam, P., \me, A unified scheme for solving split inclusions with applications,
+  \emph{Math.\ Methods Appl.\ Sci.} \textbf{46}(13) (2023), 14622--14639. \doi{10.1002/mma.9338} \ix{SCIE, Q1, IF 2.0}
+\item Inuwa, A.\,Y., Kumam, P., Chaipunya, P., \me, Fixed point theorems for enriched Kannan mappings in CAT(0) spaces,
+  \emph{Fixed Point Theory Algorithms Sci.\ Eng.} \textbf{2023} (2023), 13. \doi{10.1186/s13663-023-00750-1}
+  \ix{ESCI, Q2, IF 1.5}
+\item Kratuloek, K., Kumam, P., Amnuaykarn, K., Nantadilok, J., \me, Iterative approximation of common fixed points of
+  two nonself asymptotically nonexpansive mappings in CAT(0) spaces with numerical examples, \emph{Math.\ Methods Appl.\
+  Sci.} \textbf{46}(12) (2023), 13521--13539. \doi{10.1002/mma.9269} \ix{SCIE, Q1, IF 2.0}
+%% ---- 2022
+\item \me, Kumam, P., Sriwongsa, S., Strong convergence theorems for fixed point of multi-valued mappings in Hadamard
+  spaces, \emph{J.\ Inequal.\ Appl.} \textbf{2022} (2022), 143. \doi{10.1186/s13660-022-02870-5} \ix{SCIE, Q1, IF 1.9}
+\item \me, Kumam, P., Sriwongsa, S., One step proximal point schemes for monotone vector field inclusion problems,
+  \emph{AIMS Math.} \textbf{7}(5) (2022), 7385--7402. \doi{10.3934/math.2022412} \ix{SCIE, Q1, IF 1.8}
+\item \me, Kumam, P., Sriwongsa, S., Abubakar, J., On minimization and fixed point problems in Hadamard spaces,
+  \emph{Comput.\ Appl.\ Math.} \textbf{41}(3) (2022), 117. \doi{10.1007/s40314-022-01821-6} \ix{SCIE, Q1, IF 2.3}
+\item \me, Hashim, L., Inuwa, A.\,Y., Saje, A.\,U., Implicit midpoint scheme for enriched nonexpansive mappings,
+  \emph{Nonlinear Convex Anal.\ Optim.} \textbf{1}(2) (2022), 211--222.
+  \link{https://ncaodesign.files.wordpress.com/2023/02/ncaov1n2p211.pdf} 
+\item Minjibir, M.\,S., \me, Strong and $\Delta$-convergence theorems for a countable family of multi-valued
+  demicontractive maps in Hadamard spaces, \emph{Nonlinear Funct.\ Anal.\ Appl.} \textbf{27}(1) (2022), 45--58.
+  \doi{10.22771/nfaa.2022.27.01.03} \ix{Scopus, Q2}
+\item Yahaya, M.\,M., Kumam, P., Awwal, A.\,M., Chaipunya, P., Aji, S., \me, A new generalized quasi-Newton algorithm
+  based on structured diagonal Hessian approximation for solving nonlinear least-squares problems with application to
+  3DOF planar robot arm manipulator, \emph{IEEE Access} \textbf{10} (2022), 10816--10826.
+  \doi{10.1109/ACCESS.2022.3144875} \ix{SCIE, Q2, IF 4.2}
+\item Hadejia, Y.\,A., \me, Ahmed, I., Musa, S., Pursuit differential game problems of $l$-catch in a Hilbert space,
+  \emph{Sule Lamido Univ.\ J.\ Sci.\ Technol.} \textbf{5}(1\&2) (2022), 79--93. \link{https://www.academia.edu/107970560/Pursuit_Differential_Game_Problems_of_L_Catch_in_A_Hilbert_Space} \doi{10.56471/slujst.v5i.282} 
+\end{enumerate}}
+
+\cvsub{Theses}
+{\small
+\begin{itemize}
+\item \textbf{Ph.D.:} \emph{Approximation Methods for Fixed Point and Convex Optimization Problems}, KMUTT, Thailand, 2024.
+      \link{https://tdc.thailis.or.th/tdc/browse.php?option=show&browse_type=title&titleid=665544}
+\item \textbf{M.Sc.:} \emph{Iterative Methods for Approximation of Fixed Points of Certain Multivalued Mappings in Hadamard
+      Spaces}, AUST, Nigeria, 2019.
+      \link{https://repository.aust.edu.ng/xmlui/handle/123456789/5059}
+\end{itemize}}
+
+%% ---------------------------- TALKS ---------------------------------
+\cvsection{Conference and Seminar Presentations}
+{\small
+\begin{enumerate}[label={[T\arabic*]}]
+\item \emph{Fixed point properties of saturated and unsaturated contractive mappings via geodesic perturbations}.
+  28th International Annual Symposium on Computational Science and Engineering (ANSCSE28), Thammasat University,
+  Thailand, Jul.--Aug.\ 2025.
+\item \emph{Fixed point iterative techniques for solving nonlinear convex optimization problems} (joint with P.~Kumam).
+  \href{https://mitre.usm.md/en/node/514}{10th Conference on Mathematics \& IT: Research and Education (MITRE-2025)}, Chi\c{s}in\u{a}u, Republic of Moldova,
+  26--29 Jun.\ 2025.
+\item \emph{Substantial geodesic spaces and their geometric inequalities for fixed point theory and optimization}.
+  \href{https://icwana2024.wordpress.com/}{4th International Conference and Workshop on Applied Nonlinear Analysis (ICWANA 2024)}, Chonburi, Thailand,
+  6--8 Aug.\ 2024.
+\item \emph{Strictly pseudocontractive mappings beyond linear spaces}. \href{https://synasc.ro/2023/iafp-2023/}{SYNASC 2023 -- Workshop on Iterative Algorithms for
+  Approximating Fixed Points of Various Contractive Type Operators (IAFP 2023)}, Nancy, France, 11--14 Sep.\ 2023.
+\item \emph{Variational inequality and proximal point scheme for enriched nonexpansive mappings in CAT(0) spaces}.
+  \href{https://icfpta2023.wordpress.com/}{14th International Conference on Fixed Point Theory and its Applications (ICFPTA 2023)}, Transilvania University of
+  Bra\c{s}ov, Romania, 11--14 Jul.\ 2023.
+\item \emph{Golden ratio approaches to a solution of monotone-type variational inequality problem in certain geodesic
+  spaces}. \href{https://cmmse.usal.es/cmmse2023/welcome}{23rd International Conference on Computational and Mathematical Methods in Science and Engineering
+  (CMMSE 2023)}, C\'adiz, Spain, 3--8 Jul.\ 2023.
+\item \emph{Nonexpansive-type mappings with viscosity iteration in Hadamard spaces}. \href{https://citi.upb.ro/en/?p=2912}{2nd International Symposium (ISIM)
+  \& International Student Workshop (ISWIM) on Interdisciplinary Mathematics}, University POLITEHNICA of Bucharest,
+  Romania, 28--30 Jun.\ 2023.
+\item \emph{Variational inequality problems beyond convex settings}. \href{https://www.numta.org/}{4th International Conference and Summer School
+  ``Numerical Computations: Theory and Algorithms'' (NUMTA 2023)}, Calabria, Italy, 14--20 Jun.\ 2023.
+\item \emph{Geodesic convexity in fixed point theory} (seminar talk). \href{https://www.math.ubbcluj.ro/~nodeacj/soned.html}{Seminar on Nonlinear Operators and Differential
+  Equations}, Babe\c{s}--Bolyai University, Cluj-Napoca, Romania, 18 May 2023.
+\item \emph{Properties of enriched nonexpansive mappings in Hadamard spaces}. \href{https://iwana2022.wordpress.com/}{3rd International Workshop on Applied
+  Nonlinear Analysis (IWANA 2022)}, Chonburi, Thailand, 5--6 Sep.\ 2022 --- \textbf{Best Presentation Award}.
+\item \emph{Convergence theorems for fixed points of enriched contraction and enriched nonexpansive mappings in Hadamard
+  spaces}. \href{https://cseathai.org/2022/02/27/anscse25-khon-kaen-university-thailand/}{25th International Annual Symposium on Computational Science and Engineering (ANSCSE25)}, Khon Kaen University,
+  Thailand, Jun.\ 2022.
+\item \emph{A viscosity-type scheme for optimization problems in Hadamard spaces with applications}. \href{https://www.up.ac.th/NewsRead.aspx?itemID=24359}{International
+  Workshop on Digital Image Processing and Machine Learning (IWDM 2021)}, Thailand, 20--22 Aug.\ 2021.
+\item \emph{Iterative methods of approximation of fixed points of certain multivalued maps}. \href{https://www.unn.edu.ng/nigeria-mathematical-society-38th-annual-conference-2019/}{38th Annual Conference of the
+  Nigerian Mathematical Society}, University of Nigeria, Nsukka, 18--21 Jun.\ 2019.
+\end{enumerate}}
+
+\cvsub{Other Workshops Attended}
+{\small
+\begin{itemize}
+\item 9th International Workshop on Nonlinear Analysis, Fixed Point Theory and Applications (NAFPTA), North University
+  Centre at Baia Mare, Romania, 29 May 2023.
+\item \href{https://csss2023.kmutt.ac.th/}{International Workshop and Computational Science Summer School (CSSS 2023): Data Science and Modelling in Industries},
+  KMUTT, Bangkok, Thailand, 7--10 Mar.\ 2023.
+\end{itemize}}
+
+
+
+%% ---------------------------- REFEREES ------------------------------
+\cvsection{Referees}
+\noindent
+\begin{minipage}[t]{0.32\linewidth}\small\raggedright
+  \textbf{Prof.\ Poom Kumam}\\
+  Department of Mathematics, Faculty of Science\\
+  King Mongkut's University of Technology Thonburi (KMUTT)\\
+  Bangkok 10140, Thailand\\
+  \href{mailto:poom.kum@kmutt.ac.th}{poom.kum@kmutt.ac.th}
+\end{minipage}\hfill
+\begin{minipage}[t]{0.32\linewidth}\small\raggedright
+  \textbf{Prof.\ Vasile Berinde}\\
+  Department of Mathematics and Computer Science\\
+  North University Centre at Baia Mare, 
+  Technical University of Cluj-Napoca\\
+  Baia Mare 430122, Romania\\
+  \href{mailto:vasile.berinde@mi.utcluj.ro}{vasile.berinde@mi.utcluj.ro}
+\end{minipage}\hfill
+\begin{minipage}[t]{0.30\linewidth}\small\raggedright
+  \textbf{Prof.\ Yekini Shehu}\\
+  School of Mathematical Sciences\\
+  Zhejiang Normal University\\
+  Jinhua 321004, China\\
+  \href{mailto:yekini.shehu@zjnu.edu.cn}{yekini.shehu@zjnu.edu.cn}
+\end{minipage}
+
+\end{document}

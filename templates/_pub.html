@@ -1,0 +1,29 @@
+{% macro pub(p, show_num=True) %}
+<li class="pub" id="{{ p.id }}" data-id="{{ p.id }}" data-year="{{ p.year }}" data-topics="{{ p.topics|join(' ') }}" data-q1="{{ 1 if p.is_q1 else 0 }}" data-role="{{ p.role }}" data-type="{{ p.type }}" data-search="{{ p.search }}">
+  <span class="num" aria-hidden="true">{% if show_num %}[{{ p.num }}]{% endif %}</span>
+  <div>
+    <p class="pub-title">{% if p.url %}<a href="{{ p.url }}" rel="noopener">{{ p.title_html|safe }}</a>{% else %}{{ p.title_html|safe }}{% endif %}</p>
+    <p class="pub-authors">{{ p.authors_html|safe }}</p>
+    <p class="pub-venue">{{ p.venue_html|safe }}</p>
+    <ul class="badges">
+      {% if p.is_new %}<li class="badge new">New</li>{% endif %}
+      {% if p.role == 'first' %}<li class="badge role">First author</li>{% elif p.role == 'corresponding' %}<li class="badge role">Corresponding author</li>{% endif %}
+      {% if p.quartile %}<li class="badge{{ ' q1' if p.is_q1 }}">JCR {{ p.quartile }}</li>{% endif %}
+      {% if p.index %}<li class="badge">{{ p.index }}</li>{% endif %}
+      {% if p.impact_factor %}<li class="badge">IF {{ '%.1f'|format(p.impact_factor) }}</li>{% endif %}
+      {% if p.status == 'preprint' %}<li class="badge">Preprint</li>{% endif %}
+      {% if p.type == 'chapter' %}<li class="badge">Book chapter</li>{% endif %}
+      {% if p.citations %}<li class="badge">Cited {{ p.citations }}&times;</li>{% endif %}
+    </ul>
+    <div class="pub-actions">
+      {% if p.doi %}<a href="https://doi.org/{{ p.doi }}" rel="noopener">DOI</a>{% elif p.url %}<a href="{{ p.url }}" rel="noopener">Article</a>{% endif %}
+      {% if p.pdf %}<a href="{{ p.pdf }}">PDF</a>{% endif %}
+      {% if p.preprint %}<a href="{{ p.preprint }}" rel="noopener">Preprint</a>{% endif %}
+      {% if p.code %}<a href="{{ p.code }}" rel="noopener">Code</a>{% endif %}
+      <button type="button" class="linkbtn" data-cite="{{ p.id }}">Cite</button>
+      <button type="button" class="linkbtn" data-request="{{ p.id }}">Request PDF</button>
+      <a href="{{ p.scholar }}" rel="noopener">Find on Scholar</a>
+    </div>
+  </div>
+</li>
+{% endmacro %}

@@ -1,0 +1,58 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self'; style-src 'self'; style-src-attr 'unsafe-inline'; font-src 'self'; img-src 'self' data:{{ ' ' ~ img_src if img_src }}; connect-src 'self' https://formspree.io; form-action 'self' https://formspree.io; frame-src 'none'; object-src 'none'; base-uri 'self'; upgrade-insecure-requests">
+<meta name="referrer" content="strict-origin-when-cross-origin">
+<title>{% block title %}Sani Salisu{% endblock %}</title>
+<meta name="description" content="{% block description %}Sani Salisu works on numerical optimization and fixed point theory: existence and structure of solutions, and the iterative methods that compute them.{% endblock %}">
+<meta name="author" content="Sani Salisu">
+<link rel="canonical" href="{{ site_url }}/{% if page != 'index' %}{{ page }}.html{% endif %}">
+<meta property="og:type" content="profile">
+<meta property="og:title" content="{{ self.title() }}">
+<meta property="og:description" content="{{ self.description() }}">
+<meta property="og:url" content="{{ site_url }}/{% if page != 'index' %}{{ page }}.html{% endif %}">
+<meta property="og:image" content="{{ site.photo if site.photo.startswith('http') else site_url ~ '/' ~ site.photo }}">
+<meta name="twitter:card" content="summary">
+<meta name="theme-color" content="#2d3e8c">
+<link rel="icon" href="assets/img/favicon.svg" type="image/svg+xml">
+<link rel="alternate" type="application/rss+xml" title="Sani Salisu: publications" href="feed.xml">
+<link rel="stylesheet" href="assets/vendor/fonts.css">
+{% block head %}{% endblock %}
+<link rel="stylesheet" href="assets/css/site.css">
+<script src="assets/js/theme.js"></script>
+</head>
+<body data-page="{{ page }}">
+<a class="skip" href="#main">Skip to content</a>
+<header class="site-header">
+  <div class="wrap">
+    <a class="wordmark" href="./">Sani Salisu</a>
+    <nav class="nav" id="nav" aria-label="Main">
+      {% for href, label in [('research','Research'),('publications','Publications'),('talks','Talks'),('teaching','Teaching'),('code','Code & examples'),('gallery','Gallery'),('cv','CV'),('contact','Contact')] %}
+      <a href="{{ href }}.html"{% if page == href %} aria-current="page"{% endif %}>{{ label }}</a>
+      {% endfor %}
+    </nav>
+    <div class="header-tools">
+      <button class="icon-btn" id="theme-toggle" type="button" aria-label="Switch colour theme">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true"><circle cx="12" cy="12" r="8"/><path d="M12 4a8 8 0 0 0 0 16z" fill="currentColor"/></svg>
+      </button>
+      <button class="icon-btn menu-btn" id="menu-toggle" type="button" aria-controls="nav" aria-expanded="false" aria-label="Open menu">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true"><path d="M4 7h16M4 12h16M4 17h16"/></svg>
+      </button>
+    </div>
+  </div>
+</header>
+<main id="main">
+{% block main %}{% endblock %}
+</main>
+<footer class="site-footer">
+  <div class="wrap">
+    <p>&copy; {{ year }} Sani Salisu. School of Mathematical Sciences, Chongqing Normal University.</p>
+    <p><a href="publications.bib">BibTeX</a>, <a href="feed.xml">RSS</a>, <a href="https://orcid.org/{{ site.orcid }}" rel="noopener">ORCID</a>. Last built {{ build_date }}.</p>
+  </div>
+</footer>
+<script src="assets/js/main.js" defer></script>
+{% block scripts %}{% endblock %}
+</body>
+</html>

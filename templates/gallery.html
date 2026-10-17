@@ -1,0 +1,37 @@
+{% extends "base.html" %}
+{% block title %}Gallery, Sani Salisu{% endblock %}
+{% block description %}Photographs from conferences, research visits, the doctoral defence and life in the KMUTT Fixed Point Lab.{% endblock %}
+{% block main %}
+<div class="wrap">
+  <header class="page-head">
+    <h1>Gallery</h1>
+    <p class="lede">Conferences, research visits, a doctoral defence and the everyday life of a research group. Select any photograph to view it at full size; use the arrow keys to move through an album.</p>
+    <ul class="album-index">
+      {% for a in gallery.albums %}<li><a href="#{{ a.id }}">{{ a.title }}</a><span>{{ a.year_label }}</span></li>{% endfor %}
+    </ul>
+  </header>
+  {% for a in gallery.albums %}
+  <section class="album" id="{{ a.id }}" aria-labelledby="{{ a.id }}-h">
+    <div class="album-head">
+      <p class="when">{{ a.place }}<br>{{ a.date_label }}</p>
+      <div><h2 id="{{ a.id }}-h">{{ a.title }}</h2><p>{{ a.caption }}</p></div>
+    </div>
+    <div class="grid">
+      {% for im in a.images %}
+      <button type="button" data-album="{{ a.id }}" data-index="{{ loop.index0 }}" data-full="{{ im.full }}" aria-label="Open photograph {{ loop.index }} of {{ a.images|length }}: {{ a.title }}">
+        <img src="{{ im.thumb }}" alt="{{ im.alt }}" loading="lazy" decoding="async" width="600" height="450">
+      </button>
+      {% endfor %}
+    </div>
+  </section>
+  {% endfor %}
+</div>
+<dialog class="lightbox" id="lightbox" aria-label="Photograph viewer">
+  <div class="lb-top"><span id="lb-count"></span><button class="icon-btn" type="button" data-close aria-label="Close viewer"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true"><path d="M6 6l12 12M18 6L6 18"/></svg></button></div>
+  <figure><img id="lb-img" alt=""></figure>
+  <figcaption id="lb-cap"></figcaption>
+  <button class="icon-btn lb-nav lb-prev" type="button" id="lb-prev" aria-label="Previous photograph"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true"><path d="M15 5l-7 7 7 7"/></svg></button>
+  <button class="icon-btn lb-nav lb-next" type="button" id="lb-next" aria-label="Next photograph"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true"><path d="M9 5l7 7-7 7"/></svg></button>
+</dialog>
+{% endblock %}
+{% block scripts %}<script src="assets/js/gallery.js" defer></script>{% endblock %}

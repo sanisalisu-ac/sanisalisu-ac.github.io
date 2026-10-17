@@ -1,0 +1,61 @@
+{% extends "base.html" %}
+{% from "_pub.html" import pub %}
+{% block title %}Publications, Sani Salisu{% endblock %}
+{% block description %}All {{ stats.total }} peer-reviewed publications of Sani Salisu on fixed point theory, variational inequalities and numerical optimization, with DOIs, BibTeX and PDF requests.{% endblock %}
+{% block head %}<link rel="stylesheet" href="assets/vendor/katex/katex.min.css">{% endblock %}
+{% block main %}
+<div class="wrap">
+  <header class="page-head">
+    <h1>Publications</h1>
+    <p class="lede">{{ stats.total }} peer-reviewed papers from {{ stats.first_year }} to {{ stats.last_year }}, {{ stats.q1 }} of them in JCR Q1 journals. Every entry links to the published version; if you cannot access a paper, request a copy and I will send it.</p>
+    <div class="yearbars" role="img" aria-label="Publications per year: {% for b in yearbars %}{{ b.year }}, {{ b.n }}{{ '; ' if not loop.last }}{% endfor %}">
+      {% for b in yearbars %}<div><b>{{ b.n }}</b><span class="bar" data-h="{{ b.pct }}"></span><small>{{ b.year }}</small></div>{% endfor %}
+    </div>
+    <p class="small muted">The list updates itself each week from ORCID and Crossref. Download everything as <a href="publications.bib">BibTeX</a> or follow new papers by <a href="feed.xml">RSS</a>.</p>
+  </header>
+
+  <section class="toolbar" aria-label="Filter publications">
+    <div>
+      <label for="pub-search">Search titles, co-authors, journals or DOIs</label>
+      <input id="pub-search" class="search" type="search" placeholder="For example: CAT(0), extragradient, Berinde" autocomplete="off">
+    </div>
+    <div class="toolbar-row">
+      <div class="chips" role="group" aria-label="Topic">
+        <button class="chip" type="button" data-filter="topic" data-value="" aria-pressed="true">All topics</button>
+        {% for k, label in topic_labels.items() %}<button class="chip" type="button" data-filter="topic" data-value="{{ k }}" aria-pressed="false">{{ label }}</button>{% endfor %}
+      </div>
+    </div>
+    <div class="toolbar-row">
+      <div class="chips" role="group" aria-label="Refine">
+        <button class="chip" type="button" data-toggle="q1" aria-pressed="false">Q1 journals only</button>
+        <button class="chip" type="button" data-toggle="lead" aria-pressed="false">First or corresponding author</button>
+      </div>
+    </div>
+  </section>
+
+  <p class="result-count" id="result-count" role="status" aria-live="polite">Showing all {{ stats.total }} publications</p>
+  <div id="pub-list">
+    {% for y, items in groups %}
+    <section class="year-group" data-year-group="{{ y }}">
+      <h2>{{ y }}</h2>
+      <ol class="pubs">{% for p in items %}{{ pub(p) }}{% endfor %}</ol>
+    </section>
+    {% endfor %}
+  </div>
+  <p class="empty" id="pub-empty" hidden>No paper matches these filters. Clear the search or choose another topic.</p>
+
+  <section class="section">
+    <h2>Theses</h2>
+    <ul class="glist">
+      <li><span class="when">2024</span><div><h3>Approximation Methods for Fixed Point and Convex Optimization Problems</h3><p>Ph.D. thesis, King Mongkut's University of Technology Thonburi, Thailand. <a href="https://tdc.thailis.or.th/tdc/browse.php?option=show&amp;browse_type=title&amp;titleid=665544" rel="noopener">Thai Digital Collection record</a></p></div></li>
+      <li><span class="when">2019</span><div><h3>Iterative Methods for Approximation of Fixed Points of Certain Multivalued Mappings in Hadamard Spaces</h3><p>M.Sc. thesis, African University of Science and Technology, Abuja, Nigeria. <a href="https://repository.aust.edu.ng/xmlui/handle/123456789/5059" rel="noopener">AUST repository record</a></p></div></li>
+    </ul>
+  </section>
+</div>
+{% include "_dialogs.html" %}
+{% endblock %}
+{% block scripts %}
+<script src="assets/vendor/katex/katex.min.js" defer></script>
+<script src="assets/vendor/katex/auto-render.min.js" defer></script>
+<script src="assets/js/pubs.js" defer></script>
+{% endblock %}

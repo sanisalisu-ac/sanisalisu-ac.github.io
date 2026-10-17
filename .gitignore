@@ -1,0 +1,10 @@
+_site/
+__pycache__/
+*.pyc
+assets/vendor/katex/
+assets/vendor/fonts/
+cv/*.aux
+cv/*.log
+cv/*.out
+cv/*.pdf
+.DS_Store

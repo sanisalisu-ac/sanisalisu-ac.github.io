@@ -1,0 +1,148 @@
+{
+  "talks": [
+    {
+      "date": "2025-07",
+      "title": "Fixed point properties of saturated and unsaturated contractive mappings via geodesic perturbations",
+      "event": "28th International Annual Symposium on Computational Science and Engineering (ANSCSE28)",
+      "place": "Thammasat University, Thailand",
+      "url": null,
+      "album": null,
+      "note": null,
+      "slides": null
+    },
+    {
+      "date": "2025-06",
+      "title": "Fixed point iterative techniques for solving nonlinear convex optimization problems",
+      "event": "10th Conference on Mathematics & IT: Research and Education (MITRE-2025)",
+      "place": "Chișinău, Republic of Moldova",
+      "url": "https://mitre.usm.md/en/node/514",
+      "album": null,
+      "note": "Joint with P. Kumam",
+      "slides": null
+    },
+    {
+      "date": "2024-08",
+      "title": "Substantial geodesic spaces and their geometric inequalities for fixed point theory and optimization",
+      "event": "4th International Conference and Workshop on Applied Nonlinear Analysis (ICWANA 2024)",
+      "place": "Chonburi, Thailand",
+      "url": "https://icwana2024.wordpress.com/",
+      "album": null,
+      "note": null,
+      "slides": null
+    },
+    {
+      "date": "2023-09",
+      "title": "Strictly pseudocontractive mappings beyond linear spaces",
+      "event": "SYNASC 2023, Workshop on Iterative Algorithms for Approximating Fixed Points of Various Contractive Type Operators (IAFP 2023)",
+      "place": "Nancy, France",
+      "url": "https://synasc.ro/2023/iafp-2023/",
+      "album": null,
+      "note": null,
+      "slides": null
+    },
+    {
+      "date": "2023-07",
+      "title": "Variational inequality and proximal point scheme for enriched nonexpansive mappings in CAT(0) spaces",
+      "event": "14th International Conference on Fixed Point Theory and its Applications (ICFPTA 2023)",
+      "place": "Transilvania University of Brașov, Romania",
+      "url": "https://icfpta2023.wordpress.com/",
+      "album": "icfpta-2023",
+      "note": null,
+      "slides": null
+    },
+    {
+      "date": "2023-07",
+      "title": "Golden ratio approaches to a solution of monotone-type variational inequality problem in certain geodesic spaces",
+      "event": "23rd International Conference on Computational and Mathematical Methods in Science and Engineering (CMMSE 2023)",
+      "place": "Cádiz, Spain",
+      "url": "https://cmmse.usal.es/cmmse2023/welcome",
+      "album": null,
+      "note": null,
+      "slides": null
+    },
+    {
+      "date": "2023-06",
+      "title": "Nonexpansive-type mappings with viscosity iteration in Hadamard spaces",
+      "event": "2nd International Symposium (ISIM) & International Student Workshop (ISWIM) on Interdisciplinary Mathematics",
+      "place": "University POLITEHNICA of Bucharest, Romania",
+      "url": "https://citi.upb.ro/en/?p=2912",
+      "album": "isim-2023",
+      "note": null,
+      "slides": null
+    },
+    {
+      "date": "2023-06",
+      "title": "Variational inequality problems beyond convex settings",
+      "event": "4th International Conference and Summer School “Numerical Computations: Theory and Algorithms” (NUMTA 2023)",
+      "place": "Calabria, Italy",
+      "url": "https://www.numta.org/",
+      "album": null,
+      "note": null,
+      "slides": null
+    },
+    {
+      "date": "2023-05",
+      "title": "Geodesic convexity in fixed point theory",
+      "event": "Seminar on Nonlinear Operators and Differential Equations",
+      "place": "Babeș–Bolyai University, Cluj-Napoca, Romania",
+      "url": "https://www.math.ubbcluj.ro/~nodeacj/soned.html",
+      "album": "bbu-seminar-2023",
+      "note": "Seminar talk",
+      "slides": null
+    },
+    {
+      "date": "2022-09",
+      "title": "Properties of enriched nonexpansive mappings in Hadamard spaces",
+      "event": "3rd International Workshop on Applied Nonlinear Analysis (IWANA 2022)",
+      "place": "Chonburi, Thailand",
+      "url": "https://iwana2022.wordpress.com/",
+      "album": null,
+      "note": "Best Presentation Award",
+      "slides": null
+    },
+    {
+      "date": "2022-06",
+      "title": "Convergence theorems for fixed points of enriched contraction and enriched nonexpansive mappings in Hadamard spaces",
+      "event": "25th International Annual Symposium on Computational Science and Engineering (ANSCSE25)",
+      "place": "Khon Kaen University, Thailand",
+      "url": "https://cseathai.org/2022/02/27/anscse25-khon-kaen-university-thailand/",
+      "album": "anscse25-2022",
+      "note": null,
+      "slides": null
+    },
+    {
+      "date": "2021-08",
+      "title": "A viscosity-type scheme for optimization problems in Hadamard spaces with applications",
+      "event": "International Workshop on Digital Image Processing and Machine Learning (IWDM 2021)",
+      "place": "Thailand",
+      "url": "https://www.up.ac.th/NewsRead.aspx?itemID=24359",
+      "album": null,
+      "note": null,
+      "slides": null
+    },
+    {
+      "date": "2019-06",
+      "title": "Iterative methods of approximation of fixed points of certain multivalued maps",
+      "event": "38th Annual Conference of the Nigerian Mathematical Society",
+      "place": "University of Nigeria, Nsukka",
+      "url": "https://www.unn.edu.ng/nigeria-mathematical-society-38th-annual-conference-2019/",
+      "album": null,
+      "note": null,
+      "slides": null
+    }
+  ],
+  "workshops": [
+    {
+      "date": "2023-05",
+      "event": "9th International Workshop on Nonlinear Analysis, Fixed Point Theory and Applications (NAFPTA)",
+      "place": "North University Centre at Baia Mare, Romania",
+      "url": null
+    },
+    {
+      "date": "2023-03",
+      "event": "International Workshop and Computational Science Summer School (CSSS 2023): Data Science and Modelling in Industries",
+      "place": "KMUTT, Bangkok, Thailand",
+      "url": "https://csss2023.kmutt.ac.th/"
+    }
+  ]
+}

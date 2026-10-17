@@ -1,0 +1,27 @@
+<dialog id="cite-dialog" aria-labelledby="cite-h">
+  <div class="dlg-head"><h2 id="cite-h">Cite this paper</h2>
+    <button class="icon-btn" type="button" data-close aria-label="Close"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true"><path d="M6 6l12 12M18 6L6 18"/></svg></button></div>
+  <div class="dlg-body">
+    <p class="dlg-paper" id="cite-paper"></p>
+    <pre class="bib" id="cite-bib"></pre>
+    <div class="btn-row"><button class="btn" type="button" id="cite-copy">Copy BibTeX</button><a class="btn ghost" href="publications.bib" download>Download all (BibTeX)</a></div>
+    <p class="form-status" id="cite-status" role="status"></p>
+  </div>
+</dialog>
+<dialog id="request-dialog" aria-labelledby="req-h">
+  <div class="dlg-head"><h2 id="req-h">Request a copy</h2>
+    <button class="icon-btn" type="button" data-close aria-label="Close"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true"><path d="M6 6l12 12M18 6L6 18"/></svg></button></div>
+  <form class="dlg-body" id="request-form" novalidate>
+    <p class="dlg-paper" id="req-paper"></p>
+    <p class="small muted">{{ site.pdf_request_note }}</p>
+    <input type="hidden" name="paper" id="req-paper-field">
+    <input type="hidden" name="doi" id="req-doi-field">
+    <div class="field"><label for="req-name">Your name</label><input id="req-name" name="name" autocomplete="name" required maxlength="120"></div>
+    <div class="field"><label for="req-email">Email</label><input id="req-email" name="email" type="email" autocomplete="email" required maxlength="160"></div>
+    <div class="field"><label for="req-aff">Institution</label><input id="req-aff" name="institution" autocomplete="organization" maxlength="200"></div>
+    <div class="field"><label for="req-msg">Purpose of the request (optional)</label><textarea id="req-msg" name="message" rows="3" maxlength="1500"></textarea></div>
+    <div class="hp" aria-hidden="true"><label for="req-web">Leave this empty</label><input id="req-web" name="_gotcha" tabindex="-1" autocomplete="off"></div>
+    <div class="btn-row"><button class="btn" type="submit" id="req-submit">Send request</button></div>
+    <p class="form-status" id="req-status" role="status"></p>
+  </form>
+</dialog>

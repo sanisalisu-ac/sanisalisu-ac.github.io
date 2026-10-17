@@ -1,0 +1,34 @@
+{
+  "news": [
+    {
+      "date": "2026-10",
+      "text": "New paper with J.-W. Peng, P. Kumam and J.-C. Yao on adaptive inertial-relaxed Tseng extragradient algorithms, with applications to Nash equilibrium in oligopolistic markets, published in Mathematics and Computers in Simulation.",
+      "link": "https://doi.org/10.1016/j.matcom.2026.10.006"
+    },
+    {
+      "date": "2025-11",
+      "text": "Started a postdoctoral position at the School of Mathematical Sciences, Chongqing Normal University, China.",
+      "link": null
+    },
+    {
+      "date": "2025",
+      "text": "Co-investigator on two funded projects: a TETFund IBR grant on extreme learning machines for tomato leaf disease classification, and a Jouf University grant on blood supply chain networks.",
+      "link": "research.html#grants"
+    },
+    {
+      "date": "2024-10",
+      "text": "Joined Iconic Open University, Sokoto, as Lecturer I in the Department of IT & Software Engineering.",
+      "link": null
+    },
+    {
+      "date": "2024-07",
+      "text": "Began a postdoctoral fellowship with the Fixed Point Theory and Applications Research Group at KMUTT, Bangkok.",
+      "link": null
+    },
+    {
+      "date": "2023-11",
+      "text": "Defended the doctoral thesis Approximation Methods for Fixed Point and Convex Optimization Problems at KMUTT.",
+      "link": "gallery.html#phd-defense-2023"
+    }
+  ]
+}

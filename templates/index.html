@@ -1,0 +1,79 @@
+{% extends "base.html" %}
+{% from "_pub.html" import pub %}
+{% block title %}Sani Salisu, numerical optimization and fixed point theory{% endblock %}
+{% block head %}
+<link rel="stylesheet" href="assets/vendor/katex/katex.min.css">
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"Person","name":"Sani Salisu","jobTitle":"Postdoctoral Researcher",
+ "affiliation":[{"@type":"Organization","name":"School of Mathematical Sciences, Chongqing Normal University"},{"@type":"Organization","name":"Iconic Open University, Sokoto"}],
+ "alumniOf":[{"@type":"CollegeOrUniversity","name":"King Mongkut's University of Technology Thonburi"},{"@type":"CollegeOrUniversity","name":"African University of Science and Technology"},{"@type":"CollegeOrUniversity","name":"Sokoto State University"}],
+ "knowsAbout":["Numerical optimization","Fixed point theory","Variational inequalities","Monotone inclusions","CAT(0) spaces","Riemannian optimization"],
+ "url":"{{ site_url }}/","image":"{{ site.photo }}",
+ "sameAs":["https://orcid.org/{{ site.orcid }}","https://scholar.google.com/citations?user={{ site.scholar_id }}","https://mathscinet.ams.org/mathscinet/MRAuthorID/1494599","https://www.scopus.com/authid/detail.uri?authorId=57204799122","https://www.webofscience.com/wos/author/record/LKJ-6393-2024","https://www.researchgate.net/profile/Sani-Salisu-4","https://www.mathgenealogy.org/id.php?id=306906"]}
+</script>
+{% endblock %}
+{% block main %}
+<section class="hero" aria-labelledby="hero-name">
+  <canvas id="hero-canvas" aria-hidden="true"></canvas>
+  <div class="wrap">
+    <div class="hero-text">
+      <h1 id="hero-name">Sani Salisu</h1>
+      <p class="lede">I study fixed points and the iterative methods that reach them: when a solution exists, what the operator around it looks like, and how to design algorithms that converge to it, in Hilbert spaces and well beyond them.</p>
+      <ul class="roles">
+        <li>Postdoctoral Researcher, School of Mathematical Sciences, Chongqing Normal University, China</li>
+        <li>Lecturer I, Department of IT &amp; Software Engineering, Iconic Open University, Sokoto, Nigeria</li>
+      </ul>
+      {% include "_profiles.html" %}
+    </div>
+    <img class="portrait" src="{{ site.photo }}" alt="Portrait of Sani Salisu" width="220" height="275" fetchpriority="high">
+  </div>
+  <p class="hero-hint">Each trail is an averaged iteration converging to a fixed point. Click to start another.</p>
+</section>
+
+<section class="section">
+  <div class="wrap split">
+    <h2>At a glance</h2>
+    <div>
+      <dl class="facts">
+        <div><dt>Peer-reviewed papers</dt><dd>{{ stats.total }}</dd></div>
+        <div><dt>In JCR Q1 journals</dt><dd>{{ stats.q1 }}</dd></div>
+        <div><dt>Citations</dt><dd>{{ metrics.citations }}</dd></div>
+        <div><dt><i>h</i>-index</dt><dd>{{ metrics.h_index }}</dd></div>
+      </dl>
+      <p class="facts-note">Papers from {{ stats.first_year }} to {{ stats.last_year }}; first or corresponding author on {{ stats.lead }}. Citations and <i>h</i>-index from Google Scholar as of {{ metrics.updated }}, refreshed automatically.</p>
+      <p>My work moves between theory and computation. On the theoretical side I prove existence and uniqueness results and study the operators involved, with particular attention to enriched and multivalued mappings in geodesic spaces. On the algorithmic side I design proximal, splitting, projection, inertial and conjugate-gradient methods, and test them on problems from supply-chain logistics, machine learning, image restoration, robotics and finance.</p>
+      <div class="btn-row"><a class="btn" href="research.html">Research themes</a><a class="btn ghost" href="cv.html">Curriculum vitae</a></div>
+    </div>
+  </div>
+</section>
+
+<section class="section">
+  <div class="wrap split">
+    <h2>Recent papers</h2>
+    <div>
+      <ol class="pubs">
+        {% for p in recent %}{{ pub(p, show_num=False) }}{% endfor %}
+      </ol>
+      <a class="btn ghost" href="publications.html">All {{ stats.total }} publications</a>
+    </div>
+  </div>
+</section>
+
+<section class="section">
+  <div class="wrap split">
+    <h2>News</h2>
+    <ul class="glist">
+      {% for n in news %}
+      <li><span class="when">{{ n.date }}</span><div><p>{{ n.text }}{% if n.link %} <a href="{{ n.link }}">Read more</a>{% endif %}</p></div></li>
+      {% endfor %}
+    </ul>
+  </div>
+</section>
+{% include "_dialogs.html" %}
+{% endblock %}
+{% block scripts %}
+<script src="assets/js/hero.js" defer></script>
+<script src="assets/vendor/katex/katex.min.js" defer></script>
+<script src="assets/vendor/katex/auto-render.min.js" defer></script>
+<script src="assets/js/pubs.js" defer></script>
+{% endblock %}
