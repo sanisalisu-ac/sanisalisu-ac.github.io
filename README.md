@@ -18,13 +18,13 @@ A fast, secure, self-updating academic site, hosted free on GitHub Pages.
 
 1. Create a free account at <https://github.com> (turn on two-factor authentication under
    *Settings → Password and authentication*).
-2. Create a **new public repository** named exactly **`sanisalisu.github.io`**
-   (replace with your GitHub username). This gives the address `https://sanisalisu.github.io`.
+2. Create a **new public repository** named exactly **`sanisalisu-ac.github.io`**
+   (replace with your GitHub username). This gives the address `https://sanisalisu-ac.github.io`.
 3. Upload the contents of this folder: on the new repository page choose **uploading an existing file**,
    drag in *everything inside this folder* (including the hidden `.github` folder; on macOS press
    Cmd+Shift+. in Finder to show it), and click **Commit changes**.
    If you use Git: `git init && git add . && git commit -m "Site" && git branch -M main &&
-   git remote add origin https://github.com/sanisalisu/sanisalisu.github.io.git && git push -u origin main`.
+   git remote add origin https://github.com/sanisalisu-ac/sanisalisu-ac.github.io.git && git push -u origin main`.
 4. In the repository go to **Settings → Pages → Build and deployment → Source** and choose **GitHub Actions**.
 5. Go to **Settings → Actions → General → Workflow permissions** and choose **Read and write permissions**
    (lets the weekly update save new papers).
