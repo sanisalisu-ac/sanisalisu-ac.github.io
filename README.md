@@ -28,8 +28,7 @@ A fast, secure, self-updating academic site, hosted free on GitHub Pages.
 4. In the repository go to **Settings → Pages → Build and deployment → Source** and choose **GitHub Actions**.
 5. Go to **Settings → Actions → General → Workflow permissions** and choose **Read and write permissions**
    (lets the weekly update save new papers).
-6. Open the **Actions** tab, select **Build and deploy site**, click **Run workflow**, tick
-   **Copy gallery images…** and run it. After 3–4 minutes your site is live. This first run also copies all
+6. Open the **Actions** tab, select **Build and deploy site**, click **Run workflow** and run it. After 3–4 minutes your site is live. This first run also copies all
    gallery photos and your portrait off WordPress, so the old site can be retired.
 7. Edit `data/site.json`: set `"url"` to your address and `"github_user"` to your username.
 

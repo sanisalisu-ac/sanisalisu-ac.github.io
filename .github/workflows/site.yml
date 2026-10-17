@@ -57,11 +57,14 @@ jobs:
         continue-on-error: true
 
       - name: Copy gallery images into the repository
-        if: github.event_name == 'workflow_dispatch' && inputs.localize_images
-        run: python tools/localize_images.py
+        # runs automatically while any image is still hosted on WordPress, or on request
+        run: |
+          if grep -q 'wordpress.com' data/gallery.json data/site.json || [ "${{ inputs.localize_images }}" = "true" ]; then
+            python tools/localize_images.py
+          else echo "All images already local."; fi
+        continue-on-error: true
 
       - name: Commit refreshed data
-        if: github.event_name != 'push'
         run: |
           git config user.name "site-bot"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
