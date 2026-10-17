@@ -1,15 +1,19 @@
 {% extends "base.html" %}
 {% from "_pub.html" import pub %}
-{% block title %}Sani Salisu, numerical optimization and fixed point theory{% endblock %}
+{% block title %}Sani Salisu | Numerical optimization and fixed point theory{% endblock %}
+{% block description %}Sani Salisu (Sani Salisu Taura) is a mathematician at Chongqing Normal University, China, and Iconic Open University, Nigeria, working on numerical optimization, fixed point theory and variational inequalities.{% endblock %}
 {% block head %}
 <link rel="stylesheet" href="assets/vendor/katex/katex.min.css">
 <script type="application/ld+json">
-{"@context":"https://schema.org","@type":"Person","name":"Sani Salisu","jobTitle":"Postdoctoral Researcher",
+{"@context":"https://schema.org","@type":"Person","@id":"{{ site_url }}/#person","name":"Sani Salisu","alternateName":["Sani Salisu Taura","S. Salisu"],"givenName":"Sani","familyName":"Salisu","jobTitle":"Postdoctoral Researcher","nationality":"Nigerian",
  "affiliation":[{"@type":"Organization","name":"School of Mathematical Sciences, Chongqing Normal University"},{"@type":"Organization","name":"Iconic Open University, Sokoto"}],
  "alumniOf":[{"@type":"CollegeOrUniversity","name":"King Mongkut's University of Technology Thonburi"},{"@type":"CollegeOrUniversity","name":"African University of Science and Technology"},{"@type":"CollegeOrUniversity","name":"Sokoto State University"}],
  "knowsAbout":["Numerical optimization","Fixed point theory","Variational inequalities","Monotone inclusions","CAT(0) spaces","Riemannian optimization"],
- "url":"{{ site_url }}/","image":"{{ site.photo }}",
- "sameAs":["https://orcid.org/{{ site.orcid }}","https://scholar.google.com/citations?user={{ site.scholar_id }}","https://mathscinet.ams.org/mathscinet/MRAuthorID/1494599","https://www.scopus.com/authid/detail.uri?authorId=57204799122","https://www.webofscience.com/wos/author/record/LKJ-6393-2024","https://www.researchgate.net/profile/Sani-Salisu-4","https://www.mathgenealogy.org/id.php?id=306906"]}
+ "url":"{{ site_url }}/","image":"{{ site_url }}/{{ site.photo }}","identifier":{"@type":"PropertyValue","propertyID":"ORCID","value":"{{ site.orcid }}"},
+ "sameAs":["https://orcid.org/{{ site.orcid }}","https://scholar.google.com/citations?user={{ site.scholar_id }}","https://mathscinet.ams.org/mathscinet/MRAuthorID/1494599","https://www.scopus.com/authid/detail.uri?authorId=57204799122","https://www.webofscience.com/wos/author/record/LKJ-6393-2024","https://www.researchgate.net/profile/Sani-Salisu-4","https://www.mathgenealogy.org/id.php?id=306906","https://github.com/{{ site.github_user }}","https://sanisalisutaura.wordpress.com/"]}
+</script>
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"WebSite","name":"Sani Salisu","alternateName":"Sani Salisu academic website","url":"{{ site_url }}/","author":{"@id":"{{ site_url }}/#person"}}
 </script>
 {% endblock %}
 {% block main %}

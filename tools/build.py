@@ -198,6 +198,8 @@ def main():
     urls = "".join(f"<url><loc>{SITE_URL}/{'' if n == 'index' else n + '.html'}</loc><lastmod>{now.date()}</lastmod></url>"
                    for n in pages if n != "404")
     (OUT / "sitemap.xml").write_text(f"<?xml version=\"1.0\" encoding=\"UTF-8\"?>\n<urlset xmlns=\"http://www.sitemaps.org/schemas/sitemap/0.9\">{urls}</urlset>\n")
+    if SITE.get("indexnow_key"):
+        (OUT / f"{SITE['indexnow_key']}.txt").write_text(SITE["indexnow_key"])
     (OUT / "robots.txt").write_text(f"User-agent: *\nAllow: /\nSitemap: {SITE_URL}/sitemap.xml\n")
     print(f"built {len(pages)} pages, {len(pubs)} publications -> {OUT}")
 

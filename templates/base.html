@@ -8,6 +8,9 @@
 <title>{% block title %}Sani Salisu{% endblock %}</title>
 <meta name="description" content="{% block description %}Sani Salisu works on numerical optimization and fixed point theory: existence and structure of solutions, and the iterative methods that compute them.{% endblock %}">
 <meta name="author" content="Sani Salisu">
+{% if site.google_site_verification %}<meta name="google-site-verification" content="{{ site.google_site_verification }}">{% endif %}
+{% if site.bing_site_verification %}<meta name="msvalidate.01" content="{{ site.bing_site_verification }}">{% endif %}
+<meta property="og:site_name" content="Sani Salisu">
 <link rel="canonical" href="{{ site_url }}/{% if page != 'index' %}{{ page }}.html{% endif %}">
 <meta property="og:type" content="profile">
 <meta property="og:title" content="{{ self.title() }}">
