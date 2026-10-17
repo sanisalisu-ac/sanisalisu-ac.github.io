@@ -85,7 +85,7 @@ jobs:
       - name: Use the compiled CV
         run: if [ -f cv/Salisu_CV.pdf ]; then mkdir -p assets/cv && cp cv/Salisu_CV.pdf assets/cv/Salisu_CV.pdf; fi
 
-      - uses: actions/setup-node@v4
+      - uses: actions/setup-node@v7
         with:
           node-version: "20"
 
