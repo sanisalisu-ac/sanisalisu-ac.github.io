@@ -1,6 +1,37 @@
 {
-  "updated": null,
+  "updated": "2026-10-19",
   "publications": [
+    {
+      "title": "A Viscosity-type Scheme for Optimization Problems in Hadamard Spaces",
+      "authors": [
+        "Salisu, S.",
+        "Kumam, P.",
+        "Sriwongsa, S."
+      ],
+      "venue": "",
+      "volume": null,
+      "issue": null,
+      "pages": null,
+      "year": 2022,
+      "type": "article",
+      "status": "in press",
+      "doi": "10.22541/au.164277068.85937462/v1",
+      "url": "https://doi.org/10.22541/au.164277068.85937462/v1",
+      "index": null,
+      "quartile": null,
+      "impact_factor": null,
+      "first_author": true,
+      "corresponding": false,
+      "topics": [
+        "optimization",
+        "geometry"
+      ],
+      "series": null,
+      "source": "orcid",
+      "added": "2026-10-19",
+      "id": "salisu2022aviscositytypeschemeforo",
+      "openalex_citations": 0
+    },
     {
       "title": "On the convergence of modified Tseng extragradient methods with double inertial technique for nonmonotone variational inequalities",
       "authors": [
@@ -29,7 +60,8 @@
       ],
       "series": null,
       "source": "cv",
-      "id": "peng2026ontheconvergenceofmodifi"
+      "id": "peng2026ontheconvergenceofmodifi",
+      "openalex_citations": 0
     },
     {
       "title": "Adaptive inertial-relaxed Tseng extragradient algorithms for non-monotone variational inequalities with applications to Nash equilibrium in oligopolistic market competition",
@@ -59,7 +91,8 @@
       ],
       "series": null,
       "source": "cv",
-      "id": "peng2027adaptiveinertialrelaxedt"
+      "id": "peng2027adaptiveinertialrelaxedt",
+      "openalex_citations": 0
     },
     {
       "title": "Fixed point properties of strongly quasi-nonexpansive mappings and cutters",
@@ -88,7 +121,8 @@
       ],
       "series": null,
       "source": "cv",
-      "id": "salisu2026fixedpointpropertiesofst"
+      "id": "salisu2026fixedpointpropertiesofst",
+      "openalex_citations": 0
     },
     {
       "title": "Extrapolated adaptive proximal method with a single dynamic parameter for variational inequalities and optimization applications",
@@ -117,7 +151,8 @@
       ],
       "series": null,
       "source": "cv",
-      "id": "peng2026extrapolatedadaptiveprox"
+      "id": "peng2026extrapolatedadaptiveprox",
+      "openalex_citations": 0
     },
     {
       "title": "A perturbed single-operator method for nonlinear equations with application to classification via extreme learning machines",
@@ -146,7 +181,8 @@
       ],
       "series": null,
       "source": "cv",
-      "id": "salisu2026aperturbedsingleoperator"
+      "id": "salisu2026aperturbedsingleoperator",
+      "openalex_citations": 2
     },
     {
       "title": "Block proximal point method for mixed variational inequality problem",
@@ -174,7 +210,8 @@
       ],
       "series": null,
       "source": "cv",
-      "id": "abubakar2026blockproximalpointmethod"
+      "id": "abubakar2026blockproximalpointmethod",
+      "openalex_citations": 0
     },
     {
       "title": "A perturbed convex combination method for pseudo-monotone variational inequalities with applications to blood supply chain networks",
@@ -203,7 +240,8 @@
       ],
       "series": null,
       "source": "cv",
-      "id": "alsahli2026aperturbedconvexcombinat"
+      "id": "alsahli2026aperturbedconvexcombinat",
+      "openalex_citations": 0
     },
     {
       "title": "Fixed point theorems for nonlinear contractive mappings in cone-valued $\\theta$-type multiplicative metric spaces",
@@ -233,7 +271,8 @@
       ],
       "series": null,
       "source": "cv",
-      "id": "singh2026fixedpointtheoremsfornon"
+      "id": "singh2026fixedpointtheoremsfornon",
+      "openalex_citations": 0
     },
     {
       "title": "Inertial Krasnoselskii–Mann algorithm for approximating fixed points of enriched nonexpansive mappings",
@@ -292,7 +331,8 @@
       ],
       "series": null,
       "source": "cv",
-      "id": "jia2026atwoterminertialmethodfo"
+      "id": "jia2026atwoterminertialmethodfo",
+      "openalex_citations": 0
     },
     {
       "title": "Perturbed gradient methods for data classification via regularized extreme learning machine",
@@ -321,7 +361,8 @@
       ],
       "series": null,
       "source": "cv",
-      "id": "abubakar2026perturbedgradientmethods"
+      "id": "abubakar2026perturbedgradientmethods",
+      "openalex_citations": 0
     },
     {
       "title": "Convergence theorems for fixed points and equilibrium problems in hyperbolic spaces",
@@ -409,7 +450,8 @@
       ],
       "series": null,
       "source": "cv",
-      "id": "khammahawong2026fixedpointsofenrichedmap"
+      "id": "khammahawong2026fixedpointsofenrichedmap",
+      "openalex_citations": 0
     },
     {
       "title": "On new spectral conjugate gradient methods for Riemannian optimization using retraction and scaled vector transport",
@@ -439,7 +481,8 @@
       ],
       "series": null,
       "source": "cv",
-      "id": "salihu2026onnewspectralconjugategr"
+      "id": "salihu2026onnewspectralconjugategr",
+      "openalex_citations": 2
     },
     {
       "title": "Solving variational inequalities using an algorithm with extrapolations from the past and relaxation",
@@ -467,7 +510,8 @@
       ],
       "series": null,
       "source": "cv",
-      "id": "yao2026solvingvariationalinequa"
+      "id": "yao2026solvingvariationalinequa",
+      "openalex_citations": 2
     },
     {
       "title": "A modified contraction-type method for solving monotone inclusion problem in Hilbert spaces",
@@ -497,7 +541,8 @@
       ],
       "series": null,
       "source": "cv",
-      "id": "wang2026amodifiedcontractiontype"
+      "id": "wang2026amodifiedcontractiontype",
+      "openalex_citations": 0
     },
     {
       "title": "Convergence results of proximal-type algorithms with reflections for variational inequalities",
@@ -526,7 +571,8 @@
       "series": null,
       "source": "cv",
       "id": "yao2026convergenceresultsofprox",
-      "code": "https://github.com/sanisalisu-ac/MATLAB-CODE-Proximal-Type-Algorithm-With-Reflection"
+      "code": "https://github.com/sanisalisu-ac/MATLAB-CODE-Proximal-Type-Algorithm-With-Reflection",
+      "openalex_citations": 2
     },
     {
       "title": "Proximal methods for equilibrium problems over the set of fixed points of enriched nonexpansive mappings",
@@ -556,7 +602,8 @@
       ],
       "series": null,
       "source": "cv",
-      "id": "boonyam2026proximalmethodsforequili"
+      "id": "boonyam2026proximalmethodsforequili",
+      "openalex_citations": 0
     },
     {
       "title": "Approximating fixed points of enriched nonexpansive mappings via a geodesic implicit midpoint scheme",
@@ -585,7 +632,8 @@
       ],
       "series": null,
       "source": "cv",
-      "id": "salisu2025approximatingfixedpoints"
+      "id": "salisu2025approximatingfixedpoints",
+      "openalex_citations": 1
     },
     {
       "title": "Optimization of blood supply network through a perturbed forward–backward method",
@@ -613,7 +661,8 @@
       ],
       "series": null,
       "source": "cv",
-      "id": "salisu2025optimizationofbloodsuppl"
+      "id": "salisu2025optimizationofbloodsuppl",
+      "openalex_citations": 3
     },
     {
       "title": "Viscosity scheme with enriched mappings for hierarchical variational inequalities in certain geodesic spaces",
@@ -674,7 +723,8 @@
       ],
       "series": null,
       "source": "cv",
-      "id": "salisu2025fixedpointpropertiesofsa"
+      "id": "salisu2025fixedpointpropertiesofsa",
+      "openalex_citations": 3
     },
     {
       "title": "Extragradient method for monotone variational inequality in CAT(0) spaces",
@@ -704,7 +754,8 @@
       ],
       "series": "Numerical Computations: Theory and Algorithms (NUMTA 2023)",
       "source": "cv",
-      "id": "salisu2025extragradientmethodformo"
+      "id": "salisu2025extragradientmethodformo",
+      "openalex_citations": 2
     },
     {
       "title": "New modification of projected reflected gradient algorithm",
@@ -715,10 +766,10 @@
         "Shehu, Y."
       ],
       "venue": "Optimization",
-      "volume": null,
-      "issue": null,
-      "pages": "1–40",
-      "year": 2025,
+      "volume": "75",
+      "issue": "12",
+      "pages": "3233–3272",
+      "year": 2026,
       "type": "article",
       "status": "published",
       "doi": "10.1080/02331934.2025.2589368",
@@ -733,7 +784,8 @@
       ],
       "series": null,
       "source": "cv",
-      "id": "yao2025newmodificationofproject"
+      "id": "yao2025newmodificationofproject",
+      "openalex_citations": 0
     },
     {
       "title": "Iterative algorithm for a common solution of equilibrium and fixed point problems for a finite family of multivalued enriched nonexpansive mappings in Hadamard spaces",
@@ -763,7 +815,8 @@
       ],
       "series": null,
       "source": "cv",
-      "id": "minjibir2025iterativealgorithmforaco"
+      "id": "minjibir2025iterativealgorithmforaco",
+      "openalex_citations": 0
     },
     {
       "title": "Some new three-term conjugate gradient methods for Riemannian optimization with application to the Gough–Stewart platform",
@@ -794,7 +847,8 @@
       ],
       "series": null,
       "source": "cv",
-      "id": "salihu2025somenewthreetermconjugat"
+      "id": "salihu2025somenewthreetermconjugat",
+      "openalex_citations": 1
     },
     {
       "title": "Spectral conjugate gradient for Riemannian optimization: application to the Gough–Stewart platform",
@@ -826,7 +880,8 @@
       ],
       "series": null,
       "source": "cv",
-      "id": "nasiru2025spectralconjugategradien"
+      "id": "nasiru2025spectralconjugategradien",
+      "openalex_citations": 4
     },
     {
       "title": "New splitting algorithm with three inertial steps for three-operator monotone inclusion problems",
@@ -855,7 +910,8 @@
       ],
       "series": null,
       "source": "cv",
-      "id": "yao2025newsplittingalgorithmwit"
+      "id": "yao2025newsplittingalgorithmwit",
+      "openalex_citations": 0
     },
     {
       "title": "Approximating fixed points of nonexpansive-type mappings in Hadamard spaces",
@@ -885,7 +941,8 @@
       ],
       "series": null,
       "source": "cv",
-      "id": "worapitpong2025approximatingfixedpoints"
+      "id": "worapitpong2025approximatingfixedpoints",
+      "openalex_citations": 0
     },
     {
       "title": "Analysis of Tseng algorithm with inertial extrapolation step for stochastic variational inequality problem",
@@ -914,7 +971,8 @@
       ],
       "series": null,
       "source": "cv",
-      "id": "oyewole2025analysisoftsengalgorithm"
+      "id": "oyewole2025analysisoftsengalgorithm",
+      "openalex_citations": 2
     },
     {
       "title": "Some hybrid Riemannian conjugate gradient methods with restart strategy",
@@ -944,7 +1002,8 @@
       ],
       "series": null,
       "source": "cv",
-      "id": "salihu2025somehybridriemannianconj"
+      "id": "salihu2025somehybridriemannianconj",
+      "openalex_citations": 3
     },
     {
       "title": "A revised MRMIL Riemannian conjugate gradient method with simplified global convergence properties",
@@ -975,7 +1034,8 @@
       ],
       "series": null,
       "source": "cv",
-      "id": "salihu2025arevisedmrmilriemannianc"
+      "id": "salihu2025arevisedmrmilriemannianc",
+      "openalex_citations": 7
     },
     {
       "title": "A generalized scheme for split inclusion problem with conjugate-like direction",
@@ -1004,7 +1064,8 @@
       ],
       "series": null,
       "source": "cv",
-      "id": "abubakar2025ageneralizedschemeforspl"
+      "id": "abubakar2025ageneralizedschemeforspl",
+      "openalex_citations": 6
     },
     {
       "title": "Half a century of fixed point theory research in Thailand: a bibliometric analysis",
@@ -1063,7 +1124,8 @@
       ],
       "series": null,
       "source": "cv",
-      "id": "salisu2024goldenratiomethodforsolv"
+      "id": "salisu2024goldenratiomethodforsolv",
+      "openalex_citations": 4
     },
     {
       "title": "Variational inequality and proximal scheme for enriched nonexpansive mappings in CAT(0) spaces",
@@ -1122,7 +1184,8 @@
       ],
       "series": null,
       "source": "cv",
-      "id": "salisu2024iterativealgorithmsforco"
+      "id": "salisu2024iterativealgorithmsforco",
+      "openalex_citations": 0
     },
     {
       "title": "Viscosity implicit midpoint scheme for enriched nonexpansive mappings",
@@ -1151,7 +1214,8 @@
       ],
       "series": null,
       "source": "cv",
-      "id": "salisu2024viscosityimplicitmidpoin"
+      "id": "salisu2024viscosityimplicitmidpoin",
+      "openalex_citations": 3
     },
     {
       "title": "On approximating fixed points of strictly pseudocontractive mappings in metric spaces",
@@ -1181,7 +1245,8 @@
       ],
       "series": null,
       "source": "cv",
-      "id": "salisu2024onapproximatingfixedpoin"
+      "id": "salisu2024onapproximatingfixedpoin",
+      "openalex_citations": 3
     },
     {
       "title": "Enriched multi-valued nonexpansive mappings in geodesic spaces",
@@ -1211,7 +1276,8 @@
       ],
       "series": null,
       "source": "cv",
-      "id": "salisu2024enrichedmultivaluednonex"
+      "id": "salisu2024enrichedmultivaluednonex",
+      "openalex_citations": 4
     },
     {
       "title": "Enriched asymptotically nonexpansive mappings with center zero",
@@ -1240,7 +1306,8 @@
       ],
       "series": null,
       "source": "cv",
-      "id": "salisu2024enrichedasymptoticallyno"
+      "id": "salisu2024enrichedasymptoticallyno",
+      "openalex_citations": 6
     },
     {
       "title": "A viscosity-type scheme for optimization problems in Hadamard spaces with applications",
@@ -1269,7 +1336,8 @@
       ],
       "series": null,
       "source": "cv",
-      "id": "salisu2024aviscositytypeschemeforo"
+      "id": "salisu2024aviscositytypeschemeforo",
+      "openalex_citations": 3
     },
     {
       "title": "Spectral-like conjugate gradient methods with sufficient descent property for vector optimization",
@@ -1298,7 +1366,8 @@
       ],
       "series": null,
       "source": "cv",
-      "id": "yahaya2024spectrallikeconjugategra"
+      "id": "yahaya2024spectrallikeconjugategra",
+      "openalex_citations": 10
     },
     {
       "title": "Two efficient nonlinear conjugate gradient methods for Riemannian manifolds",
@@ -1327,7 +1396,8 @@
       ],
       "series": null,
       "source": "cv",
-      "id": "salihu2024twoefficientnonlinearcon"
+      "id": "salihu2024twoefficientnonlinearcon",
+      "openalex_citations": 16
     },
     {
       "title": "Modified Halpern and viscosity methods for hierarchical variational inequalities on Hadamard manifolds",
@@ -1355,7 +1425,8 @@
       ],
       "series": null,
       "source": "cv",
-      "id": "khammahawong2024modifiedhalpernandviscos"
+      "id": "khammahawong2024modifiedhalpernandviscos",
+      "openalex_citations": 6
     },
     {
       "title": "On the class of Wei–Yao–Liu conjugate gradient methods for vector optimization",
@@ -1384,7 +1455,8 @@
       ],
       "series": null,
       "source": "cv",
-      "id": "yahaya2024ontheclassofweiyaoliucon"
+      "id": "yahaya2024ontheclassofweiyaoliucon",
+      "openalex_citations": 4
     },
     {
       "title": "Equilibrium problems and proximal algorithm using tangent space products",
@@ -1413,7 +1485,8 @@
       ],
       "series": null,
       "source": "cv",
-      "id": "inuwa2024equilibriumproblemsandpr"
+      "id": "inuwa2024equilibriumproblemsandpr",
+      "openalex_citations": 1
     },
     {
       "title": "Coupled best proximity points for cyclic Kannan and Chatterjea contractions in CAT$_p$(0) spaces",
@@ -1443,7 +1516,8 @@
       ],
       "series": null,
       "source": "cv",
-      "id": "mongkolkeha2024coupledbestproximitypoin"
+      "id": "mongkolkeha2024coupledbestproximitypoin",
+      "openalex_citations": 4
     },
     {
       "title": "On fixed points of enriched contractions and enriched nonexpansive mappings",
@@ -1471,7 +1545,8 @@
       ],
       "series": null,
       "source": "cv",
-      "id": "salisu2023onfixedpointsofenrichedc"
+      "id": "salisu2023onfixedpointsofenrichedc",
+      "openalex_citations": 11
     },
     {
       "title": "Convergence theorems for fixed points in CAT$_p$(0) spaces",
@@ -1501,7 +1576,8 @@
       ],
       "series": null,
       "source": "cv",
-      "id": "salisu2023convergencetheoremsforfi"
+      "id": "salisu2023convergencetheoremsforfi",
+      "openalex_citations": 13
     },
     {
       "title": "Approximating fixed points of demicontractive mappings in metric spaces by geodesic averaged perturbation techniques",
@@ -1531,7 +1607,8 @@
       ],
       "series": null,
       "source": "cv",
-      "id": "salisu2023approximatingfixedpoints"
+      "id": "salisu2023approximatingfixedpoints",
+      "openalex_citations": 5
     },
     {
       "title": "Convergence theorems for monotone vector field inclusions and minimization problems in Hadamard spaces",
@@ -1561,7 +1638,8 @@
       ],
       "series": null,
       "source": "cv",
-      "id": "salisu2023convergencetheoremsformo"
+      "id": "salisu2023convergencetheoremsformo",
+      "openalex_citations": 7
     },
     {
       "title": "Generalized RMIL conjugate gradient method under the strong Wolfe line search with application in image processing",
@@ -1594,7 +1672,8 @@
       ],
       "series": null,
       "source": "cv",
-      "id": "awwal2023generalizedrmilconjugate"
+      "id": "awwal2023generalizedrmilconjugate",
+      "openalex_citations": 16
     },
     {
       "title": "A unified scheme for solving split inclusions with applications",
@@ -1623,7 +1702,8 @@
       ],
       "series": null,
       "source": "cv",
-      "id": "sumalai2023aunifiedschemeforsolving"
+      "id": "sumalai2023aunifiedschemeforsolving",
+      "openalex_citations": 8
     },
     {
       "title": "Fixed point theorems for enriched Kannan mappings in CAT(0) spaces",
@@ -1653,7 +1733,8 @@
       ],
       "series": null,
       "source": "cv",
-      "id": "inuwa2023fixedpointtheoremsforenr"
+      "id": "inuwa2023fixedpointtheoremsforenr",
+      "openalex_citations": 7
     },
     {
       "title": "Iterative approximation of common fixed points of two nonself asymptotically nonexpansive mappings in CAT(0) spaces with numerical examples",
@@ -1684,7 +1765,8 @@
       ],
       "series": null,
       "source": "cv",
-      "id": "kratuloek2023iterativeapproximationof"
+      "id": "kratuloek2023iterativeapproximationof",
+      "openalex_citations": 5
     },
     {
       "title": "Strong convergence theorems for fixed point of multi-valued mappings in Hadamard spaces",
@@ -1713,7 +1795,8 @@
       ],
       "series": null,
       "source": "cv",
-      "id": "salisu2022strongconvergencetheorem"
+      "id": "salisu2022strongconvergencetheorem",
+      "openalex_citations": 11
     },
     {
       "title": "One step proximal point schemes for monotone vector field inclusion problems",
@@ -1741,7 +1824,8 @@
       ],
       "series": null,
       "source": "cv",
-      "id": "salisu2022onestepproximalpointsche"
+      "id": "salisu2022onestepproximalpointsche",
+      "openalex_citations": 8
     },
     {
       "title": "On minimization and fixed point problems in Hadamard spaces",
@@ -1772,7 +1856,8 @@
       ],
       "series": null,
       "source": "cv",
-      "id": "salisu2022onminimizationandfixedpo"
+      "id": "salisu2022onminimizationandfixedpo",
+      "openalex_citations": 10
     },
     {
       "title": "Implicit midpoint scheme for enriched nonexpansive mappings",
@@ -1861,7 +1946,8 @@
       ],
       "series": null,
       "source": "cv",
-      "id": "yahaya2022anewgeneralizedquasinewt"
+      "id": "yahaya2022anewgeneralizedquasinewt",
+      "openalex_citations": 21
     },
     {
       "title": "Pursuit differential game problems of $l$-catch in a Hilbert space",
@@ -1890,7 +1976,8 @@
       ],
       "series": null,
       "source": "cv",
-      "id": "hadejia2022pursuitdifferentialgamep"
+      "id": "hadejia2022pursuitdifferentialgamep",
+      "openalex_citations": 1
     }
   ]
 }

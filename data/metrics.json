@@ -5,9 +5,10 @@
   "h_index": 10,
   "i10_index": 12,
   "openalex": {
-    "citations": null,
-    "h_index": null,
-    "updated": null
+    "citations": 313,
+    "h_index": 10,
+    "i10_index": 12,
+    "updated": "2026-10-19"
   },
   "note": "Scholar figures are refreshed weekly by the update workflow when Google Scholar allows it; OpenAlex figures are always refreshed."
 }
