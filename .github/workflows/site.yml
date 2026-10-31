@@ -123,7 +123,7 @@ jobs:
         uses: actions/configure-pages@v5
 
       - name: Compile the CV
-        uses: xu-cheng/latex-action@v3
+        uses: xu-cheng/latex-action@v4
         with:
           root_file: Salisu_CV.tex
           working_directory: cv
