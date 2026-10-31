@@ -1,6 +1,67 @@
 {
-  "updated": "2026-10-26",
+  "updated": "2026-10-31",
   "publications": [
+    {
+      "title": "Fixed point iterative techniques for solving nonlinear convex optimization problems",
+      "authors": [
+        "Kumam, P.",
+        "Salisu, S."
+      ],
+      "venue": "Mathematics and Information Technologies: Research and Education",
+      "volume": null,
+      "issue": null,
+      "pages": null,
+      "year": 2025,
+      "type": "article",
+      "status": "published",
+      "doi": null,
+      "url": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=stLnqjwAAAAJ&pagesize=100&sortby=pubdate&citation_for_view=stLnqjwAAAAJ:hMod-77fHWUC",
+      "index": null,
+      "quartile": null,
+      "impact_factor": null,
+      "first_author": false,
+      "corresponding": false,
+      "topics": [
+        "fixed-point",
+        "optimization"
+      ],
+      "series": null,
+      "citations": 0,
+      "source": "scholar",
+      "added": "2026-10-31",
+      "id": "kumam2025fixedpointiterativetechn"
+    },
+    {
+      "title": "Adaptive Inertial Subgradient Extragradient Method with Extrapolation from the Past: Weak and Linear Convergence for Variational Inequalities",
+      "authors": [
+        "Salisu, S.",
+        "Shehu, Y.",
+        "Yao, Y."
+      ],
+      "venue": "",
+      "volume": null,
+      "issue": null,
+      "pages": null,
+      "year": 2026,
+      "type": "article",
+      "status": "published",
+      "doi": null,
+      "url": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=stLnqjwAAAAJ&pagesize=100&sortby=pubdate&citation_for_view=stLnqjwAAAAJ:GnPB-g6toBAC",
+      "index": null,
+      "quartile": null,
+      "impact_factor": null,
+      "first_author": true,
+      "corresponding": false,
+      "topics": [
+        "variational",
+        "optimization"
+      ],
+      "series": null,
+      "citations": 0,
+      "source": "scholar",
+      "added": "2026-10-31",
+      "id": "salisu2026adaptiveinertialsubgradi"
+    },
     {
       "title": "A Viscosity-type Scheme for Optimization Problems in Hadamard Spaces",
       "authors": [
@@ -30,7 +91,9 @@
       "source": "orcid",
       "added": "2026-10-19",
       "id": "salisu2022aviscositytypeschemeforo",
-      "openalex_citations": 0
+      "openalex_citations": 0,
+      "citations": 0,
+      "scholar_url": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=stLnqjwAAAAJ&pagesize=100&sortby=pubdate&citation_for_view=stLnqjwAAAAJ:UeHWp8X0CEIC"
     },
     {
       "title": "On the convergence of modified Tseng extragradient methods with double inertial technique for nonmonotone variational inequalities",
@@ -61,7 +124,9 @@
       "series": null,
       "source": "cv",
       "id": "peng2026ontheconvergenceofmodifi",
-      "openalex_citations": 0
+      "openalex_citations": 0,
+      "citations": 0,
+      "scholar_url": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=stLnqjwAAAAJ&pagesize=100&sortby=pubdate&citation_for_view=stLnqjwAAAAJ:ldfaerwXgEUC"
     },
     {
       "title": "Adaptive inertial-relaxed Tseng extragradient algorithms for non-monotone variational inequalities with applications to Nash equilibrium in oligopolistic market competition",
@@ -92,7 +157,9 @@
       "series": null,
       "source": "cv",
       "id": "peng2027adaptiveinertialrelaxedt",
-      "openalex_citations": 0
+      "openalex_citations": 0,
+      "citations": 0,
+      "scholar_url": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=stLnqjwAAAAJ&pagesize=100&sortby=pubdate&citation_for_view=stLnqjwAAAAJ:2P1L_qKh6hAC"
     },
     {
       "title": "Fixed point properties of strongly quasi-nonexpansive mappings and cutters",
@@ -122,7 +189,9 @@
       "series": null,
       "source": "cv",
       "id": "salisu2026fixedpointpropertiesofst",
-      "openalex_citations": 0
+      "openalex_citations": 0,
+      "citations": 0,
+      "scholar_url": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=stLnqjwAAAAJ&pagesize=100&sortby=pubdate&citation_for_view=stLnqjwAAAAJ:70eg2SAEIzsC"
     },
     {
       "title": "Extrapolated adaptive proximal method with a single dynamic parameter for variational inequalities and optimization applications",
@@ -152,7 +221,9 @@
       "series": null,
       "source": "cv",
       "id": "peng2026extrapolatedadaptiveprox",
-      "openalex_citations": 0
+      "openalex_citations": 0,
+      "citations": 0,
+      "scholar_url": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=stLnqjwAAAAJ&pagesize=100&sortby=pubdate&citation_for_view=stLnqjwAAAAJ:RYcK_YlVTxYC"
     },
     {
       "title": "A perturbed single-operator method for nonlinear equations with application to classification via extreme learning machines",
@@ -182,7 +253,9 @@
       "series": null,
       "source": "cv",
       "id": "salisu2026aperturbedsingleoperator",
-      "openalex_citations": 2
+      "openalex_citations": 2,
+      "citations": 3,
+      "scholar_url": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=stLnqjwAAAAJ&pagesize=100&sortby=pubdate&citation_for_view=stLnqjwAAAAJ:k_IJM867U9cC"
     },
     {
       "title": "Block proximal point method for mixed variational inequality problem",
@@ -211,7 +284,9 @@
       "series": null,
       "source": "cv",
       "id": "abubakar2026blockproximalpointmethod",
-      "openalex_citations": 0
+      "openalex_citations": 0,
+      "citations": 0,
+      "scholar_url": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=stLnqjwAAAAJ&pagesize=100&sortby=pubdate&citation_for_view=stLnqjwAAAAJ:35N4QoGY0k4C"
     },
     {
       "title": "A perturbed convex combination method for pseudo-monotone variational inequalities with applications to blood supply chain networks",
@@ -241,7 +316,9 @@
       "series": null,
       "source": "cv",
       "id": "alsahli2026aperturbedconvexcombinat",
-      "openalex_citations": 0
+      "openalex_citations": 0,
+      "citations": 0,
+      "scholar_url": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=stLnqjwAAAAJ&pagesize=100&sortby=pubdate&citation_for_view=stLnqjwAAAAJ:vV6vV6tmYwMC"
     },
     {
       "title": "Fixed point theorems for nonlinear contractive mappings in cone-valued $\\theta$-type multiplicative metric spaces",
@@ -272,7 +349,9 @@
       "series": null,
       "source": "cv",
       "id": "singh2026fixedpointtheoremsfornon",
-      "openalex_citations": 0
+      "openalex_citations": 0,
+      "citations": 0,
+      "scholar_url": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=stLnqjwAAAAJ&pagesize=100&sortby=pubdate&citation_for_view=stLnqjwAAAAJ:J_g5lzvAfSwC"
     },
     {
       "title": "Inertial Krasnoselskii–Mann algorithm for approximating fixed points of enriched nonexpansive mappings",
@@ -300,7 +379,9 @@
       ],
       "series": null,
       "source": "cv",
-      "id": "sarkinbai2026inertialkrasnoselskiiman"
+      "id": "sarkinbai2026inertialkrasnoselskiiman",
+      "citations": 0,
+      "scholar_url": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=stLnqjwAAAAJ&pagesize=100&sortby=pubdate&citation_for_view=stLnqjwAAAAJ:O3NaXMp0MMsC"
     },
     {
       "title": "A two-term inertial method for monotone VIPs: implementation in multiclass classification and portfolio optimization",
@@ -332,7 +413,9 @@
       "series": null,
       "source": "cv",
       "id": "jia2026atwoterminertialmethodfo",
-      "openalex_citations": 0
+      "openalex_citations": 0,
+      "citations": 0,
+      "scholar_url": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=stLnqjwAAAAJ&pagesize=100&sortby=pubdate&citation_for_view=stLnqjwAAAAJ:ns9cj8rnVeAC"
     },
     {
       "title": "Perturbed gradient methods for data classification via regularized extreme learning machine",
@@ -362,7 +445,9 @@
       "series": null,
       "source": "cv",
       "id": "abubakar2026perturbedgradientmethods",
-      "openalex_citations": 0
+      "openalex_citations": 0,
+      "citations": 0,
+      "scholar_url": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=stLnqjwAAAAJ&pagesize=100&sortby=pubdate&citation_for_view=stLnqjwAAAAJ:YFjsv_pBGBYC"
     },
     {
       "title": "Convergence theorems for fixed points and equilibrium problems in hyperbolic spaces",
@@ -392,7 +477,9 @@
       ],
       "series": null,
       "source": "cv",
-      "id": "harbau2026convergencetheoremsforfi"
+      "id": "harbau2026convergencetheoremsforfi",
+      "citations": 0,
+      "scholar_url": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=stLnqjwAAAAJ&pagesize=100&sortby=pubdate&citation_for_view=stLnqjwAAAAJ:NaGl4SEjCO4C"
     },
     {
       "title": "Approximation of solutions of Hammerstein integral inclusions in $L^p$ spaces",
@@ -421,7 +508,9 @@
       ],
       "series": null,
       "source": "cv",
-      "id": "maaruf2026approximationofsolutions"
+      "id": "maaruf2026approximationofsolutions",
+      "citations": 0,
+      "scholar_url": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=stLnqjwAAAAJ&pagesize=100&sortby=pubdate&citation_for_view=stLnqjwAAAAJ:RGFaLdJalmkC"
     },
     {
       "title": "Fixed points of enriched mappings with general real constants",
@@ -451,7 +540,9 @@
       "series": null,
       "source": "cv",
       "id": "khammahawong2026fixedpointsofenrichedmap",
-      "openalex_citations": 0
+      "openalex_citations": 0,
+      "citations": 0,
+      "scholar_url": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=stLnqjwAAAAJ&pagesize=100&sortby=pubdate&citation_for_view=stLnqjwAAAAJ:BqipwSGYUEgC"
     },
     {
       "title": "On new spectral conjugate gradient methods for Riemannian optimization using retraction and scaled vector transport",
@@ -482,7 +573,9 @@
       "series": null,
       "source": "cv",
       "id": "salihu2026onnewspectralconjugategr",
-      "openalex_citations": 2
+      "openalex_citations": 2,
+      "citations": 2,
+      "scholar_url": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=stLnqjwAAAAJ&pagesize=100&sortby=pubdate&citation_for_view=stLnqjwAAAAJ:maZDTaKrznsC"
     },
     {
       "title": "Solving variational inequalities using an algorithm with extrapolations from the past and relaxation",
@@ -511,7 +604,9 @@
       "series": null,
       "source": "cv",
       "id": "yao2026solvingvariationalinequa",
-      "openalex_citations": 2
+      "openalex_citations": 2,
+      "citations": 2,
+      "scholar_url": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=stLnqjwAAAAJ&pagesize=100&sortby=pubdate&citation_for_view=stLnqjwAAAAJ:blknAaTinKkC"
     },
     {
       "title": "A modified contraction-type method for solving monotone inclusion problem in Hilbert spaces",
@@ -542,7 +637,9 @@
       "series": null,
       "source": "cv",
       "id": "wang2026amodifiedcontractiontype",
-      "openalex_citations": 0
+      "openalex_citations": 0,
+      "citations": 0,
+      "scholar_url": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=stLnqjwAAAAJ&pagesize=100&sortby=pubdate&citation_for_view=stLnqjwAAAAJ:j3f4tGmQtD8C"
     },
     {
       "title": "Convergence results of proximal-type algorithms with reflections for variational inequalities",
@@ -572,7 +669,9 @@
       "source": "cv",
       "id": "yao2026convergenceresultsofprox",
       "code": "https://github.com/sanisalisu-ac/MATLAB-CODE-Proximal-Type-Algorithm-With-Reflection",
-      "openalex_citations": 2
+      "openalex_citations": 2,
+      "citations": 2,
+      "scholar_url": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=stLnqjwAAAAJ&pagesize=100&sortby=pubdate&citation_for_view=stLnqjwAAAAJ:iH-uZ7U-co4C"
     },
     {
       "title": "Proximal methods for equilibrium problems over the set of fixed points of enriched nonexpansive mappings",
@@ -603,7 +702,9 @@
       "series": null,
       "source": "cv",
       "id": "boonyam2026proximalmethodsforequili",
-      "openalex_citations": 0
+      "openalex_citations": 0,
+      "citations": 1,
+      "scholar_url": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=stLnqjwAAAAJ&pagesize=100&sortby=pubdate&citation_for_view=stLnqjwAAAAJ:bEWYMUwI8FkC"
     },
     {
       "title": "Approximating fixed points of enriched nonexpansive mappings via a geodesic implicit midpoint scheme",
@@ -633,7 +734,9 @@
       "series": null,
       "source": "cv",
       "id": "salisu2025approximatingfixedpoints",
-      "openalex_citations": 1
+      "openalex_citations": 1,
+      "citations": 1,
+      "scholar_url": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=stLnqjwAAAAJ&pagesize=100&sortby=pubdate&citation_for_view=stLnqjwAAAAJ:4JMBOYKVnBMC"
     },
     {
       "title": "Optimization of blood supply network through a perturbed forward–backward method",
@@ -662,7 +765,9 @@
       "series": null,
       "source": "cv",
       "id": "salisu2025optimizationofbloodsuppl",
-      "openalex_citations": 3
+      "openalex_citations": 3,
+      "citations": 4,
+      "scholar_url": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=stLnqjwAAAAJ&pagesize=100&sortby=pubdate&citation_for_view=stLnqjwAAAAJ:hFOr9nPyWt4C"
     },
     {
       "title": "Viscosity scheme with enriched mappings for hierarchical variational inequalities in certain geodesic spaces",
@@ -693,7 +798,9 @@
       ],
       "series": null,
       "source": "cv",
-      "id": "salisu2025viscosityschemewithenric"
+      "id": "salisu2025viscosityschemewithenric",
+      "citations": 2,
+      "scholar_url": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=stLnqjwAAAAJ&pagesize=100&sortby=pubdate&citation_for_view=stLnqjwAAAAJ:mB3voiENLucC"
     },
     {
       "title": "Fixed point properties of saturated and unsaturated contractive mappings in CAT(0) spaces",
@@ -724,7 +831,9 @@
       "series": null,
       "source": "cv",
       "id": "salisu2025fixedpointpropertiesofsa",
-      "openalex_citations": 3
+      "openalex_citations": 3,
+      "citations": 4,
+      "scholar_url": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=stLnqjwAAAAJ&pagesize=100&sortby=pubdate&citation_for_view=stLnqjwAAAAJ:hC7cP41nSMkC"
     },
     {
       "title": "Extragradient method for monotone variational inequality in CAT(0) spaces",
@@ -758,7 +867,9 @@
       "openalex_citations": 2,
       "series_volume": "14477",
       "publisher": "Springer, Cham",
-      "series_year": 2025
+      "series_year": 2025,
+      "citations": 2,
+      "scholar_url": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=stLnqjwAAAAJ&pagesize=100&sortby=pubdate&citation_for_view=stLnqjwAAAAJ:-f6ydRqryjwC"
     },
     {
       "title": "New modification of projected reflected gradient algorithm",
@@ -788,7 +899,9 @@
       "series": null,
       "source": "cv",
       "id": "yao2025newmodificationofproject",
-      "openalex_citations": 0
+      "openalex_citations": 0,
+      "citations": 0,
+      "scholar_url": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=stLnqjwAAAAJ&pagesize=100&sortby=pubdate&citation_for_view=stLnqjwAAAAJ:isC4tDSrTZIC"
     },
     {
       "title": "Iterative algorithm for a common solution of equilibrium and fixed point problems for a finite family of multivalued enriched nonexpansive mappings in Hadamard spaces",
@@ -819,7 +932,9 @@
       "series": null,
       "source": "cv",
       "id": "minjibir2025iterativealgorithmforaco",
-      "openalex_citations": 0
+      "openalex_citations": 0,
+      "citations": 0,
+      "scholar_url": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=stLnqjwAAAAJ&pagesize=100&sortby=pubdate&citation_for_view=stLnqjwAAAAJ:NMxIlDl6LWMC"
     },
     {
       "title": "Some new three-term conjugate gradient methods for Riemannian optimization with application to the Gough–Stewart platform",
@@ -851,7 +966,9 @@
       "series": null,
       "source": "cv",
       "id": "salihu2025somenewthreetermconjugat",
-      "openalex_citations": 1
+      "openalex_citations": 1,
+      "citations": 1,
+      "scholar_url": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=stLnqjwAAAAJ&pagesize=100&sortby=pubdate&citation_for_view=stLnqjwAAAAJ:TFP_iSt0sucC"
     },
     {
       "title": "Spectral conjugate gradient for Riemannian optimization: application to the Gough–Stewart platform",
@@ -884,7 +1001,9 @@
       "series": null,
       "source": "cv",
       "id": "nasiru2025spectralconjugategradien",
-      "openalex_citations": 4
+      "openalex_citations": 4,
+      "citations": 6,
+      "scholar_url": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=stLnqjwAAAAJ&pagesize=100&sortby=pubdate&citation_for_view=stLnqjwAAAAJ:r0BpntZqJG4C"
     },
     {
       "title": "New splitting algorithm with three inertial steps for three-operator monotone inclusion problems",
@@ -914,7 +1033,9 @@
       "series": null,
       "source": "cv",
       "id": "yao2025newsplittingalgorithmwit",
-      "openalex_citations": 0
+      "openalex_citations": 0,
+      "citations": 1,
+      "scholar_url": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=stLnqjwAAAAJ&pagesize=100&sortby=pubdate&citation_for_view=stLnqjwAAAAJ:e5wmG9Sq2KIC"
     },
     {
       "title": "Approximating fixed points of nonexpansive-type mappings in Hadamard spaces",
@@ -945,7 +1066,9 @@
       "series": null,
       "source": "cv",
       "id": "worapitpong2025approximatingfixedpoints",
-      "openalex_citations": 0
+      "openalex_citations": 0,
+      "citations": 1,
+      "scholar_url": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=stLnqjwAAAAJ&pagesize=100&sortby=pubdate&citation_for_view=stLnqjwAAAAJ:RHpTSmoSYBkC"
     },
     {
       "title": "Analysis of Tseng algorithm with inertial extrapolation step for stochastic variational inequality problem",
@@ -975,7 +1098,9 @@
       "series": null,
       "source": "cv",
       "id": "oyewole2025analysisoftsengalgorithm",
-      "openalex_citations": 2
+      "openalex_citations": 2,
+      "citations": 2,
+      "scholar_url": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=stLnqjwAAAAJ&pagesize=100&sortby=pubdate&citation_for_view=stLnqjwAAAAJ:_Qo2XoVZTnwC"
     },
     {
       "title": "Some hybrid Riemannian conjugate gradient methods with restart strategy",
@@ -1006,7 +1131,9 @@
       "series": null,
       "source": "cv",
       "id": "salihu2025somehybridriemannianconj",
-      "openalex_citations": 3
+      "openalex_citations": 3,
+      "citations": 2,
+      "scholar_url": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=stLnqjwAAAAJ&pagesize=100&sortby=pubdate&citation_for_view=stLnqjwAAAAJ:HDshCWvjkbEC"
     },
     {
       "title": "A revised MRMIL Riemannian conjugate gradient method with simplified global convergence properties",
@@ -1038,7 +1165,9 @@
       "series": null,
       "source": "cv",
       "id": "salihu2025arevisedmrmilriemannianc",
-      "openalex_citations": 7
+      "openalex_citations": 7,
+      "citations": 9,
+      "scholar_url": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=stLnqjwAAAAJ&pagesize=100&sortby=pubdate&citation_for_view=stLnqjwAAAAJ:TQgYirikUcIC"
     },
     {
       "title": "A generalized scheme for split inclusion problem with conjugate-like direction",
@@ -1068,7 +1197,9 @@
       "series": null,
       "source": "cv",
       "id": "abubakar2025ageneralizedschemeforspl",
-      "openalex_citations": 6
+      "openalex_citations": 6,
+      "citations": 6,
+      "scholar_url": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=stLnqjwAAAAJ&pagesize=100&sortby=pubdate&citation_for_view=stLnqjwAAAAJ:ZeXyd9-uunAC"
     },
     {
       "title": "Half a century of fixed point theory research in Thailand: a bibliometric analysis",
@@ -1098,7 +1229,9 @@
       ],
       "series": null,
       "source": "cv",
-      "id": "saqlain2025halfacenturyoffixedpoint"
+      "id": "saqlain2025halfacenturyoffixedpoint",
+      "citations": 0,
+      "scholar_url": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=stLnqjwAAAAJ&pagesize=100&sortby=pubdate&citation_for_view=stLnqjwAAAAJ:M3NEmzRMIkIC"
     },
     {
       "title": "Golden ratio method for solving monotone variational inequality problems in Hadamard spaces",
@@ -1128,7 +1261,9 @@
       "series": null,
       "source": "cv",
       "id": "salisu2024goldenratiomethodforsolv",
-      "openalex_citations": 4
+      "openalex_citations": 4,
+      "citations": 5,
+      "scholar_url": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=stLnqjwAAAAJ&pagesize=100&sortby=pubdate&citation_for_view=stLnqjwAAAAJ:4DMP91E08xMC"
     },
     {
       "title": "Variational inequality and proximal scheme for enriched nonexpansive mappings in CAT(0) spaces",
@@ -1159,7 +1294,9 @@
       ],
       "series": null,
       "source": "cv",
-      "id": "salisu2024variationalinequalityand"
+      "id": "salisu2024variationalinequalityand",
+      "citations": 5,
+      "scholar_url": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=stLnqjwAAAAJ&pagesize=100&sortby=pubdate&citation_for_view=stLnqjwAAAAJ:IWHjjKOFINEC"
     },
     {
       "title": "Iterative algorithms for common fixed points of a countable family of quasi-nonexpansive multivalued mappings in CAT(0) spaces",
@@ -1188,7 +1325,9 @@
       "series": null,
       "source": "cv",
       "id": "salisu2024iterativealgorithmsforco",
-      "openalex_citations": 0
+      "openalex_citations": 0,
+      "citations": 0,
+      "scholar_url": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=stLnqjwAAAAJ&pagesize=100&sortby=pubdate&citation_for_view=stLnqjwAAAAJ:7PzlFSSx8tAC"
     },
     {
       "title": "Viscosity implicit midpoint scheme for enriched nonexpansive mappings",
@@ -1218,7 +1357,9 @@
       "series": null,
       "source": "cv",
       "id": "salisu2024viscosityimplicitmidpoin",
-      "openalex_citations": 3
+      "openalex_citations": 3,
+      "citations": 3,
+      "scholar_url": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=stLnqjwAAAAJ&pagesize=100&sortby=pubdate&citation_for_view=stLnqjwAAAAJ:qUcmZB5y_30C"
     },
     {
       "title": "On approximating fixed points of strictly pseudocontractive mappings in metric spaces",
@@ -1249,7 +1390,9 @@
       "series": null,
       "source": "cv",
       "id": "salisu2024onapproximatingfixedpoin",
-      "openalex_citations": 3
+      "openalex_citations": 3,
+      "citations": 9,
+      "scholar_url": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=stLnqjwAAAAJ&pagesize=100&sortby=pubdate&citation_for_view=stLnqjwAAAAJ:aqlVkmm33-oC"
     },
     {
       "title": "Enriched multi-valued nonexpansive mappings in geodesic spaces",
@@ -1280,7 +1423,9 @@
       "series": null,
       "source": "cv",
       "id": "salisu2024enrichedmultivaluednonex",
-      "openalex_citations": 4
+      "openalex_citations": 4,
+      "citations": 7,
+      "scholar_url": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=stLnqjwAAAAJ&pagesize=100&sortby=pubdate&citation_for_view=stLnqjwAAAAJ:4TOpqqG69KYC"
     },
     {
       "title": "Enriched asymptotically nonexpansive mappings with center zero",
@@ -1310,7 +1455,9 @@
       "series": null,
       "source": "cv",
       "id": "salisu2024enrichedasymptoticallyno",
-      "openalex_citations": 6
+      "openalex_citations": 6,
+      "citations": 7,
+      "scholar_url": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=stLnqjwAAAAJ&pagesize=100&sortby=pubdate&citation_for_view=stLnqjwAAAAJ:M3ejUd6NZC8C"
     },
     {
       "title": "A viscosity-type scheme for optimization problems in Hadamard spaces with applications",
@@ -1340,7 +1487,9 @@
       "series": null,
       "source": "cv",
       "id": "salisu2024aviscositytypeschemeforo",
-      "openalex_citations": 3
+      "openalex_citations": 3,
+      "citations": 2,
+      "scholar_url": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=stLnqjwAAAAJ&pagesize=100&sortby=pubdate&citation_for_view=stLnqjwAAAAJ:MXK_kJrjxJIC"
     },
     {
       "title": "Spectral-like conjugate gradient methods with sufficient descent property for vector optimization",
@@ -1370,7 +1519,9 @@
       "series": null,
       "source": "cv",
       "id": "yahaya2024spectrallikeconjugategra",
-      "openalex_citations": 10
+      "openalex_citations": 10,
+      "citations": 12,
+      "scholar_url": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=stLnqjwAAAAJ&pagesize=100&sortby=pubdate&citation_for_view=stLnqjwAAAAJ:mVmsd5A6BfQC"
     },
     {
       "title": "Two efficient nonlinear conjugate gradient methods for Riemannian manifolds",
@@ -1400,7 +1551,9 @@
       "series": null,
       "source": "cv",
       "id": "salihu2024twoefficientnonlinearcon",
-      "openalex_citations": 16
+      "openalex_citations": 16,
+      "citations": 18,
+      "scholar_url": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=stLnqjwAAAAJ&pagesize=100&sortby=pubdate&citation_for_view=stLnqjwAAAAJ:L8Ckcad2t8MC"
     },
     {
       "title": "Modified Halpern and viscosity methods for hierarchical variational inequalities on Hadamard manifolds",
@@ -1429,7 +1582,9 @@
       "series": null,
       "source": "cv",
       "id": "khammahawong2024modifiedhalpernandviscos",
-      "openalex_citations": 6
+      "openalex_citations": 6,
+      "citations": 6,
+      "scholar_url": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=stLnqjwAAAAJ&pagesize=100&sortby=pubdate&citation_for_view=stLnqjwAAAAJ:_kc_bZDykSQC"
     },
     {
       "title": "On the class of Wei–Yao–Liu conjugate gradient methods for vector optimization",
@@ -1459,7 +1614,9 @@
       "series": null,
       "source": "cv",
       "id": "yahaya2024ontheclassofweiyaoliucon",
-      "openalex_citations": 4
+      "openalex_citations": 4,
+      "citations": 10,
+      "scholar_url": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=stLnqjwAAAAJ&pagesize=100&sortby=pubdate&citation_for_view=stLnqjwAAAAJ:QIV2ME_5wuYC"
     },
     {
       "title": "Equilibrium problems and proximal algorithm using tangent space products",
@@ -1489,7 +1646,9 @@
       "series": null,
       "source": "cv",
       "id": "inuwa2024equilibriumproblemsandpr",
-      "openalex_citations": 1
+      "openalex_citations": 1,
+      "citations": 5,
+      "scholar_url": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=stLnqjwAAAAJ&pagesize=100&sortby=pubdate&citation_for_view=stLnqjwAAAAJ:YOwf2qJgpHMC"
     },
     {
       "title": "Coupled best proximity points for cyclic Kannan and Chatterjea contractions in CAT$_p$(0) spaces",
@@ -1520,7 +1679,9 @@
       "series": null,
       "source": "cv",
       "id": "mongkolkeha2024coupledbestproximitypoin",
-      "openalex_citations": 4
+      "openalex_citations": 4,
+      "citations": 7,
+      "scholar_url": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=stLnqjwAAAAJ&pagesize=100&sortby=pubdate&citation_for_view=stLnqjwAAAAJ:9ZlFYXVOiuMC"
     },
     {
       "title": "On fixed points of enriched contractions and enriched nonexpansive mappings",
@@ -1549,7 +1710,9 @@
       "series": null,
       "source": "cv",
       "id": "salisu2023onfixedpointsofenrichedc",
-      "openalex_citations": 11
+      "openalex_citations": 11,
+      "citations": 27,
+      "scholar_url": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=stLnqjwAAAAJ&pagesize=100&sortby=pubdate&citation_for_view=stLnqjwAAAAJ:ufrVoPGSRksC"
     },
     {
       "title": "Convergence theorems for fixed points in CAT$_p$(0) spaces",
@@ -1611,7 +1774,9 @@
       "series": null,
       "source": "cv",
       "id": "salisu2023approximatingfixedpoints",
-      "openalex_citations": 5
+      "openalex_citations": 5,
+      "citations": 11,
+      "scholar_url": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=stLnqjwAAAAJ&pagesize=100&sortby=pubdate&citation_for_view=stLnqjwAAAAJ:Zph67rFs4hoC"
     },
     {
       "title": "Convergence theorems for monotone vector field inclusions and minimization problems in Hadamard spaces",
@@ -1642,7 +1807,9 @@
       "series": null,
       "source": "cv",
       "id": "salisu2023convergencetheoremsformo",
-      "openalex_citations": 7
+      "openalex_citations": 7,
+      "citations": 7,
+      "scholar_url": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=stLnqjwAAAAJ&pagesize=100&sortby=pubdate&citation_for_view=stLnqjwAAAAJ:5nxA0vEk-isC"
     },
     {
       "title": "Generalized RMIL conjugate gradient method under the strong Wolfe line search with application in image processing",
@@ -1676,7 +1843,9 @@
       "series": null,
       "source": "cv",
       "id": "awwal2023generalizedrmilconjugate",
-      "openalex_citations": 16
+      "openalex_citations": 16,
+      "citations": 26,
+      "scholar_url": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=stLnqjwAAAAJ&pagesize=100&sortby=pubdate&citation_for_view=stLnqjwAAAAJ:3fE2CSJIrl8C"
     },
     {
       "title": "A unified scheme for solving split inclusions with applications",
@@ -1706,7 +1875,9 @@
       "series": null,
       "source": "cv",
       "id": "sumalai2023aunifiedschemeforsolving",
-      "openalex_citations": 8
+      "openalex_citations": 8,
+      "citations": 9,
+      "scholar_url": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=stLnqjwAAAAJ&pagesize=100&sortby=pubdate&citation_for_view=stLnqjwAAAAJ:8k81kl-MbHgC"
     },
     {
       "title": "Fixed point theorems for enriched Kannan mappings in CAT(0) spaces",
@@ -1737,7 +1908,9 @@
       "series": null,
       "source": "cv",
       "id": "inuwa2023fixedpointtheoremsforenr",
-      "openalex_citations": 7
+      "openalex_citations": 7,
+      "citations": 11,
+      "scholar_url": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=stLnqjwAAAAJ&pagesize=100&sortby=pubdate&citation_for_view=stLnqjwAAAAJ:kNdYIx-mwKoC"
     },
     {
       "title": "Iterative approximation of common fixed points of two nonself asymptotically nonexpansive mappings in CAT(0) spaces with numerical examples",
@@ -1769,7 +1942,9 @@
       "series": null,
       "source": "cv",
       "id": "kratuloek2023iterativeapproximationof",
-      "openalex_citations": 5
+      "openalex_citations": 5,
+      "citations": 5,
+      "scholar_url": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=stLnqjwAAAAJ&pagesize=100&sortby=pubdate&citation_for_view=stLnqjwAAAAJ:hqOjcs7Dif8C"
     },
     {
       "title": "Strong convergence theorems for fixed point of multi-valued mappings in Hadamard spaces",
@@ -1799,7 +1974,9 @@
       "series": null,
       "source": "cv",
       "id": "salisu2022strongconvergencetheorem",
-      "openalex_citations": 11
+      "openalex_citations": 11,
+      "citations": 12,
+      "scholar_url": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=stLnqjwAAAAJ&pagesize=100&sortby=pubdate&citation_for_view=stLnqjwAAAAJ:eQOLeE2rZwMC"
     },
     {
       "title": "One step proximal point schemes for monotone vector field inclusion problems",
@@ -1828,7 +2005,9 @@
       "series": null,
       "source": "cv",
       "id": "salisu2022onestepproximalpointsche",
-      "openalex_citations": 8
+      "openalex_citations": 8,
+      "citations": 9,
+      "scholar_url": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=stLnqjwAAAAJ&pagesize=100&sortby=pubdate&citation_for_view=stLnqjwAAAAJ:LkGwnXOMwfcC"
     },
     {
       "title": "On minimization and fixed point problems in Hadamard spaces",
@@ -1860,7 +2039,9 @@
       "series": null,
       "source": "cv",
       "id": "salisu2022onminimizationandfixedpo",
-      "openalex_citations": 10
+      "openalex_citations": 10,
+      "citations": 15,
+      "scholar_url": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=stLnqjwAAAAJ&pagesize=100&sortby=pubdate&citation_for_view=stLnqjwAAAAJ:qjMakFHDy7sC"
     },
     {
       "title": "Implicit midpoint scheme for enriched nonexpansive mappings",
@@ -1889,7 +2070,9 @@
       ],
       "series": null,
       "source": "cv",
-      "id": "salisu2022implicitmidpointschemefo"
+      "id": "salisu2022implicitmidpointschemefo",
+      "citations": 9,
+      "scholar_url": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=stLnqjwAAAAJ&pagesize=100&sortby=pubdate&citation_for_view=stLnqjwAAAAJ:Se3iqnhoufwC"
     },
     {
       "title": "Strong and $\\Delta$-convergence theorems for a countable family of multi-valued demicontractive maps in Hadamard spaces",
@@ -1917,7 +2100,9 @@
       ],
       "series": null,
       "source": "cv",
-      "id": "minjibir2022stronganddeltaconvergenc"
+      "id": "minjibir2022stronganddeltaconvergenc",
+      "citations": 10,
+      "scholar_url": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=stLnqjwAAAAJ&pagesize=100&sortby=pubdate&citation_for_view=stLnqjwAAAAJ:WF5omc3nYNoC"
     },
     {
       "title": "A new generalized quasi-Newton algorithm based on structured diagonal Hessian approximation for solving nonlinear least-squares problems with application to 3DOF planar robot arm manipulator",
@@ -1950,7 +2135,9 @@
       "series": null,
       "source": "cv",
       "id": "yahaya2022anewgeneralizedquasinewt",
-      "openalex_citations": 21
+      "openalex_citations": 21,
+      "citations": 24,
+      "scholar_url": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=stLnqjwAAAAJ&pagesize=100&sortby=pubdate&citation_for_view=stLnqjwAAAAJ:_FxGoFyzp5QC"
     },
     {
       "title": "Pursuit differential game problems of $l$-catch in a Hilbert space",
@@ -1980,7 +2167,9 @@
       "series": null,
       "source": "cv",
       "id": "hadejia2022pursuitdifferentialgamep",
-      "openalex_citations": 1
+      "openalex_citations": 1,
+      "citations": 0,
+      "scholar_url": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=stLnqjwAAAAJ&pagesize=100&sortby=pubdate&citation_for_view=stLnqjwAAAAJ:roLk4NBRz8UC"
     }
   ]
 }
