@@ -1,0 +1,17 @@
+name: tmp fetch sveltia
+on:
+  push:
+    branches: [tmp-sveltia]
+permissions:
+  contents: write
+jobs:
+  fetch:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - run: |
+          mkdir -p /tmp/s && cd /tmp/s && npm pack @sveltia/cms && tar -xzf sveltia-cms-*.tgz
+          ls package package/dist > /tmp/listing.txt; cat package/package.json | head -60 >> /tmp/listing.txt
+          cd "$GITHUB_WORKSPACE" && mkdir -p tmp-sveltia && cp -r /tmp/s/package/dist tmp-sveltia/ && cp /tmp/listing.txt tmp-sveltia/
+          git config user.name bot && git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add tmp-sveltia && git commit -m "tmp: sveltia dist" && git push
