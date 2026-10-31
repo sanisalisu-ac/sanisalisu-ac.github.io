@@ -8,10 +8,9 @@
 </head>
 <body>
   <!-- Sveltia CMS: edits data/*.json and uploads photos straight into the GitHub repository.
-       Sign in with a GitHub personal access token (see README, "Editing the site from the browser"). -->
-  <script type="module">
-    import("../assets/vendor/sveltia/sveltia-cms.js")
-      .catch(() => import("https://unpkg.com/@sveltia/cms/dist/sveltia-cms.js"));
-  </script>
+       Sign in with a GitHub personal access token (see README, "Editing the site from the browser").
+       Loaded as a classic script so it starts itself; falls back to the public CDN if the local copy is missing. -->
+  <script src="../assets/vendor/sveltia/sveltia-cms.js"
+          onerror="var s=document.createElement('script');s.src='https://unpkg.com/@sveltia/cms/dist/sveltia-cms.js';document.body.appendChild(s)"></script>
 </body>
 </html>

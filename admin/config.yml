@@ -6,6 +6,7 @@ backend:
   name: github
   repo: sanisalisu-ac/sanisalisu-ac.github.io
   branch: main
+  auth_methods: [token]   # sign in with a personal access token (see README)
   commit_messages:
     create: "Add {{collection}} \"{{slug}}\" [editor]"
     update: "Update {{collection}} \"{{slug}}\" [editor]"
@@ -15,7 +16,8 @@ backend:
 
 site_url: https://sanisalisu-ac.github.io
 display_url: https://sanisalisu-ac.github.io
-logo_url: /assets/img/favicon.svg
+logo:
+  src: /assets/img/favicon.svg
 
 # New uploads land here; the workflow moves them into the right album folder and resizes them.
 media_folder: assets/img/uploads
@@ -136,7 +138,7 @@ collections:
               - { name: date_label, label: "Date as shown (optional)", widget: string, required: false, hint: "e.g. 11–14 July 2027" }
               - { name: place, label: "Place", widget: string }
               - { name: caption, label: "Notes / description", widget: text, required: false }
-              - { name: cover, label: "Cover", widget: hidden, required: false }
+              - { name: cover, label: "Cover", widget: hidden }
               - name: images
                 label: Photographs
                 label_singular: photograph
@@ -144,4 +146,4 @@ collections:
                 fields:
                   - { name: src, label: "Photo", widget: image }
                   - { name: alt, label: "Description (for screen readers)", widget: string, required: false }
-                  - { name: thumb, label: "Thumbnail", widget: hidden, required: false }
+                  - { name: thumb, label: "Thumbnail", widget: hidden }
