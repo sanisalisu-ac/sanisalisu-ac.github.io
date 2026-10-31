@@ -1,0 +1,147 @@
+# Sveltia CMS configuration: the browser editor at https://sanisalisu-ac.github.io/admin/
+# Every save is a commit to the repository; the site (and the CV) rebuild themselves within ~4 minutes.
+# Photos you upload are resized and given thumbnails automatically by tools/optimize_images.py.
+
+backend:
+  name: github
+  repo: sanisalisu-ac/sanisalisu-ac.github.io
+  branch: main
+  commit_messages:
+    create: "Add {{collection}} \"{{slug}}\" [editor]"
+    update: "Update {{collection}} \"{{slug}}\" [editor]"
+    delete: "Delete {{collection}} \"{{slug}}\" [editor]"
+    uploadMedia: "Upload \"{{path}}\" [editor]"
+    deleteMedia: "Delete \"{{path}}\" [editor]"
+
+site_url: https://sanisalisu-ac.github.io
+display_url: https://sanisalisu-ac.github.io
+logo_url: /assets/img/favicon.svg
+
+# New uploads land here; the workflow moves them into the right album folder and resizes them.
+media_folder: assets/img/uploads
+public_folder: /assets/img/uploads
+
+collections:
+  # ------------------------------------------------------------------ upcoming events
+  - name: events
+    label: Upcoming conferences and events
+    description: Conferences, workshops, seminars or visits you will attend. They appear under "Upcoming" on the home and Talks pages and disappear automatically once they are over.
+    files:
+      - name: events
+        label: Upcoming events
+        file: data/events.json
+        format: json
+        fields:
+          - name: events
+            label: Events
+            label_singular: event
+            widget: list
+            add_to_top: true
+            required: false
+            summary: "{{fields.start}} · {{fields.title}}"
+            fields:
+              - { name: title, label: "Event name", widget: string, hint: "e.g. 15th International Conference on Fixed Point Theory and its Applications (ICFPTA 2027)" }
+              - { name: start, label: "Start date", widget: datetime, date_format: "YYYY-MM-DD", time_format: false, format: "YYYY-MM-DD" }
+              - { name: end, label: "End date", widget: datetime, date_format: "YYYY-MM-DD", time_format: false, format: "YYYY-MM-DD", required: false, hint: "Leave empty for a one-day event." }
+              - { name: place, label: "Place", widget: string, hint: "City, country (or 'Online')" }
+              - name: role
+                label: "My role"
+                widget: select
+                required: false
+                options: ["Invited speaker", "Plenary speaker", "Speaker", "Poster", "Participant", "Organizer", "Session chair", "Scientific committee", "Visiting researcher"]
+              - { name: talk, label: "Talk title", widget: string, required: false }
+              - { name: url, label: "Event website", widget: string, required: false }
+              - { name: note, label: "Short note", widget: text, required: false, hint: "One or two sentences shown under the event." }
+
+  # ------------------------------------------------------------------ talks and participation
+  - name: talks
+    label: Talks and event participation
+    description: Talks you have given and workshops you attended. These feed the Talks page and the CV. To show photographs, create an album under "Photo albums" and type its album ID here.
+    files:
+      - name: talks
+        label: Talks and workshops
+        file: data/talks.json
+        format: json
+        fields:
+          - name: talks
+            label: Talks given
+            label_singular: talk
+            widget: list
+            add_to_top: true
+            summary: "{{fields.date}} · {{fields.title}}"
+            fields:
+              - { name: date, label: "Month", widget: string, pattern: ['^\d{4}(-\d{2})?$', "Use YYYY-MM, e.g. 2027-07"], hint: "YYYY-MM, used for ordering" }
+              - { name: when, label: "Dates as printed", widget: string, required: false, hint: "e.g. 11–14 Jul. 2027 (used in the CV)" }
+              - { name: title, label: "Talk title", widget: string }
+              - { name: event, label: "Event", widget: string }
+              - { name: place, label: "Place", widget: string, hint: "Institution, city, country" }
+              - { name: url, label: "Event website", widget: string, required: false }
+              - { name: note, label: "Note", widget: string, required: false, hint: "e.g. Invited talk, Joint with P. Kumam, Best Presentation Award" }
+              - { name: slides, label: "Slides (PDF)", widget: file, required: false, media_folder: /assets/slides, public_folder: /assets/slides }
+              - { name: album, label: "Photo album ID", widget: string, required: false, hint: "The ID of an album in 'Photo albums', e.g. icfpta-2027" }
+          - name: workshops
+            label: Workshops and events attended
+            label_singular: workshop
+            widget: list
+            add_to_top: true
+            summary: "{{fields.date}} · {{fields.event}}"
+            fields:
+              - { name: date, label: "Month", widget: string, pattern: ['^\d{4}(-\d{2})?$', "Use YYYY-MM"] }
+              - { name: when, label: "Dates as printed", widget: string, required: false }
+              - { name: event, label: "Event", widget: string }
+              - { name: place, label: "Place", widget: string }
+              - { name: url, label: "Event website", widget: string, required: false }
+
+  # ------------------------------------------------------------------ news
+  - name: news
+    label: News
+    description: Short announcements shown on the home page (newest first).
+    files:
+      - name: news
+        label: News items
+        file: data/news.json
+        format: json
+        fields:
+          - name: news
+            label: News
+            label_singular: news item
+            widget: list
+            add_to_top: true
+            summary: "{{fields.date}} · {{fields.text}}"
+            fields:
+              - { name: date, label: "Date", widget: string, pattern: ['^\d{4}(-\d{2})?$', "Use YYYY or YYYY-MM"], hint: "YYYY-MM" }
+              - { name: text, label: "Text", widget: text }
+              - { name: link, label: "Link (optional)", widget: string, required: false, hint: "A URL, or a page of the site such as talks.html" }
+
+  # ------------------------------------------------------------------ gallery
+  - name: gallery
+    label: Photo albums
+    description: Albums on the Gallery page. Upload photos straight from your phone or computer; they are resized automatically.
+    files:
+      - name: gallery
+        label: Albums
+        file: data/gallery.json
+        format: json
+        fields:
+          - name: albums
+            label: Albums
+            label_singular: album
+            widget: list
+            add_to_top: true
+            summary: "{{fields.date}} · {{fields.title}}"
+            fields:
+              - { name: title, label: "Album title", widget: string }
+              - { name: id, label: "Album ID", widget: string, required: false, pattern: ['^[a-z0-9-]*$', "Lower-case letters, digits and hyphens only"], hint: "Short name used in links, e.g. icfpta-2027. Leave empty to create one from the title." }
+              - { name: date, label: "Date", widget: string, hint: "YYYY-MM-DD for an event, or a span such as 2021-2023" }
+              - { name: date_label, label: "Date as shown (optional)", widget: string, required: false, hint: "e.g. 11–14 July 2027" }
+              - { name: place, label: "Place", widget: string }
+              - { name: caption, label: "Notes / description", widget: text, required: false }
+              - { name: cover, label: "Cover", widget: hidden, required: false }
+              - name: images
+                label: Photographs
+                label_singular: photograph
+                widget: list
+                fields:
+                  - { name: src, label: "Photo", widget: image }
+                  - { name: alt, label: "Description (for screen readers)", widget: string, required: false }
+                  - { name: thumb, label: "Thumbnail", widget: hidden, required: false }

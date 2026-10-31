@@ -9,3 +9,4 @@ cv/*.out
 cv/*.pdf
 .DS_Store
 .scholar-stale
+assets/vendor/sveltia/

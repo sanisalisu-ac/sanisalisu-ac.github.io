@@ -1,0 +1,17 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="robots" content="noindex, nofollow">
+  <title>Site editor | Sani Salisu</title>
+</head>
+<body>
+  <!-- Sveltia CMS: edits data/*.json and uploads photos straight into the GitHub repository.
+       Sign in with a GitHub personal access token (see README, "Editing the site from the browser"). -->
+  <script type="module">
+    import("../assets/vendor/sveltia/sveltia-cms.js")
+      .catch(() => import("https://unpkg.com/@sveltia/cms/dist/sveltia-cms.js"));
+  </script>
+</body>
+</html>

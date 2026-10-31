@@ -116,6 +116,45 @@ def prepare_pubs():
     return data, pubs, groups
 
 
+MONTHS_SHORT = ["Jan", "Feb", "Mar", "Apr", "May", "Jun", "Jul", "Aug", "Sep", "Oct", "Nov", "Dec"]
+
+
+def talk_countries(items):
+    """Countries of the talks, most frequent first (last part of each 'place')."""
+    alias = {"Republic of Moldova": "Moldova"}
+    counts, first = {}, {}
+    for i, t in enumerate(items):
+        c = alias.get(*(((t.get("place") or "").split(",")[-1].strip(),) * 2))
+        if c:
+            counts[c] = counts.get(c, 0) + 1
+            first.setdefault(c, i)
+    names = sorted(counts, key=lambda c: (-counts[c], first[c]))
+    return ", ".join(names[:-1]) + " and " + names[-1] if len(names) > 1 else "".join(names)
+
+
+def upcoming_events(items):
+    """Events that have not ended yet (the site is rebuilt daily, so past ones drop off by themselves)."""
+    today, out = dt.date.today(), []
+    for e in items:
+        try:
+            start = dt.date.fromisoformat(str(e.get("start"))[:10])
+            end = dt.date.fromisoformat(str(e["end"])[:10]) if e.get("end") else start
+        except ValueError:
+            continue
+        if end < today:
+            continue
+        if end == start:
+            label = f"{start.day} {MONTHS_SHORT[start.month - 1]} {start.year}"
+        elif (start.year, start.month) == (end.year, end.month):
+            label = f"{start.day}–{end.day} {MONTHS_SHORT[start.month - 1]} {start.year}"
+        elif start.year == end.year:
+            label = f"{start.day} {MONTHS_SHORT[start.month - 1]} – {end.day} {MONTHS_SHORT[end.month - 1]} {start.year}"
+        else:
+            label = f"{start.day} {MONTHS_SHORT[start.month - 1]} {start.year} – {end.day} {MONTHS_SHORT[end.month - 1]} {end.year}"
+        out.append({**e, "label": label, "start_date": start, "ongoing": start <= today})
+    return sorted(out, key=lambda e: e["start_date"])
+
+
 def main():
     env = Environment(loader=FileSystemLoader(ROOT / "templates"), autoescape=select_autoescape(["html"]),
                       trim_blocks=True, lstrip_blocks=True)
@@ -128,6 +167,7 @@ def main():
     talks = load("talks")
     gallery = load("gallery")
     news = load("news")["news"]
+    events = upcoming_events(load("events")["events"] if (DATA / "events.json").exists() else [])
 
     by_year = {}
     for p in pubs:
@@ -149,14 +189,24 @@ def main():
         "lead": sum(bool(p["role"]) for p in peer),
         "first_year": min(yrs), "last_year": max(yrs),
         "talks": len(talks["talks"]),
+        "talk_countries": talk_countries(talks["talks"]),
         "coauthors": len({a for p in pubs for a in p["authors"] if a != ME}),
     }
     months = ["January", "February", "March", "April", "May", "June", "July", "August", "September", "October",
               "November", "December"]
+    iso = re.compile(r"^\d{4}-\d{2}(-\d{2})?$")
+    dated = sorted((a for a in gallery["albums"] if iso.match(str(a.get("date", "")))), key=lambda a: a["date"], reverse=True)
+    gallery["albums"] = dated + [a for a in gallery["albums"] if not iso.match(str(a.get("date", "")))]
     for a in gallery["albums"]:
-        d = a["date"]
-        a["year_label"] = d[:4] if len(d) == 10 else d.replace("-", "–")
-        a["date_label"] = a.get("date_label") or (f"{int(d[8:])} {months[int(d[5:7]) - 1]} {d[:4]}" if len(d) == 10 else a["year_label"])
+        d = str(a.get("date", ""))
+        a["year_label"] = d[:4] if iso.match(d) else d.replace("-", "–")
+        if len(d) == 10 and iso.match(d):
+            auto = f"{int(d[8:])} {months[int(d[5:7]) - 1]} {d[:4]}"
+        elif len(d) == 7 and iso.match(d):
+            auto = f"{months[int(d[5:7]) - 1]} {d[:4]}"
+        else:
+            auto = a["year_label"]
+        a["date_label"] = a.get("date_label") or auto
         for j, im in enumerate(a["images"]):
             src = im["src"]
             ext = src.startswith("http")
@@ -170,7 +220,7 @@ def main():
     img_src = " ".join(sorted(external))
     now = dt.datetime.now(dt.timezone.utc)
     ctx = dict(img_src=img_src, site=SITE, site_url=SITE_URL, pubs=pubs, groups=groups, stats=stats, metrics=metrics, talks=talks,
-               gallery=gallery, news=news, topics=topics, topic_labels={k: v[0] for k, v in TOPICS.items()},
+               gallery=gallery, news=news, events=events, topics=topics, topic_labels={k: v[0] for k, v in TOPICS.items()},
                yearbars=yearbars, recent=pubs[:6], updated=data.get("updated"), build_date=now.strftime("%d %B %Y"),
                year=now.year)
 
@@ -184,6 +234,8 @@ def main():
 
     shutil.copytree(ROOT / "assets", OUT / "assets")
     shutil.copytree(DATA, OUT / "data")
+    if (ROOT / "admin").exists():  # the browser editor (Sveltia CMS)
+        shutil.copytree(ROOT / "admin", OUT / "admin")
     for extra in ("CNAME",):
         if (ROOT / extra).exists():
             shutil.copy(ROOT / extra, OUT / extra)
@@ -207,7 +259,7 @@ def main():
     (OUT / "sitemap.xml").write_text(f"<?xml version=\"1.0\" encoding=\"UTF-8\"?>\n<urlset xmlns=\"http://www.sitemaps.org/schemas/sitemap/0.9\">{urls}</urlset>\n")
     if SITE.get("indexnow_key"):
         (OUT / f"{SITE['indexnow_key']}.txt").write_text(SITE["indexnow_key"])
-    (OUT / "robots.txt").write_text(f"User-agent: *\nAllow: /\nSitemap: {SITE_URL}/sitemap.xml\n")
+    (OUT / "robots.txt").write_text(f"User-agent: *\nAllow: /\nDisallow: /admin/\nSitemap: {SITE_URL}/sitemap.xml\n")
     print(f"built {len(pages)} pages, {len(pubs)} publications -> {OUT}")
 
 

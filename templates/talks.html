@@ -5,8 +5,26 @@
 <div class="wrap">
   <header class="page-head">
     <h1>Talks</h1>
-    <p class="lede">{{ stats.talks }} conference and seminar talks across Thailand, Romania, France, Spain, Italy, Moldova and Nigeria. Where photographs exist, the talk links to its album in the gallery.</p>
+    <p class="lede">{{ stats.talks }} conference and seminar talks across {{ stats.talk_countries }}. Where photographs exist, the talk links to its album in the gallery.</p>
   </header>
+  {% if events %}
+  <section class="section" id="upcoming">
+    <div class="split">
+      <h2>Upcoming</h2>
+      <ul class="glist">
+      {% for e in events %}
+      <li><span class="when">{{ e.label }}{% if e.ongoing %}<br><em>now</em>{% endif %}</span>
+        <div>
+          <p class="talk-title">{% if e.url %}<a href="{{ e.url }}" rel="noopener">{{ e.title }}</a>{% else %}{{ e.title }}{% endif %}</p>
+          <p>{{ e.place }}{% if e.role %} · {{ e.role }}{% endif %}{% if e.talk %}: <em>{{ e.talk }}</em>{% endif %}</p>
+          {% if e.note %}<p>{{ e.note }}</p>{% endif %}
+        </div>
+      </li>
+      {% endfor %}
+      </ul>
+    </div>
+  </section>
+  {% endif %}
   <section class="section">
     <ul class="glist">
       {% for t in talks.talks %}

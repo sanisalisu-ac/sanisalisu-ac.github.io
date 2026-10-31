@@ -46,9 +46,34 @@ A fast, secure, self-updating academic site, hosted free on GitHub Pages.
 | Google Search indexing | Add the site in Google Search Console and submit `sitemap.xml`. |
 | New papers appear automatically | Keep your **ORCID** record current. Easiest: in ORCID, *Works → Add → Search & link → Crossref Metadata Search* and allow Crossref to auto-update your record. |
 
-## 2. Everyday updates
+## 2. Editing the site from the browser (no code)
 
-All content lives in plain text files in `data/`. Edit them on github.com (click the file, then the pencil),
+Open **<https://sanisalisu-ac.github.io/admin/>** on a computer or phone. It has forms for:
+
+| Section | What it updates |
+|---|---|
+| **Upcoming conferences and events** | "Upcoming" on the home and Talks pages; each event disappears by itself once it is over |
+| **Talks and event participation** | the Talks page *and* the CV (talks, workshops, talk count); attach slides as PDF |
+| **News** | the News list on the home page |
+| **Photo albums** | the Gallery: upload photos straight from your phone, add notes/description; link an album to a talk by typing its *Album ID* in the talk |
+
+Every **Save** is a commit; the site and the CV PDF rebuild themselves within about 4 minutes. Photos are turned
+the right way up, resized and given thumbnails automatically, and lists are kept newest first.
+
+**Signing in (once per device).** The editor signs in to GitHub with a personal access token:
+1. On GitHub: profile picture → **Settings → Developer settings → Personal access tokens → Fine-grained tokens →
+   Generate new token** (direct link: <https://github.com/settings/personal-access-tokens/new>).
+2. Name it e.g. `site editor`; set an expiration (up to a year); **Repository access → Only select repositories →
+   `sanisalisu-ac.github.io`**; **Permissions → Repository permissions → Contents → Read and write**. Generate and copy it.
+3. On the editor page choose **Sign In with Token** and paste it. The browser remembers it; use it only on your own devices,
+   and revoke the token on GitHub if a device is lost.
+
+Publications are still updated automatically (ORCID, Crossref, Scholar); to add PDF or code links to a paper, edit
+`data/publications.json` as below.
+
+## 3. Everyday updates by hand
+
+Everything the editor does can also be done by hand. All content lives in plain text files in `data/`. Edit them on github.com (click the file, then the pencil),
 commit, and the site rebuilds itself within minutes.
 
 | To change… | Edit |
@@ -84,7 +109,7 @@ Put an `"added": "YYYY-MM-DD"` date to show a **New** badge for 90 days.
 To rebuild the whole list from the LaTeX CV: `python tools/cv_to_json.py cv/Salisu_CV.tex`
 (keeps any `pdf`, `code`, `citations` fields already present).
 
-## 3. Preview on your own computer (optional)
+## 4. Preview on your own computer (optional)
 
 ```bash
 pip install -r requirements.txt
@@ -99,7 +124,9 @@ python -m http.server -d _site  # open http://localhost:8000
 data/*.json  ─┐
 templates/   ─┼─ tools/build.py ─► _site/ (plain HTML/CSS/JS) ─► GitHub Pages
 assets/      ─┘
-ORCID / Crossref / OpenAlex / Scholar ─► tools/update_publications.py (weekly) ─► data/
+ORCID / Crossref / OpenAlex / Scholar ─► tools/update_publications.py (daily) ─► data/
+browser editor (admin/, Sveltia CMS) ─► commits to data/ and photos ─► tools/optimize_images.py
+data/*.json ─► tools/make_cv.py ─► cv/generated/*.tex ─► cv/Salisu_CV.pdf
 ```
 
 ## Privacy notes

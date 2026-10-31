@@ -63,6 +63,25 @@
   </div>
 </section>
 
+{% if events %}
+<section class="section">
+  <div class="wrap split">
+    <h2>Upcoming</h2>
+    <ul class="glist">
+      {% for e in events %}
+      <li><span class="when">{{ e.label }}{% if e.ongoing %}<br><em>now</em>{% endif %}</span>
+        <div>
+          <p class="talk-title">{% if e.url %}<a href="{{ e.url }}" rel="noopener">{{ e.title }}</a>{% else %}{{ e.title }}{% endif %}</p>
+          <p>{{ e.place }}{% if e.role %} · {{ e.role }}{% endif %}{% if e.talk %}: <em>{{ e.talk }}</em>{% endif %}</p>
+          {% if e.note %}<p>{{ e.note }}</p>{% endif %}
+        </div>
+      </li>
+      {% endfor %}
+    </ul>
+  </div>
+</section>
+{% endif %}
+
 <section class="section">
   <div class="wrap split">
     <h2>News</h2>

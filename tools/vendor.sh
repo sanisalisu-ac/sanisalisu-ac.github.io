@@ -15,5 +15,10 @@ for pkg in spectral public-sans; do
   P="$(ls -d "$tmp"/fontsource-$pkg-*/package)"
   cp "$P"/files/$pkg-latin-*.woff2 "$P"/files/$pkg-latin-ext-*.woff2 assets/vendor/fonts/ 2>/dev/null || true
 done
+# Sveltia CMS for the browser editor (admin/). Optional: admin/index.html falls back to unpkg if this fails.
+if ( cd "$tmp" && npm pack --silent @sveltia/cms >/dev/null 2>&1 ); then
+  S="$(ls "$tmp"/sveltia-cms-*.tgz | head -1)"; mkdir -p "$tmp/sveltia" && tar -xzf "$S" -C "$tmp/sveltia"
+  mkdir -p assets/vendor/sveltia && cp "$tmp"/sveltia/package/dist/sveltia-cms.js assets/vendor/sveltia/ || true
+fi
 rm -rf "$tmp"
 echo "vendored: $(ls assets/vendor/katex | wc -l) KaTeX files, $(ls assets/vendor/fonts | wc -l) font files"

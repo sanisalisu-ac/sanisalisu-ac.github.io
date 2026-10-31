@@ -4,6 +4,7 @@
 #    then build and deploy
 #  - manually (Actions tab > "Build and deploy site" > Run workflow): the same, with optional boxes to type in
 #    Google Scholar figures by hand and to copy gallery images from the old WordPress site
+#  - edits made in the browser editor (https://sanisalisu-ac.github.io/admin/) are commits, so they trigger this too
 #  - if Google Scholar cannot be read for more than 3 days, a GitHub issue is opened (GitHub e-mails you);
 #    it closes itself once Scholar figures are current again
 name: Build and deploy site
@@ -74,6 +75,10 @@ jobs:
         run: python tools/update_publications.py
         continue-on-error: true
 
+      - name: Tidy edits from the browser editor (resize photos, make thumbnails, order lists)
+        run: python tools/optimize_images.py
+        continue-on-error: true
+
       - name: Generate the CV's publication list, figures and talks from the data
         run: python tools/make_cv.py
 
@@ -113,7 +118,7 @@ jobs:
         run: |
           git config user.name "site-bot"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
-          git add data assets/img cv/generated
+          git add -A data assets/img assets/slides cv/generated 2>/dev/null || git add -A data assets/img cv/generated
           if git diff --cached --quiet; then echo "No data changes."; else
             git commit -m "Refresh publications, metrics and media [automated]"
             git push

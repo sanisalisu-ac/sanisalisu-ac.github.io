@@ -229,6 +229,9 @@ def scholar_scholarly():
 
 def scholar(pubs, metrics, add_new):
     key = os.environ.get("SERPAPI_KEY", "").strip()
+    if os.environ.get("GITHUB_EVENT_NAME") == "push" and metrics.get("updated") == TODAY and not scholar_manual():
+        log("Google Scholar already read today; skipped on this edit to save SerpApi searches")
+        return 0
     methods = ([("SerpApi", lambda: scholar_serpapi(key))] if key else []) + \
               [("profile page", scholar_direct), ("scholarly", scholar_scholarly)]
     totals, arts = None, []
