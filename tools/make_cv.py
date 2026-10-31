@@ -93,8 +93,19 @@ def pub_item(p):
     return f"\\item {authors}, {title}, {src}. {tail}".rstrip()
 
 
+def counts_as_peer_reviewed(p):
+    """Rule shared by the CV and the site's counts. Preprints never count. Items that so far exist only on Google
+    Scholar (no DOI yet, e.g. conference abstracts or submitted work) count once ORCID/Crossref supply a DOI, or
+    when "peer_reviewed": true is set on the entry in data/publications.json."""
+    if p.get("peer_reviewed") is not None:
+        return bool(p["peer_reviewed"])
+    if p.get("status") == "preprint":
+        return False
+    return not (p.get("source") == "scholar" and not p.get("doi"))
+
+
 def peer_reviewed(pubs):
-    pubs = [p for p in pubs if p.get("status") != "preprint"]
+    pubs = [p for p in pubs if counts_as_peer_reviewed(p)]
     # newest first; "in press" papers before published ones of the same year; otherwise keep the file's order
     order = {id(p): i for i, p in enumerate(pubs)}
     return sorted(pubs, key=lambda p: (-(p.get("year") or 0), p.get("status") != "in press", order[id(p)]))

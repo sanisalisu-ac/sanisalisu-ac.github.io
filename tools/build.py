@@ -22,6 +22,8 @@ def load(name):
 
 SITE = load("site")
 SITE_URL = os.environ.get("SITE_URL", SITE.get("url", "")).rstrip("/")
+from make_cv import counts_as_peer_reviewed  # noqa: E402  (tools/ is on sys.path when run as a script)
+
 ME = "Salisu, S."
 
 TOPICS = {
@@ -140,7 +142,7 @@ def main():
         lead = [p for p in members if p["role"]][:3] or members[:3]
         topics.append({"key": key, "label": label, "blurb": blurb, "count": len(members), "examples": lead})
 
-    peer = [p for p in pubs if p.get("status") != "preprint"]  # same counting rule as the CV (tools/make_cv.py)
+    peer = [p for p in pubs if counts_as_peer_reviewed(p)]  # same counting rule as the CV
     stats = {
         "total": len(peer),
         "q1": sum(p["is_q1"] for p in peer),

@@ -267,7 +267,9 @@ def scholar(pubs, metrics, add_new):
                         (x.split()[-1] + ", " + " ".join(w[0] + "." for w in x.split()[:-1])).strip(", ")) for x in authors]
             entry = {"title": a["title"], "authors": authors or ["Salisu, S."], "venue": (a.get("venue") or "").split(",")[0],
                      "volume": None, "issue": None, "pages": None, "year": a["year"], "type": "article",
-                     "status": "preprint" if re.search(r"arxiv|preprint|ssrn|researchsquare", (a.get("venue") or "").lower()) else "published",
+                     "status": "preprint" if not (a.get("venue") or "").strip() or
+                               re.search(r"arxiv|preprint|ssrn|researchsquare|authorea", (a.get("venue") or "").lower())
+                               else "published",
                      "doi": None, "url": a["link"], "index": None, "quartile": None,
                      "impact_factor": None, "first_author": bool(authors) and authors[0] == "Salisu, S.",
                      "corresponding": False, "topics": topics_for(a["title"]), "series": None,
