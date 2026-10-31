@@ -237,6 +237,7 @@ def scholar(pubs, metrics, add_new):
             totals, arts = fn()
             if totals and totals.get("citations") is not None:
                 log(f"Google Scholar read via {name}")
+                metrics["scholar_method"] = name
                 break
             totals = None
         except Exception as e:  # noqa: BLE001
@@ -244,6 +245,7 @@ def scholar(pubs, metrics, add_new):
     manual = scholar_manual()
     if manual:
         log("Google Scholar figures entered by hand:", manual)
+        metrics["scholar_method"] = "entered by hand"
         totals = {**(totals or {}), **manual}
     if not totals:
         log("Google Scholar skipped (kept previous figures)")
