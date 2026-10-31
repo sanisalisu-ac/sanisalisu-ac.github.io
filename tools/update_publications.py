@@ -5,9 +5,14 @@ Sources (each optional; a failing source is skipped and nothing is ever deleted)
   1. ORCID public API        - finds new works (DOIs) on the ORCID record.
   2. Crossref                - full metadata for new DOIs; completes "in press" entries.
   3. OpenAlex                - citation counts per DOI and author-level totals (free, no key).
-  4. Google Scholar          - profile citations, h-index, i10-index and per-paper counts.
-       * with the SERPAPI_KEY secret: SerpApi's Google Scholar Author API (free plan suffices);
-       * otherwise: the `scholarly` package (Scholar often blocks cloud servers, so this is best effort).
+  4. Google Scholar          - profile citations, h-index, i10-index and per-paper counts, tried in this order:
+       * SerpApi's Google Scholar Author API, when the SERPAPI_KEY secret is set (reliable; free plan suffices);
+       * the public profile page read directly (works when Google does not block the server);
+       * the `scholarly` package (last resort).
+     Figures typed into the manual run form (SCHOLAR_CITATIONS / SCHOLAR_H / SCHOLAR_I10) override all of these.
+
+If Google Scholar could not be read for more than STALE_DAYS days, a file .scholar-stale is written so the
+workflow can raise a warning and open a GitHub issue (which e-mails the site owner).
 
 Run locally:  python tools/update_publications.py [--dry-run]
 """
@@ -26,6 +31,10 @@ CONTACT = SITE.get("api_contact_email", "")
 UA = "academic-site-updater/1.0" + (f" (mailto:{CONTACT})" if CONTACT else "")
 ME_SURNAME = "salisu"
 TODAY = dt.date.today().isoformat()
+STALE_DAYS = 3
+BROWSER_UA = ("Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) "
+              "Chrome/130.0 Safari/537.36")
+PREPRINT_DOI = ("10.22541/", "10.21203/", "10.48550/", "10.2139/", "10.20944/", "10.31219/")
 
 
 def log(*a):
@@ -110,10 +119,13 @@ def crossref(doi):
     title = re.sub(r"<[^>]+>", "", (m.get("title") or [""])[0]).strip()
     kind = "chapter" if m.get("type") in ("book-chapter", "proceedings-article") else "article"
     pages = m.get("page") or m.get("article-number")
+    preprint = m.get("type") == "posted-content" or doi.lower().startswith(PREPRINT_DOI)
+    if preprint and not venue:
+        venue = ((m.get("institution") or [{}])[0].get("name") or m.get("publisher") or "Preprint")
     return {
         "title": title, "authors": authors, "venue": venue, "volume": m.get("volume"), "issue": m.get("issue"),
         "pages": pages.replace("-", "–") if pages else None, "year": date[0] if date else None,
-        "type": kind, "status": "published" if m.get("volume") or kind == "chapter" else "in press",
+        "type": kind, "status": "preprint" if preprint else ("published" if m.get("volume") or kind == "chapter" else "in press"),
         "doi": doi.lower(), "url": f"https://doi.org/{doi}", "index": None, "quartile": None, "impact_factor": None,
         "first_author": bool(authors) and authors[0] == "Salisu, S.", "corresponding": False,
         "topics": topics_for(title), "series": venue if kind == "chapter" else None,
@@ -161,6 +173,49 @@ def scholar_serpapi(key):
         start += 100
 
 
+def scholar_direct():
+    """Read the public Scholar profile page (100 papers per page)."""
+    from bs4 import BeautifulSoup  # imported lazily
+    totals, arts, start = None, [], 0
+    while True:
+        url = (f"https://scholar.google.com/citations?user={SCHOLAR_ID}&hl=en&cstart={start}&pagesize=100"
+               "&view_op=list_works&sortby=pubdate")
+        req = urllib.request.Request(url, headers={"User-Agent": BROWSER_UA, "Accept-Language": "en-US,en;q=0.9"})
+        with urllib.request.urlopen(req, timeout=30) as r:
+            page = r.read().decode("utf-8", "replace")
+        soup = BeautifulSoup(page, "html.parser")
+        if totals is None:
+            cells = [c.get_text(strip=True) for c in soup.select("td.gsc_rsb_std")]
+            if len(cells) < 6 or not cells[0].isdigit():
+                raise RuntimeError("Scholar returned no profile (blocked or CAPTCHA)")
+            totals = {"citations": int(cells[0]), "h_index": int(cells[2]), "i10_index": int(cells[4])}
+        rows = soup.select("tr.gsc_a_tr")
+        for tr in rows:
+            a = tr.select_one("a.gsc_a_at")
+            if not a:
+                continue
+            c = tr.select_one("a.gsc_a_ac")
+            y = tr.select_one("span.gsc_a_h")
+            grey = tr.select("div.gs_gray")
+            arts.append({"title": a.get_text(strip=True),
+                         "year": int(y.get_text(strip=True)) if y and y.get_text(strip=True).isdigit() else None,
+                         "venue": grey[1].get_text(strip=True) if len(grey) > 1 else None,
+                         "authors": grey[0].get_text(strip=True) if grey else None,
+                         "link": "https://scholar.google.com" + a.get("href", ""),
+                         "citations": int(c.get_text(strip=True)) if c and c.get_text(strip=True).isdigit() else 0})
+        if len(rows) < 100 or start > 400:
+            return totals, arts
+        start += 100
+        time.sleep(3)
+
+
+def scholar_manual():
+    vals = {k: os.environ.get(e, "").strip() for k, e in
+            (("citations", "SCHOLAR_CITATIONS"), ("h_index", "SCHOLAR_H"), ("i10_index", "SCHOLAR_I10"))}
+    vals = {k: int(v) for k, v in vals.items() if v.isdigit()}
+    return vals if "citations" in vals else None
+
+
 def scholar_scholarly():
     from scholarly import scholarly  # imported lazily: optional dependency
     a = scholarly.fill(scholarly.search_author_id(SCHOLAR_ID), sections=["basics", "indices", "publications"])
@@ -174,10 +229,24 @@ def scholar_scholarly():
 
 def scholar(pubs, metrics, add_new):
     key = os.environ.get("SERPAPI_KEY", "").strip()
-    try:
-        totals, arts = scholar_serpapi(key) if key else scholar_scholarly()
-    except Exception as e:  # noqa: BLE001
-        log("Google Scholar skipped (kept previous figures):", repr(e)[:200])
+    methods = ([("SerpApi", lambda: scholar_serpapi(key))] if key else []) + \
+              [("profile page", scholar_direct), ("scholarly", scholar_scholarly)]
+    totals, arts = None, []
+    for name, fn in methods:
+        try:
+            totals, arts = fn()
+            if totals and totals.get("citations") is not None:
+                log(f"Google Scholar read via {name}")
+                break
+            totals = None
+        except Exception as e:  # noqa: BLE001
+            log(f"Google Scholar via {name} failed:", repr(e)[:200])
+    manual = scholar_manual()
+    if manual:
+        log("Google Scholar figures entered by hand:", manual)
+        totals = {**(totals or {}), **manual}
+    if not totals:
+        log("Google Scholar skipped (kept previous figures)")
         return 0
     if totals.get("citations") is not None:
         metrics.update({k: v for k, v in totals.items() if v is not None})
@@ -260,7 +329,8 @@ def main():
 
     # complete entries that were in press
     for p in pubs:
-        if p.get("doi") and (p.get("status") == "in press" or not p.get("volume")) and p.get("type") != "chapter":
+        if p.get("doi") and p.get("status") != "preprint" and (p.get("status") == "in press" or not p.get("volume")) \
+                and p.get("type") != "chapter":
             try:
                 c = crossref(p["doi"])
                 if c.get("volume"):
@@ -285,6 +355,16 @@ def main():
     changed = (json.dumps(pdata, sort_keys=True), json.dumps(metrics, sort_keys=True)) != before
     if changed:
         pdata["updated"] = TODAY
+    try:
+        age = (dt.date.today() - dt.date.fromisoformat(metrics.get("updated", "2000-01-01"))).days
+    except ValueError:
+        age = 999
+    stale = ROOT / ".scholar-stale"
+    if age > STALE_DAYS:
+        stale.write_text(f"{age}\n")
+        log(f"WARNING: Google Scholar figures are {age} days old")
+    elif stale.exists():
+        stale.unlink()
     if args.dry_run:
         log("dry run: changes", "found" if changed else "none")
         return

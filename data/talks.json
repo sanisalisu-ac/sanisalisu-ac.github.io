@@ -8,7 +8,8 @@
       "url": null,
       "album": null,
       "note": null,
-      "slides": null
+      "slides": null,
+      "when": "Jul.–Aug. 2025"
     },
     {
       "date": "2025-06",
@@ -18,7 +19,8 @@
       "url": "https://mitre.usm.md/en/node/514",
       "album": null,
       "note": "Joint with P. Kumam",
-      "slides": null
+      "slides": null,
+      "when": "26–29 Jun. 2025"
     },
     {
       "date": "2024-08",
@@ -28,7 +30,8 @@
       "url": "https://icwana2024.wordpress.com/",
       "album": null,
       "note": null,
-      "slides": null
+      "slides": null,
+      "when": "6–8 Aug. 2024"
     },
     {
       "date": "2023-09",
@@ -38,7 +41,8 @@
       "url": "https://synasc.ro/2023/iafp-2023/",
       "album": null,
       "note": null,
-      "slides": null
+      "slides": null,
+      "when": "11–14 Sep. 2023"
     },
     {
       "date": "2023-07",
@@ -48,7 +52,8 @@
       "url": "https://icfpta2023.wordpress.com/",
       "album": "icfpta-2023",
       "note": null,
-      "slides": null
+      "slides": null,
+      "when": "11–14 Jul. 2023"
     },
     {
       "date": "2023-07",
@@ -58,7 +63,8 @@
       "url": "https://cmmse.usal.es/cmmse2023/welcome",
       "album": null,
       "note": null,
-      "slides": null
+      "slides": null,
+      "when": "3–8 Jul. 2023"
     },
     {
       "date": "2023-06",
@@ -68,7 +74,8 @@
       "url": "https://citi.upb.ro/en/?p=2912",
       "album": "isim-2023",
       "note": null,
-      "slides": null
+      "slides": null,
+      "when": "28–30 Jun. 2023"
     },
     {
       "date": "2023-06",
@@ -78,7 +85,8 @@
       "url": "https://www.numta.org/",
       "album": null,
       "note": null,
-      "slides": null
+      "slides": null,
+      "when": "14–20 Jun. 2023"
     },
     {
       "date": "2023-05",
@@ -88,7 +96,8 @@
       "url": "https://www.math.ubbcluj.ro/~nodeacj/soned.html",
       "album": "bbu-seminar-2023",
       "note": "Seminar talk",
-      "slides": null
+      "slides": null,
+      "when": "18 May 2023"
     },
     {
       "date": "2022-09",
@@ -98,7 +107,8 @@
       "url": "https://iwana2022.wordpress.com/",
       "album": null,
       "note": "Best Presentation Award",
-      "slides": null
+      "slides": null,
+      "when": "5–6 Sep. 2022"
     },
     {
       "date": "2022-06",
@@ -108,7 +118,8 @@
       "url": "https://cseathai.org/2022/02/27/anscse25-khon-kaen-university-thailand/",
       "album": "anscse25-2022",
       "note": null,
-      "slides": null
+      "slides": null,
+      "when": "Jun. 2022"
     },
     {
       "date": "2021-08",
@@ -118,7 +129,8 @@
       "url": "https://www.up.ac.th/NewsRead.aspx?itemID=24359",
       "album": null,
       "note": null,
-      "slides": null
+      "slides": null,
+      "when": "20–22 Aug. 2021"
     },
     {
       "date": "2019-06",
@@ -128,7 +140,8 @@
       "url": "https://www.unn.edu.ng/nigeria-mathematical-society-38th-annual-conference-2019/",
       "album": null,
       "note": null,
-      "slides": null
+      "slides": null,
+      "when": "18–21 Jun. 2019"
     }
   ],
   "workshops": [
@@ -136,13 +149,15 @@
       "date": "2023-05",
       "event": "9th International Workshop on Nonlinear Analysis, Fixed Point Theory and Applications (NAFPTA)",
       "place": "North University Centre at Baia Mare, Romania",
-      "url": null
+      "url": null,
+      "when": "29 May 2023"
     },
     {
       "date": "2023-03",
       "event": "International Workshop and Computational Science Summer School (CSSS 2023): Data Science and Modelling in Industries",
       "place": "KMUTT, Bangkok, Thailand",
-      "url": "https://csss2023.kmutt.ac.th/"
+      "url": "https://csss2023.kmutt.ac.th/",
+      "when": "7–10 Mar. 2023"
     }
   ]
 }

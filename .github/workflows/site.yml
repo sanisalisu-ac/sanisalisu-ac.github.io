@@ -1,22 +1,36 @@
 # Builds and publishes the site to GitHub Pages (free).
-#  - on every push to main: build and deploy
-#  - every Monday 03:17 UTC: refresh publications/citations from ORCID, Crossref, OpenAlex and Google Scholar,
-#    commit any changes, then build and deploy
-#  - manually (Actions tab > "Build and deploy site" > Run workflow): same as the weekly run, with an option
-#    to copy all gallery images from the old WordPress site into the repository
+#  - every day at 03:17 UTC and on every push to main: refresh publications and citations from ORCID, Crossref,
+#    OpenAlex and Google Scholar, regenerate the CV from that data, commit any changes, compile the CV PDF,
+#    then build and deploy
+#  - manually (Actions tab > "Build and deploy site" > Run workflow): the same, with optional boxes to type in
+#    Google Scholar figures by hand and to copy gallery images from the old WordPress site
+#  - if Google Scholar cannot be read for more than 3 days, a GitHub issue is opened (GitHub e-mails you);
+#    it closes itself once Scholar figures are current again
 name: Build and deploy site
 
 on:
   push:
     branches: [main]
   schedule:
-    - cron: "17 3 * * 1"
+    - cron: "17 3 * * *"
   workflow_dispatch:
     inputs:
       update_publications:
         description: "Refresh publications and citation metrics"
         type: boolean
         default: true
+      scholar_citations:
+        description: "Optional: Google Scholar citations (all) to use now, e.g. 342"
+        type: string
+        default: ""
+      scholar_h:
+        description: "Optional: Google Scholar h-index"
+        type: string
+        default: ""
+      scholar_i10:
+        description: "Optional: Google Scholar i10-index"
+        type: string
+        default: ""
       localize_images:
         description: "Copy gallery images from WordPress into this repository (run once)"
         type: boolean
@@ -26,6 +40,7 @@ permissions:
   contents: write   # to commit refreshed data
   pages: write      # to deploy to GitHub Pages
   id-token: write   # required by deploy-pages
+  issues: write     # to alert you when Google Scholar figures go stale
 
 concurrency:
   group: pages
@@ -50,10 +65,40 @@ jobs:
         run: pip install -r requirements.txt
 
       - name: Refresh publications and metrics
-        if: github.event_name == 'schedule' || (github.event_name == 'workflow_dispatch' && inputs.update_publications)
+        if: github.event_name != 'workflow_dispatch' || inputs.update_publications
         env:
           SERPAPI_KEY: ${{ secrets.SERPAPI_KEY }}
+          SCHOLAR_CITATIONS: ${{ inputs.scholar_citations }}
+          SCHOLAR_H: ${{ inputs.scholar_h }}
+          SCHOLAR_I10: ${{ inputs.scholar_i10 }}
         run: python tools/update_publications.py
+        continue-on-error: true
+
+      - name: Generate the CV's publication list, figures and talks from the data
+        run: python tools/make_cv.py
+
+      - name: Alert if Google Scholar figures are stale
+        if: github.event_name != 'push'
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: |
+          title="Google Scholar figures are not refreshing"
+          open=$(gh issue list --state open --search "in:title \"$title\"" --json number --jq '.[0].number' || true)
+          if [ -f .scholar-stale ]; then
+            days=$(cat .scholar-stale)
+            echo "::warning::Google Scholar figures are $days days old. Add the SERPAPI_KEY secret (see README) or type the figures into the Run workflow form."
+            body="The site could not read Google Scholar for $days days (Google blocks most cloud servers), so citations on the site and CV may be behind.
+
+          **Permanent fix (2 minutes):** create a free key at https://serpapi.com/manage-api-key and add it under *Settings → Secrets and variables → Actions → New repository secret* with the name \`SERPAPI_KEY\`.
+
+          **Quick fix:** Actions → *Build and deploy site* → *Run workflow*, type the current citations, h-index and i10-index from your Scholar profile, and run.
+
+          This issue closes itself once the figures are current."
+            if [ -z "$open" ]; then gh issue create --title "$title" --body "$body" || true
+            elif [ $((days % 7)) -eq 0 ]; then gh issue comment "$open" --body "Still stale: $days days." || true; fi
+          elif [ -n "$open" ]; then
+            gh issue close "$open" --comment "Google Scholar figures are current again." || true
+          fi
         continue-on-error: true
 
       - name: Copy gallery images into the repository
@@ -68,7 +113,7 @@ jobs:
         run: |
           git config user.name "site-bot"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
-          git add data assets/img
+          git add data assets/img cv/generated
           if git diff --cached --quiet; then echo "No data changes."; else
             git commit -m "Refresh publications, metrics and media [automated]"
             git push
@@ -82,11 +127,12 @@ jobs:
         with:
           root_file: Salisu_CV.tex
           working_directory: cv
-          pre_compile: sed -i "s#https://sanisalisu.github.io#${{ steps.pages.outputs.base_url }}#" Salisu_CV.tex
         continue-on-error: true
 
       - name: Use the compiled CV
-        run: if [ -f cv/Salisu_CV.pdf ]; then mkdir -p assets/cv && cp cv/Salisu_CV.pdf assets/cv/Salisu_CV.pdf; fi
+        run: |
+          if [ -f cv/Salisu_CV.pdf ]; then mkdir -p assets/cv && cp cv/Salisu_CV.pdf assets/cv/Salisu_CV.pdf
+          else echo "::warning::The CV did not compile; the previous PDF is being served. Check the 'Compile the CV' step."; fi
 
       - uses: actions/setup-node@v4
         with:

@@ -8,13 +8,13 @@
         "Kumam, P.",
         "Sriwongsa, S."
       ],
-      "venue": "",
+      "venue": "Authorea Preprints",
       "volume": null,
       "issue": null,
       "pages": null,
       "year": 2022,
       "type": "article",
-      "status": "in press",
+      "status": "preprint",
       "doi": "10.22541/au.164277068.85937462/v1",
       "url": "https://doi.org/10.22541/au.164277068.85937462/v1",
       "index": null,
@@ -752,10 +752,13 @@
         "optimization",
         "geometry"
       ],
-      "series": "Numerical Computations: Theory and Algorithms (NUMTA 2023)",
+      "series": "Lecture Notes in Computer Science",
       "source": "cv",
       "id": "salisu2025extragradientmethodformo",
-      "openalex_citations": 2
+      "openalex_citations": 2,
+      "series_volume": "14477",
+      "publisher": "Springer, Cham",
+      "series_year": 2025
     },
     {
       "title": "New modification of projected reflected gradient algorithm",

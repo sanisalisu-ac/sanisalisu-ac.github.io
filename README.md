@@ -5,8 +5,11 @@ A fast, secure, self-updating academic site, hosted free on GitHub Pages.
 - **Pages:** Home, Research, Publications, Talks, Teaching, Code & examples, Gallery, CV, Contact.
 - **Publications** are searchable and filterable (topic, Q1, first/corresponding author), each with DOI,
   one-click BibTeX, a **Request PDF** form and a Google Scholar link. Full BibTeX and an RSS feed are generated.
-- **Auto-updates every Monday:** new papers are pulled from ORCID + Crossref, "in press" papers are completed
-  when they get a volume, citation counts come from OpenAlex and Google Scholar. No manual work.
+- **Auto-updates every day (and on every edit):** new papers are pulled from ORCID + Crossref, "in press" papers
+  are completed when they get a volume, citation counts come from Google Scholar and OpenAlex, and the **CV PDF is
+  regenerated from the same data** (publication list, Scholar figures, counts, talks). No manual work.
+- **Never silently stale:** if Google Scholar cannot be read for more than 3 days, the workflow opens a GitHub issue
+  (GitHub e-mails you) explaining the fix, and closes it once figures are current again.
 - **Security:** no server, no database, no third-party scripts or fonts (KaTeX and fonts are self-hosted),
   a strict Content-Security-Policy, email addresses hidden from harvesters, spam honeypots on forms,
   HTTPS enforced by GitHub, Dependabot keeping the build tools patched.
@@ -37,7 +40,8 @@ A fast, secure, self-updating academic site, hosted free on GitHub Pages.
 | Want | Do this |
 |---|---|
 | Requests and messages delivered straight to your inbox (instead of opening the visitor's mail app) | Create a free form at <https://formspree.io> (50 submissions/month free), copy its ID (the part after `/f/`) into `"formspree_id"` in `data/site.json`. |
-| Reliable Google Scholar numbers every week | Google Scholar blocks most cloud servers. Create a free key at <https://serpapi.com> (free plan: 100 searches/month; the site uses about 5), then add it under **Settings → Secrets and variables → Actions → New repository secret** with the name `SERPAPI_KEY`. Without it the site still tries Scholar and always updates OpenAlex. |
+| **Reliable Google Scholar numbers every day (recommended)** | Google Scholar blocks most cloud servers, so without this the Scholar figures only update when Google happens to allow it. Create a free key at <https://serpapi.com/manage-api-key> (the free plan covers a daily refresh: one search per run), then add it under **Settings → Secrets and variables → Actions → New repository secret** with the name `SERPAPI_KEY`. |
+| Update the Scholar figures right now, by hand | **Actions → Build and deploy site → Run workflow**, type the citations / h-index / i10-index shown on your Scholar profile, and run. The site and the CV PDF both update within ~4 minutes. |
 | Your own domain (e.g. `sanisalisu.com`) | Buy the domain, add a file `CNAME` containing just the domain, and follow GitHub's custom-domain guide. Tick **Enforce HTTPS**. |
 | Google Search indexing | Add the site in Google Search Console and submit `sitemap.xml`. |
 | New papers appear automatically | Keep your **ORCID** record current. Easiest: in ORCID, *Works → Add → Search & link → Crossref Metadata Search* and allow Crossref to auto-update your record. |
@@ -55,7 +59,7 @@ commit, and the site rebuilds itself within minutes.
 | Gallery albums and captions | `data/gallery.json` (images go in `assets/img/gallery/<album-id>/`) |
 | Email, Formspree ID, photo, GitHub username | `data/site.json` |
 | Page text (research themes, teaching, CV page) | `templates/*.html` |
-| The downloadable CV | `cv/Salisu_CV.tex` (compiled automatically on every push; add `cv/SaniPhotograph.png` for the photo) |
+| The downloadable CV | `cv/Salisu_CV.tex` for appointments, grants, referees etc. The **publication list, Scholar figures, publication/Q1/talk counts and talks are generated** from `data/*.json` into `cv/generated/` by `tools/make_cv.py` – never edit those by hand. Compiled automatically on every run; add `cv/SaniPhotograph.png` for the photo. Locally: `python tools/make_cv.py && cd cv && pdflatex Salisu_CV.tex`. |
 
 A publication entry looks like this; only `title`, `authors` and `year` are required:
 

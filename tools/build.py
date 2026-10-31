@@ -119,6 +119,10 @@ def main():
                       trim_blocks=True, lstrip_blocks=True)
     data, pubs, groups = prepare_pubs()
     metrics = load("metrics")
+    try:
+        metrics["updated_label"] = dt.date.fromisoformat(metrics["updated"]).strftime("%-d %B %Y")
+    except (KeyError, ValueError):
+        metrics["updated_label"] = metrics.get("updated", "")
     talks = load("talks")
     gallery = load("gallery")
     news = load("news")["news"]
@@ -136,10 +140,11 @@ def main():
         lead = [p for p in members if p["role"]][:3] or members[:3]
         topics.append({"key": key, "label": label, "blurb": blurb, "count": len(members), "examples": lead})
 
+    peer = [p for p in pubs if p.get("status") != "preprint"]  # same counting rule as the CV (tools/make_cv.py)
     stats = {
-        "total": len(pubs),
-        "q1": sum(p["is_q1"] for p in pubs),
-        "lead": sum(bool(p["role"]) for p in pubs),
+        "total": len(peer),
+        "q1": sum(p["is_q1"] for p in peer),
+        "lead": sum(bool(p["role"]) for p in peer),
         "first_year": min(yrs), "last_year": max(yrs),
         "talks": len(talks["talks"]),
         "coauthors": len({a for p in pubs for a in p["authors"] if a != ME}),
