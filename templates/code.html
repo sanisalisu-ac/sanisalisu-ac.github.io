@@ -6,7 +6,7 @@
 <div class="wrap">
   <header class="page-head">
     <h1>Code and examples</h1>
-    <p class="lede">Two small experiments that show, in a few seconds, why the averaging and extrapolation ideas in my papers matter. Both run in your browser; the same algorithms are available below as short Python scripts.</p>
+    <p class="lede">Two experiments that show, in a few seconds, why averaging and extrapolation work. Both run in the browser and are also available below as short Python scripts.</p>
   </header>
 
   <section class="section" id="averaging">
@@ -17,7 +17,7 @@
       </div>
       <div>
         <h2>Averaging tames a nonexpansive map</h2>
-        <p>Let \(T\) rotate the plane by an angle \(\theta\) about the origin. It is nonexpansive and its only fixed point is \(0\), yet the Picard iteration \(x_{n+1} = T x_n\) circles forever. The Krasnoselskii–Mann iteration</p>
+        <p>Let \(T:\mathbb{R}^2\to\mathbb{R}^2\) be the rotation of the plane by an angle \(\theta\in(0,\pi)\) about the origin, \(T x = R_\theta x\), where \(R_\theta = \begin{pmatrix}\cos\theta & -\sin\theta\\ \sin\theta & \cos\theta\end{pmatrix}\). Since \(\|Tx - Ty\| = \|x - y\|\), the map is nonexpansive, and its only fixed point is \(0\); yet the Picard iteration \(x_{n+1} = T x_n\) circles forever. The Krasnoselskii–Mann iteration</p>
         <div class="math-block">\[ x_{n+1} = (1-\lambda)\,x_n + \lambda\, T x_n, \qquad 0<\lambda<1, \]</div>
         <p>averages each step with the current point and spirals into the fixed point. Enriched nonexpansive mappings are exactly the maps for which a suitable averaging of this kind becomes nonexpansive.</p>
         <div class="controls">
