@@ -134,7 +134,7 @@ jobs:
           if [ -f cv/Salisu_CV.pdf ]; then mkdir -p assets/cv && cp cv/Salisu_CV.pdf assets/cv/Salisu_CV.pdf
           else echo "::warning::The CV did not compile; the previous PDF is being served. Check the 'Compile the CV' step."; fi
 
-      - uses: actions/setup-node@v4
+      - uses: actions/setup-node@v7
         with:
           node-version: "20"
 
