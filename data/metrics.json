@@ -1,6 +1,6 @@
 {
   "source": "Google Scholar",
-  "updated": "2026-11-14",
+  "updated": "2026-11-15",
   "citations": 344,
   "h_index": 10,
   "i10_index": 12,
@@ -8,7 +8,7 @@
     "citations": 336,
     "h_index": 11,
     "i10_index": 12,
-    "updated": "2026-11-14"
+    "updated": "2026-11-15"
   },
   "note": "Scholar figures are refreshed daily by the update workflow; OpenAlex figures are always refreshed.",
   "scholar_method": "SerpApi"
