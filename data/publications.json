@@ -1,5 +1,5 @@
 {
-  "updated": "2026-11-16",
+  "updated": "2026-11-17",
   "publications": [
     {
       "title": "Fixed point iterative techniques for solving nonlinear convex optimization problems",
@@ -255,7 +255,7 @@
       "series": null,
       "source": "cv",
       "id": "salisu2026aperturbedsingleoperator",
-      "openalex_citations": 2,
+      "openalex_citations": 3,
       "citations": 3,
       "scholar_url": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=stLnqjwAAAAJ&pagesize=100&sortby=pubdate&citation_for_view=stLnqjwAAAAJ:k_IJM867U9cC"
     },
@@ -1003,7 +1003,7 @@
       "series": null,
       "source": "cv",
       "id": "nasiru2025spectralconjugategradien",
-      "openalex_citations": 5,
+      "openalex_citations": 6,
       "citations": 6,
       "scholar_url": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=stLnqjwAAAAJ&pagesize=100&sortby=pubdate&citation_for_view=stLnqjwAAAAJ:r0BpntZqJG4C"
     },
@@ -1035,7 +1035,7 @@
       "series": null,
       "source": "cv",
       "id": "yao2025newsplittingalgorithmwit",
-      "openalex_citations": 0,
+      "openalex_citations": 1,
       "citations": 1,
       "scholar_url": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=stLnqjwAAAAJ&pagesize=100&sortby=pubdate&citation_for_view=stLnqjwAAAAJ:e5wmG9Sq2KIC"
     },
@@ -1068,7 +1068,7 @@
       "series": null,
       "source": "cv",
       "id": "worapitpong2025approximatingfixedpoints",
-      "openalex_citations": 0,
+      "openalex_citations": 2,
       "citations": 1,
       "scholar_url": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=stLnqjwAAAAJ&pagesize=100&sortby=pubdate&citation_for_view=stLnqjwAAAAJ:RHpTSmoSYBkC"
     },
@@ -1167,7 +1167,7 @@
       "series": null,
       "source": "cv",
       "id": "salihu2025arevisedmrmilriemannianc",
-      "openalex_citations": 7,
+      "openalex_citations": 8,
       "citations": 9,
       "scholar_url": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=stLnqjwAAAAJ&pagesize=100&sortby=pubdate&citation_for_view=stLnqjwAAAAJ:TQgYirikUcIC"
     },
@@ -1327,7 +1327,7 @@
       "series": null,
       "source": "cv",
       "id": "salisu2024iterativealgorithmsforco",
-      "openalex_citations": 0,
+      "openalex_citations": 1,
       "citations": 0,
       "scholar_url": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=stLnqjwAAAAJ&pagesize=100&sortby=pubdate&citation_for_view=stLnqjwAAAAJ:7PzlFSSx8tAC"
     },
@@ -1392,7 +1392,7 @@
       "series": null,
       "source": "cv",
       "id": "salisu2024onapproximatingfixedpoin",
-      "openalex_citations": 3,
+      "openalex_citations": 7,
       "citations": 9,
       "scholar_url": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=stLnqjwAAAAJ&pagesize=100&sortby=pubdate&citation_for_view=stLnqjwAAAAJ:aqlVkmm33-oC"
     },
@@ -1425,7 +1425,7 @@
       "series": null,
       "source": "cv",
       "id": "salisu2024enrichedmultivaluednonex",
-      "openalex_citations": 5,
+      "openalex_citations": 8,
       "citations": 7,
       "scholar_url": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=stLnqjwAAAAJ&pagesize=100&sortby=pubdate&citation_for_view=stLnqjwAAAAJ:4TOpqqG69KYC"
     },
@@ -1457,7 +1457,7 @@
       "series": null,
       "source": "cv",
       "id": "salisu2024enrichedasymptoticallyno",
-      "openalex_citations": 5,
+      "openalex_citations": 8,
       "citations": 7,
       "scholar_url": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=stLnqjwAAAAJ&pagesize=100&sortby=pubdate&citation_for_view=stLnqjwAAAAJ:M3ejUd6NZC8C"
     },
@@ -1584,7 +1584,7 @@
       "series": null,
       "source": "cv",
       "id": "khammahawong2024modifiedhalpernandviscos",
-      "openalex_citations": 6,
+      "openalex_citations": 7,
       "citations": 6,
       "scholar_url": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=stLnqjwAAAAJ&pagesize=100&sortby=pubdate&citation_for_view=stLnqjwAAAAJ:_kc_bZDykSQC"
     },
@@ -1616,7 +1616,7 @@
       "series": null,
       "source": "cv",
       "id": "yahaya2024ontheclassofweiyaoliucon",
-      "openalex_citations": 4,
+      "openalex_citations": 7,
       "citations": 10,
       "scholar_url": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=stLnqjwAAAAJ&pagesize=100&sortby=pubdate&citation_for_view=stLnqjwAAAAJ:QIV2ME_5wuYC"
     },
@@ -1648,7 +1648,7 @@
       "series": null,
       "source": "cv",
       "id": "inuwa2024equilibriumproblemsandpr",
-      "openalex_citations": 1,
+      "openalex_citations": 3,
       "citations": 6,
       "scholar_url": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=stLnqjwAAAAJ&pagesize=100&sortby=pubdate&citation_for_view=stLnqjwAAAAJ:YOwf2qJgpHMC"
     },
@@ -1681,7 +1681,7 @@
       "series": null,
       "source": "cv",
       "id": "mongkolkeha2024coupledbestproximitypoin",
-      "openalex_citations": 5,
+      "openalex_citations": 8,
       "citations": 7,
       "scholar_url": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=stLnqjwAAAAJ&pagesize=100&sortby=pubdate&citation_for_view=stLnqjwAAAAJ:9ZlFYXVOiuMC"
     },
@@ -1712,7 +1712,7 @@
       "series": null,
       "source": "cv",
       "id": "salisu2023onfixedpointsofenrichedc",
-      "openalex_citations": 14,
+      "openalex_citations": 22,
       "citations": 27,
       "scholar_url": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=stLnqjwAAAAJ&pagesize=100&sortby=pubdate&citation_for_view=stLnqjwAAAAJ:ufrVoPGSRksC"
     },
@@ -1745,7 +1745,7 @@
       "series": null,
       "source": "cv",
       "id": "salisu2023convergencetheoremsforfi",
-      "openalex_citations": 14
+      "openalex_citations": 16
     },
     {
       "title": "Approximating fixed points of demicontractive mappings in metric spaces by geodesic averaged perturbation techniques",
@@ -1776,7 +1776,7 @@
       "series": null,
       "source": "cv",
       "id": "salisu2023approximatingfixedpoints",
-      "openalex_citations": 6,
+      "openalex_citations": 10,
       "citations": 12,
       "scholar_url": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=stLnqjwAAAAJ&pagesize=100&sortby=pubdate&citation_for_view=stLnqjwAAAAJ:Zph67rFs4hoC"
     },
@@ -1845,7 +1845,7 @@
       "series": null,
       "source": "cv",
       "id": "awwal2023generalizedrmilconjugate",
-      "openalex_citations": 16,
+      "openalex_citations": 21,
       "citations": 26,
       "scholar_url": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=stLnqjwAAAAJ&pagesize=100&sortby=pubdate&citation_for_view=stLnqjwAAAAJ:3fE2CSJIrl8C"
     },
@@ -1910,7 +1910,7 @@
       "series": null,
       "source": "cv",
       "id": "inuwa2023fixedpointtheoremsforenr",
-      "openalex_citations": 9,
+      "openalex_citations": 13,
       "citations": 11,
       "scholar_url": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=stLnqjwAAAAJ&pagesize=100&sortby=pubdate&citation_for_view=stLnqjwAAAAJ:kNdYIx-mwKoC"
     },
@@ -1944,7 +1944,7 @@
       "series": null,
       "source": "cv",
       "id": "kratuloek2023iterativeapproximationof",
-      "openalex_citations": 6,
+      "openalex_citations": 7,
       "citations": 5,
       "scholar_url": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=stLnqjwAAAAJ&pagesize=100&sortby=pubdate&citation_for_view=stLnqjwAAAAJ:hqOjcs7Dif8C"
     },
@@ -2007,7 +2007,7 @@
       "series": null,
       "source": "cv",
       "id": "salisu2022onestepproximalpointsche",
-      "openalex_citations": 9,
+      "openalex_citations": 11,
       "citations": 9,
       "scholar_url": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=stLnqjwAAAAJ&pagesize=100&sortby=pubdate&citation_for_view=stLnqjwAAAAJ:LkGwnXOMwfcC"
     },
@@ -2041,7 +2041,7 @@
       "series": null,
       "source": "cv",
       "id": "salisu2022onminimizationandfixedpo",
-      "openalex_citations": 11,
+      "openalex_citations": 15,
       "citations": 15,
       "scholar_url": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=stLnqjwAAAAJ&pagesize=100&sortby=pubdate&citation_for_view=stLnqjwAAAAJ:qjMakFHDy7sC"
     },
@@ -2137,7 +2137,7 @@
       "series": null,
       "source": "cv",
       "id": "yahaya2022anewgeneralizedquasinewt",
-      "openalex_citations": 22,
+      "openalex_citations": 25,
       "citations": 24,
       "scholar_url": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=stLnqjwAAAAJ&pagesize=100&sortby=pubdate&citation_for_view=stLnqjwAAAAJ:_FxGoFyzp5QC"
     },
