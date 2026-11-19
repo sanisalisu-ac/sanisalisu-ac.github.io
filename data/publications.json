@@ -1,5 +1,5 @@
 {
-  "updated": "2026-11-18",
+  "updated": "2026-11-19",
   "publications": [
     {
       "title": "Fixed point iterative techniques for solving nonlinear convex optimization problems",
@@ -223,7 +223,7 @@
       "series": null,
       "source": "cv",
       "id": "peng2026extrapolatedadaptiveprox",
-      "openalex_citations": 0,
+      "openalex_citations": 1,
       "citations": 0,
       "scholar_url": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=stLnqjwAAAAJ&pagesize=100&sortby=pubdate&citation_for_view=stLnqjwAAAAJ:RYcK_YlVTxYC"
     },
@@ -415,7 +415,7 @@
       "series": null,
       "source": "cv",
       "id": "jia2026atwoterminertialmethodfo",
-      "openalex_citations": 0,
+      "openalex_citations": 1,
       "citations": 0,
       "scholar_url": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=stLnqjwAAAAJ&pagesize=100&sortby=pubdate&citation_for_view=stLnqjwAAAAJ:ns9cj8rnVeAC"
     },
@@ -671,7 +671,7 @@
       "source": "cv",
       "id": "yao2026convergenceresultsofprox",
       "code": "https://github.com/sanisalisu-ac/MATLAB-CODE-Proximal-Type-Algorithm-With-Reflection",
-      "openalex_citations": 2,
+      "openalex_citations": 3,
       "citations": 2,
       "scholar_url": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=stLnqjwAAAAJ&pagesize=100&sortby=pubdate&citation_for_view=stLnqjwAAAAJ:iH-uZ7U-co4C"
     },
@@ -1263,7 +1263,7 @@
       "series": null,
       "source": "cv",
       "id": "salisu2024goldenratiomethodforsolv",
-      "openalex_citations": 5,
+      "openalex_citations": 6,
       "citations": 5,
       "scholar_url": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=stLnqjwAAAAJ&pagesize=100&sortby=pubdate&citation_for_view=stLnqjwAAAAJ:4DMP91E08xMC"
     },
@@ -1584,7 +1584,7 @@
       "series": null,
       "source": "cv",
       "id": "khammahawong2024modifiedhalpernandviscos",
-      "openalex_citations": 7,
+      "openalex_citations": 8,
       "citations": 6,
       "scholar_url": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=stLnqjwAAAAJ&pagesize=100&sortby=pubdate&citation_for_view=stLnqjwAAAAJ:_kc_bZDykSQC"
     },
@@ -2137,7 +2137,7 @@
       "series": null,
       "source": "cv",
       "id": "yahaya2022anewgeneralizedquasinewt",
-      "openalex_citations": 25,
+      "openalex_citations": 26,
       "citations": 24,
       "scholar_url": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=stLnqjwAAAAJ&pagesize=100&sortby=pubdate&citation_for_view=stLnqjwAAAAJ:_FxGoFyzp5QC"
     },
