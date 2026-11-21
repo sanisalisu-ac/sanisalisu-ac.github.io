@@ -1,5 +1,5 @@
 {
-  "updated": "2026-11-20",
+  "updated": "2026-11-21",
   "publications": [
     {
       "title": "Fixed point iterative techniques for solving nonlinear convex optimization problems",
@@ -542,7 +542,7 @@
       "series": null,
       "source": "cv",
       "id": "khammahawong2026fixedpointsofenrichedmap",
-      "openalex_citations": 0,
+      "openalex_citations": 1,
       "citations": 0,
       "scholar_url": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=stLnqjwAAAAJ&pagesize=100&sortby=pubdate&citation_for_view=stLnqjwAAAAJ:BqipwSGYUEgC"
     },
